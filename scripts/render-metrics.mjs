@@ -1,5 +1,5 @@
 import { getProfileData, offlineProfile } from './github-data.mjs';
-import { bar, escapeXml, readConfig, truncate, writeGenerated } from './utils.mjs';
+import { bar, escapeXml, FONT_MONO, FONT_SANS, readConfig, truncate, writeGenerated } from './utils.mjs';
 
 const config = await readConfig();
 let data;
@@ -38,16 +38,16 @@ const recentRows = recent.map((repo, i) => {
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="280" viewBox="0 0 960 280" role="img" aria-label="Development activity">
 <style>
-  text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
-  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
-  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-  .prompt { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10.5px; fill: #6f9ab4; }
-  .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 17px; font-weight: 700; fill: #f8fafc; }
-  .stat { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 13px; font-weight: 700; fill: #dff4ff; }
-  .muted { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 9.5px; fill: #5f8196; }
-  .key { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10.5px; fill: #bad7e8; }
-  .date { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; fill: #5e8ba5; }
-  .repo { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 500; fill: #d8e9f5; }
+  text { font-family: ${FONT_MONO}; }
+  .mono { font-family: ${FONT_MONO}; }
+  .sans { font-family: ${FONT_SANS}; }
+  .prompt { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #6f9ab4; }
+  .title { font-family: ${FONT_SANS}; font-size: 17px; font-weight: 700; fill: #f8fafc; }
+  .stat { font-family: ${FONT_MONO}; font-size: 13px; font-weight: 700; fill: #dff4ff; }
+  .muted { font-family: ${FONT_MONO}; font-size: 9.5px; fill: #5f8196; }
+  .key { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #bad7e8; }
+  .date { font-family: ${FONT_MONO}; font-size: 10px; fill: #5e8ba5; }
+  .repo { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #d8e9f5; }
 </style>
 <rect width="960" height="280" rx="18" fill="#06111f"/>
 <rect x="12" y="12" width="936" height="256" rx="14" fill="#081829" stroke="#153a55"/>
@@ -68,7 +68,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="280" vi
 ${languageRows}
 </g>
 <text x="490" y="118" class="mono prompt">&gt; recent --pushes</text>
-<g>
+<g class="mono">
 ${recentRows}
 </g>
 </svg>`;

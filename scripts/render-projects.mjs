@@ -1,5 +1,5 @@
 import { getRepositories, offlineRepositories } from './github-data.mjs';
-import { escapeXml, readConfig, truncate, writeGenerated } from './utils.mjs';
+import { escapeXml, FONT_MONO, FONT_SANS, readConfig, truncate, writeGenerated } from './utils.mjs';
 
 const DEFAULT_DESCRIPTIONS = {
   'Medical-NLU-Pipeline': 'Clinical and medical natural-language understanding experiments and evaluation.',
@@ -69,15 +69,15 @@ const rightRows = visionNames.slice(0, 3).map((name, i) => repoRow(name, 510, 10
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="330" viewBox="0 0 960 330" role="img" aria-label="Research and engineering tracks">
 <style>
-  text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
-  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-  .prompt { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10.5px; fill: #6f9ab4; }
-  .lane { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: .8px; }
-  .sub { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10.5px; fill: #64859b; }
-  .repo { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 12px; font-weight: 600; fill: #eef8ff; }
-  .desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 10.5px; font-weight: 400; fill: #88a5b8; }
-  .tag { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 9px; font-weight: 700; letter-spacing: .6px; text-anchor: end; }
+  text { font-family: ${FONT_SANS}; }
+  .mono { font-family: ${FONT_MONO}; }
+  .sans { font-family: ${FONT_SANS}; }
+  .prompt { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #6f9ab4; }
+  .lane { font-family: ${FONT_SANS}; font-size: 13px; font-weight: 700; letter-spacing: .8px; }
+  .sub { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #64859b; }
+  .repo { font-family: ${FONT_SANS}; font-size: 12px; font-weight: 600; fill: #eef8ff; }
+  .desc { font-family: ${FONT_SANS}; font-size: 10.5px; font-weight: 400; fill: #88a5b8; }
+  .tag { font-family: ${FONT_MONO}; font-size: 9px; font-weight: 700; letter-spacing: .6px; text-anchor: end; }
 </style>
 <rect width="960" height="330" rx="18" fill="#06111f"/>
 <rect x="12" y="12" width="936" height="306" rx="14" fill="#081829" stroke="#153a55"/>

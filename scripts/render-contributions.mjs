@@ -1,4 +1,4 @@
-import { readConfig, writeGenerated } from './utils.mjs';
+import { FONT_MONO, FONT_SANS, readConfig, writeGenerated } from './utils.mjs';
 
 const config = await readConfig();
 const username = config.username;
@@ -69,14 +69,14 @@ const updated = new Date().toISOString().slice(0, 10);
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="${username} contribution heatmap">
 <style>
-  text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
-  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
-  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-  .prompt { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; fill: #78a8c4; }
-  .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 17px; font-weight: 700; fill: #f8fafc; }
-  .month { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 9px; fill: #55788f; }
-  .day { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 9px; fill: #55788f; }
-  .small { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 9px; fill: #55788f; }
+  text { font-family: ${FONT_MONO}; }
+  .mono { font-family: ${FONT_MONO}; }
+  .sans { font-family: ${FONT_SANS}; }
+  .prompt { font-family: ${FONT_MONO}; font-size: 11px; fill: #78a8c4; }
+  .title { font-family: ${FONT_SANS}; font-size: 17px; font-weight: 700; fill: #f8fafc; }
+  .month { font-family: ${FONT_MONO}; font-size: 9px; fill: #55788f; }
+  .day { font-family: ${FONT_MONO}; font-size: 9px; fill: #55788f; }
+  .small { font-family: ${FONT_MONO}; font-size: 9px; fill: #55788f; }
 </style>
 <rect width="${width}" height="${height}" rx="18" fill="#06111f"/>
 <rect x="12" y="12" width="936" height="216" rx="14" fill="#081829" stroke="#153a55"/>
