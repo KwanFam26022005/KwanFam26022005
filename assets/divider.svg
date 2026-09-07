@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="34" viewBox="0 0 1000 34"><style>.p{stroke:#28485b;stroke-width:1;fill:none;stroke-dasharray:10 12;animation:f 5s linear infinite}.n{fill:#62dbff}@keyframes f{to{stroke-dashoffset:-88}}</style><path class="p" d="M0 17H1000"/><circle class="n" cx="124" cy="17" r="3"/><circle class="n" cx="500" cy="17" r="3"/><circle class="n" cx="876" cy="17" r="3"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="28" viewBox="0 0 1000 28">
+<style>
+  .line { stroke: #1e293b; stroke-width: 1; fill: none; stroke-dasharray: 8 10; }
+  .dot-cv { fill: #38bdf8; }
+  .dot-rag { fill: #8b5cf6; }
+</style>
+<path class="line" d="M0 14H1000"/>
+<circle class="dot-cv" cx="490" cy="14" r="3"/>
+<circle class="dot-rag" cx="510" cy="14" r="3"/>
+</svg>

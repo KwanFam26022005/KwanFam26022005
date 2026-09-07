@@ -1,18 +1,41 @@
 {
   "username": "KwanFam26022005",
   "displayName": "Khoa Pham",
-  "tagline": "AI Systems · Applied Research · Computer Vision",
+  "tagline": "AI Systems Engineer · Computer Vision & OCR · Agentic-RAG & Verified AI",
   "featuredRepositories": [
     "meter-reading-engine-v2",
     "meter-reading-inference-service",
-    "Invoice-engine",
-    "Interactive-Web-Dashboard-for-Frequent-Itemset-Mining-and-Apriori-Pruning-Analysis"
+    "meter-reading-pipeline-visualizer",
+    "Medical-NLU-Pipeline",
+    "tdtu-student-handbook-chatbot",
+    "Invoice-engine"
   ],
+  "tracks": {
+    "cv": {
+      "title": "Computer Vision & OCR Systems",
+      "accent": "#38bdf8",
+      "repositories": [
+        "meter-reading-engine-v2",
+        "meter-reading-inference-service",
+        "meter-reading-pipeline-visualizer",
+        "Invoice-engine"
+      ]
+    },
+    "rag": {
+      "title": "Agentic-RAG & Research Systems",
+      "accent": "#8b5cf6",
+      "repositories": [
+        "Medical-NLU-Pipeline",
+        "tdtu-student-handbook-chatbot",
+        "Interactive-Web-Dashboard-for-Frequent-Itemset-Mining-and-Apriori-Pruning-Analysis"
+      ]
+    }
+  },
   "domains": [
-    "Computer Vision & OCR",
-    "Agentic RAG & NLP",
-    "Document Intelligence",
-    "Data Mining & Visualization",
-    "AI Systems Architecture"
+    "Computer Vision & OCR Systems",
+    "Agentic-RAG & Evidence Verification",
+    "Production Inference Services",
+    "Document Intelligence & Parsing",
+    "Applied Machine Learning Research"
   ]
 }

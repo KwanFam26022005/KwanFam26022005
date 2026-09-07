@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="90" viewBox="0 0 960 90"><style>.m{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;fill:#6e8ea1}.c{fill:#65ddff;animation:p 2.6s ease-in-out infinite}@keyframes p{50%{opacity:.3}}</style><path d="M80 24H880" stroke="#1d3b4d"/><circle cx="480" cy="24" r="4" class="c"/><text x="480" y="60" text-anchor="middle" class="m" font-size="11">RESEARCH → EVALUATION → SYSTEMS</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="74" viewBox="0 0 960 74">
+<style>
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; fill: #64748b; font-size: 10.5px; letter-spacing: 2px; }
+  .dot-cv { fill: #38bdf8; }
+  .dot-rag { fill: #8b5cf6; }
+</style>
+<path d="M120 18H840" stroke="#1e293b" stroke-width="1"/>
+<circle cx="474" cy="18" r="3.5" class="dot-cv"/>
+<circle cx="486" cy="18" r="3.5" class="dot-rag"/>
+<text x="480" y="50" text-anchor="middle" class="mono">EMPIRICAL RESEARCH <tspan fill="#38bdf8">→</tspan> VERIFIABLE EVALUATION <tspan fill="#8b5cf6">→</tspan> PRODUCTION SYSTEMS</text>
+</svg>

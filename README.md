@@ -1,96 +1,128 @@
 <div align="center">
-  <img src="./assets/hero.svg" width="100%" alt="Kwan AI Systems Lab" />
+  <img src="./assets/hero.svg" width="100%" alt="Khoa Pham - AI Systems Lab" />
 </div>
+
+## RESEARCH IDENTITY
+
+Computer Science student and AI Systems Engineer focused on building verifiable, production-grade artificial intelligence systems. My research and engineering work centers on two complementary domains:
+
+1. **Computer Vision & OCR Systems**: High-reliability image preprocessing, quality gating, text localization, and fail-closed inference microservices.
+2. **Agentic-RAG & Evidence-Verified AI**: Intent routing, multi-hop reasoning, corrective retrieval, and citation-auditing barriers to prevent hallucinations.
+
+I emphasize rigorous empirical evaluation, explicit interface contracts, reproducible benchmarks, and operational reliability over ungrounded black-box models.
 
 <div align="center">
-  <a href="https://github.com/KwanFam26022005"><img src="https://img.shields.io/badge/FOCUS-AI_SYSTEMS-071018?style=for-the-badge&labelColor=071018&color=1d4357" alt="AI Systems" /></a>
-  <img src="https://img.shields.io/badge/CV-OCR-071018?style=for-the-badge&labelColor=071018&color=1d4357" alt="Computer Vision and OCR" />
-  <img src="https://img.shields.io/badge/R%26D-AGENTIC_RAG-071018?style=for-the-badge&labelColor=071018&color=1d4357" alt="Agentic RAG" />
+  <img src="./assets/focus-pillars.svg" width="100%" alt="Core Research Pillars Architecture" />
 </div>
-
-<img src="./assets/divider.svg" width="100%" alt="" />
-
-## ABOUT THIS NODE
-
-Computer Science student focused on **AI systems, Computer Vision/OCR, applied machine learning, and research-oriented software engineering**. I like turning research questions into systems with explicit contracts, measurable evaluation, reproducible experiments, and production boundaries.
-
-<img src="./assets/research-terminal.svg" width="100%" alt="Active research domains" />
-
-<img src="./assets/divider.svg" width="100%" alt="" />
 
 ## FEATURED SYSTEMS
 
-<img src="./generated/projects.svg" width="100%" alt="Featured projects" />
+<div align="center">
+  <img src="./generated/projects.svg" width="100%" alt="Featured Systems Tracks" />
+</div>
+
+### Track 01 — Computer Vision & Document AI
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### Meter Reading Engine v2
-Production-oriented LCD electricity-meter reading pipeline with explicit quality gates, localization/geometry policies, PP-OCRv6 recognition, validation, centralized decisions, and atomic artifact persistence.
+#### [meter-reading-engine-v2](https://github.com/KwanFam26022005/meter-reading-engine-v2)
+Production-grade LCD electricity meter OCR pipeline with automated quality evaluation, geometry rectification, PP-OCRv6 recognition, and deterministic digit validation.
 
-`Python` · `Computer Vision` · `OCR` · `Pipeline Architecture`
-
-[Open repository →](https://github.com/KwanFam26022005/meter-reading-engine-v2)
+`Python` · `Computer Vision` · `PP-OCRv6` · `Quality Gates`
 
 </td>
 <td width="50%" valign="top">
 
-### Meter Reading Inference Service
-FastAPI inference and inspection adapter around the frozen meter-reading core, with revision verification, readiness checks, local model policies, safe artifact access, and fail-closed inference readiness.
+#### [meter-reading-inference-service](https://github.com/KwanFam26022005/meter-reading-inference-service)
+FastAPI inference adapter around the frozen meter-reading core, featuring model revision verification, readiness probes, and fail-closed execution policies.
 
-`Python` · `FastAPI` · `PP-OCRv6` · `Inference API`
-
-[Open repository →](https://github.com/KwanFam26022005/meter-reading-inference-service)
+`Python` · `FastAPI` · `Inference API` · `Docker`
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### Universal Invoice Engine
-Local-first Vietnamese business-document processing system covering parser routing, evidence-grade intermediate representations, deterministic validation, DuckDB persistence, semantic fallback, and human review.
+#### [meter-reading-pipeline-visualizer](https://github.com/KwanFam26022005/meter-reading-pipeline-visualizer)
+Visual telemetry dashboard and interactive stage inspector for the meter-reading pipeline, enabling granular analysis of localization and recognition phases.
 
-`Python` · `Document AI` · `DuckDB` · `OCR`
-
-[Open repository →](https://github.com/KwanFam26022005/Invoice-engine)
+`TypeScript` · `React` · `Telemetry` · `Pipeline Inspection`
 
 </td>
 <td width="50%" valign="top">
 
-### FIM / Apriori Dashboard
-Interactive web project for frequent-itemset mining, Apriori pruning analysis, association rules, performance instrumentation, and visualization-library comparison.
+#### [Invoice-engine](https://github.com/KwanFam26022005/Invoice-engine)
+Local-first Vietnamese business document intake system with deterministic validation rules, DuckDB persistence, semantic fallbacks, and human review routing.
 
-`PHP` · `MySQL` · `JavaScript` · `ECharts` · `Apriori`
-
-[Open repository →](https://github.com/KwanFam26022005/Interactive-Web-Dashboard-for-Frequent-Itemset-Mining-and-Apriori-Pruning-Analysis)
+`Python` · `Document AI` · `DuckDB` · `OCR`
 
 </td>
 </tr>
 </table>
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+### Track 02 — Agentic-RAG & Research Systems
 
-## LOADED MODULES
+<table>
+<tr>
+<td width="50%" valign="top">
 
-| Domain | Working set |
+#### [Medical-NLU-Pipeline](https://github.com/KwanFam26022005/Medical-NLU-Pipeline)
+Clinical natural language understanding pipeline for medical entity extraction, classification benchmarks, and evidence-grounded semantic parsing.
+
+`Python` · `Clinical NLU` · `NLP` · `Evaluation Benchmarks`
+
+</td>
+<td width="50%" valign="top">
+
+#### [tdtu-student-handbook-chatbot](https://github.com/KwanFam26022005/tdtu-student-handbook-chatbot)
+Domain-specific institutional assistant using retrieval-augmented generation to answer university handbook and regulatory inquiries with contextual accuracy.
+
+`Python` · `RAG` · `Vector Search` · `LLM Application`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### KOA Agentic-RAG *(Research Architecture)*
+Conceptual multi-agent retrieval framework featuring query decomposition, iterative corrective retrieval, and citation verification barriers for complex multi-hop inquiries.
+
+`Architecture Prototype` · `Agentic AI` · `Evidence Verification`
+
+</td>
+<td width="50%" valign="top">
+
+#### [Interactive-Web-Dashboard-for-Frequent-Itemset-Mining](https://github.com/KwanFam26022005/Interactive-Web-Dashboard-for-Frequent-Itemset-Mining-and-Apriori-Pruning-Analysis)
+Interactive web platform for frequent-itemset mining, Apriori pruning performance profiling, association rule discovery, and comparative visualization.
+
+`PHP` · `MySQL` · `JavaScript` · `ECharts` · `Apriori`
+
+</td>
+</tr>
+</table>
+
+## STACK & CAPABILITIES
+
+| Research & Engineering Domain | Technologies & Methodologies |
 |---|---|
-| **AI / ML** | Python · Computer Vision · OCR · NLP · evaluation pipelines |
-| **LLM Systems** | RAG · Agentic RAG · evidence verification · corrective retrieval |
-| **Data** | MySQL · DuckDB · Pandas · transactional analytics |
-| **Systems** | GitHub Actions · reproducible environments · API boundaries · offline-first workflows |
-| **Web / Viz** | FastAPI · PHP · JavaScript/TypeScript · Next.js · ECharts · D3.js |
-
-<img src="./assets/divider.svg" width="100%" alt="" />
+| **Computer Vision & OCR** | PP-OCRv6 · OpenCV · PyTorch · Image Quality Gating · Localization & Rectification |
+| **Agentic-RAG & Verified AI** | Corrective Retrieval (Self-RAG) · Multi-Hop Reasoning · Vector Search · Clinical NLU · Citation Auditing |
+| **Data & Persistence** | DuckDB · MySQL · Pandas · Structured Transactional Modeling |
+| **Systems & Reliability** | FastAPI · Docker · GitHub Actions Automation · Fail-Closed Inference Boundaries |
+| **Web & Instrumentation** | TypeScript · React / Next.js · ECharts · D3.js · PHP |
 
 ## LIVE TELEMETRY
 
-The panel below is generated from the GitHub API by a scheduled GitHub Action. It updates only when the generated SVG changes.
+<div align="center">
+  <img src="./generated/metrics.svg" width="100%" alt="Live System Telemetry" />
+</div>
 
-<img src="./generated/metrics.svg" width="100%" alt="Live GitHub telemetry" />
+<div align="center">
+  <img src="./generated/github-contribution-grid-snake.svg" width="100%" alt="Contribution Graph" />
+</div>
 
-### Contribution signal
-
-<img src="./generated/github-contribution-grid-snake.svg" width="100%" alt="GitHub contribution animation" />
-
-<img src="./assets/footer.svg" width="100%" alt="Research to systems" />
+<div align="center">
+  <img src="./assets/footer.svg" width="100%" alt="Research to Systems" />
+</div>

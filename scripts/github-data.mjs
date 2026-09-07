@@ -50,15 +50,15 @@ export async function getRepositories(username, names) {
 
 export function offlineProfile(username) {
   return {
-    user: { login: username, public_repos: 13 },
+    user: { login: username, public_repos: 14 },
     repos: [],
-    stats: { publicRepos: 13, stars: 0, forks: 0, recentlyUpdated: 8 },
-    languages: [['Python', 6], ['JavaScript', 3], ['TypeScript', 2], ['PHP', 1]],
+    stats: { publicRepos: 14, stars: 0, forks: 0, recentlyUpdated: 8 },
+    languages: [['Python', 8], ['TypeScript', 3], ['JavaScript', 2], ['PHP', 1]],
     recent: [
       { name: 'meter-reading-engine-v2', pushed_at: '2026-09-06T00:00:00Z' },
       { name: 'meter-reading-inference-service', pushed_at: '2026-09-05T00:00:00Z' },
-      { name: 'Invoice-engine', pushed_at: '2026-09-04T00:00:00Z' },
-      { name: 'Interactive-Web-Dashboard-for-Frequent-Itemset-Mining-and-Apriori-Pruning-Analysis', pushed_at: '2026-09-03T00:00:00Z' }
+      { name: 'meter-reading-pipeline-visualizer', pushed_at: '2026-09-04T00:00:00Z' },
+      { name: 'Medical-NLU-Pipeline', pushed_at: '2026-09-03T00:00:00Z' }
     ]
   };
 }
@@ -67,7 +67,9 @@ export function offlineRepositories() {
   return [
     { name: 'meter-reading-engine-v2', language: 'Python', description: 'Production-oriented pipeline engineering for LCD electricity-meter reading.', stargazers_count: 0 },
     { name: 'meter-reading-inference-service', language: 'Python', description: 'FastAPI inference and inspection adapter for the frozen meter-reading core pipeline.', stargazers_count: 0 },
+    { name: 'meter-reading-pipeline-visualizer', language: 'TypeScript', description: 'Visual telemetry and interactive stage inspector for meter-reading-engine-v2 pipeline.', stargazers_count: 0 },
     { name: 'Invoice-engine', language: 'Python', description: 'Local-first document intake, validation, persistence and human-review system.', stargazers_count: 0 },
-    { name: 'Interactive-Web-Dashboard-for-Frequent-Itemset-Mining-and-Apriori-Pruning-Analysis', language: 'PHP', description: 'Interactive dashboard for Apriori mining, pruning analysis and visualization.', stargazers_count: 0 }
+    { name: 'Medical-NLU-Pipeline', language: 'Python', description: 'Clinical and medical natural language understanding pipeline and classification benchmarks.', stargazers_count: 0 },
+    { name: 'tdtu-student-handbook-chatbot', language: 'Python', description: 'Student handbook assistant with domain-specific retrieval-augmented generation.', stargazers_count: 0 }
   ];
 }
