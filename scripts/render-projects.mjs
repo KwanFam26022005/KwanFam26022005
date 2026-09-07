@@ -9,6 +9,17 @@ const DEFAULT_DESCRIPTIONS = {
   'meter-reading-inference-service': 'FastAPI inference adapter with revision checks, readiness probes and fail-closed behavior.'
 };
 
+const AGENTIC_TAGS = {
+  'tdtu-student-handbook-chatbot': 'RAG',
+  'Medical-NLU-Pipeline': 'CLINICAL NLP'
+};
+
+const VISION_TAGS = {
+  'meter-reading-engine-v2': 'OCR',
+  'Invoice-engine': 'DOCUMENT AI',
+  'meter-reading-inference-service': 'INFERENCE'
+};
+
 const config = await readConfig();
 const agenticNames = config.tracks?.agentic?.repositories ?? ['tdtu-student-handbook-chatbot', 'Medical-NLU-Pipeline'];
 const visionNames = config.tracks?.vision?.repositories ?? ['meter-reading-engine-v2', 'Invoice-engine', 'meter-reading-inference-service'];
@@ -51,10 +62,10 @@ function researchRow(x, y) {
 
 const leftRows = [
   researchRow(32, 108),
-  ...agenticNames.slice(0, 2).map((name, i) => repoRow(name, 32, 170 + i * 62, '#a78bfa', 'AGENTIC'))
+  ...agenticNames.slice(0, 2).map((name, i) => repoRow(name, 32, 170 + i * 62, '#a78bfa', AGENTIC_TAGS[name] ?? 'AGENTIC'))
 ].join('\n');
 
-const rightRows = visionNames.slice(0, 3).map((name, i) => repoRow(name, 510, 108 + i * 62, '#38bdf8', 'VISION')).join('\n');
+const rightRows = visionNames.slice(0, 3).map((name, i) => repoRow(name, 510, 108 + i * 62, '#38bdf8', VISION_TAGS[name] ?? 'VISION')).join('\n');
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="330" viewBox="0 0 960 330" role="img" aria-label="Research and engineering tracks">
 <style>
