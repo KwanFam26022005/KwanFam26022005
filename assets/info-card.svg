@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" role="img" aria-label="Khoa Pham developer identity card">
+<style>
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+  .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+  .prompt{font-size:10.5px;fill:#71a1bd}
+  .title{font-size:18px;font-weight:700;fill:#f8fafc}
+  .key{font-size:11px;fill:#5e88a4}
+  .val{font-size:11.5px;fill:#d9e9f5}
+  .accent-cv{fill:#7dd3fc}
+  .accent-rag{fill:#a78bfa}
+  .accent-health{fill:#5eead4}
+  .small{font-size:9.5px;fill:#587b91}
+</style>
+<rect width="560" height="300" rx="18" fill="#06111f"/>
+<rect x="12" y="12" width="536" height="276" rx="14" fill="#081829" stroke="#153a55"/>
+<circle cx="28" cy="29" r="3" fill="#2dd4bf"/><circle cx="40" cy="29" r="3" fill="#38bdf8"/><circle cx="52" cy="29" r="3" fill="#8b5cf6"/>
+<text x="68" y="33" class="mono prompt">khoa@github:~$ whoami --research</text>
+<rect x="253" y="23" width="6" height="12" fill="#5eead4" rx="1">
+  <animate attributeName="opacity" values="1;.12;1" dur="1.1s" repeatCount="indefinite"/>
+</rect>
+
+<text x="28" y="70" class="sans title">Phạm Hồng Đăng Khoa</text>
+<line x1="28" y1="84" x2="532" y2="84" stroke="#17384f"/>
+
+<g class="mono">
+  <text x="28" y="111" class="key">role</text><text x="128" y="111" class="val">AI systems / computer science</text>
+  <text x="28" y="136" class="key">focus</text><text x="128" y="136" class="val accent-cv">computer vision · OCR</text>
+  <text x="28" y="161" class="key">research</text><text x="128" y="161" class="val accent-rag">agentic-RAG · evidence verification</text>
+  <text x="28" y="186" class="key">domain</text><text x="128" y="186" class="val accent-health">healthcare AI · clinical knowledge</text>
+  <text x="28" y="211" class="key">principle</text><text x="128" y="211" class="val">measure &gt; verify &gt; deploy</text>
+  <text x="28" y="236" class="key">location</text><text x="128" y="236" class="val">Ho Chi Minh City, VN</text>
+</g>
+
+<g transform="translate(28 259)" class="mono small">
+  <text>status: building / evaluating / iterating</text>
+  <circle cx="283" cy="-3" r="3" fill="#2dd4bf">
+    <animate attributeName="opacity" values=".45;1;.45" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+</g>
+</svg>
