@@ -1,0 +1,17 @@
+{
+  "type": "normal",
+  "fileName": "profile-ocean-3d.svg",
+  "backgroundColor": "#07131f",
+  "foregroundColor": "#edf3f8",
+  "strongColor": "#55aa9e",
+  "weakColor": "#58778c",
+  "radarColor": "#9384c5",
+  "growingAnimation": true,
+  "contribColors": [
+    "#0d2231",
+    "#17384a",
+    "#2c6275",
+    "#55a9c9",
+    "#55aa9e"
+  ]
+}
