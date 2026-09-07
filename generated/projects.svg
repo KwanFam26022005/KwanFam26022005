@@ -4,27 +4,27 @@
     <rect width="430" height="120" rx="14" class="card"/>
     <text x="20" y="30" class="project">METER READING ENGINE V2</text>
     <text x="20" y="52" class="meta">Python · ★ 0</text>
-    <text x="20" y="79" class="desc">Production-oriented pipeline engineering for LCD electric…</text>
+    <text x="20" y="79" class="desc">Repository on GitHub</text>
     <text x="20" y="101" class="link">github.com/KwanFam26022005/meter-reading-engine-v2</text>
   </g>
 <g transform="translate(483 30)">
     <rect width="430" height="120" rx="14" class="card"/>
     <text x="20" y="30" class="project">METER READING INFERENCE SERVICE</text>
     <text x="20" y="52" class="meta">Python · ★ 0</text>
-    <text x="20" y="79" class="desc">FastAPI inference and inspection adapter for the frozen m…</text>
+    <text x="20" y="79" class="desc">Repository on GitHub</text>
     <text x="20" y="101" class="link">github.com/KwanFam26022005/meter-reading-inference-service</text>
   </g>
 <g transform="translate(28 175)">
     <rect width="430" height="120" rx="14" class="card"/>
     <text x="20" y="30" class="project">INVOICE ENGINE</text>
     <text x="20" y="52" class="meta">Python · ★ 0</text>
-    <text x="20" y="79" class="desc">Local-first document intake, validation, persistence and …</text>
+    <text x="20" y="79" class="desc">Repository on GitHub</text>
     <text x="20" y="101" class="link">github.com/KwanFam26022005/Invoice-engine</text>
   </g>
 <g transform="translate(483 175)">
     <rect width="430" height="120" rx="14" class="card"/>
     <text x="20" y="30" class="project">FIM / APRIORI DASHBOARD</text>
     <text x="20" y="52" class="meta">PHP · ★ 0</text>
-    <text x="20" y="79" class="desc">Interactive dashboard for Apriori mining, pruning analysi…</text>
+    <text x="20" y="79" class="desc">Repository on GitHub</text>
     <text x="20" y="101" class="link">github.com/KwanFam26022005/Interactive-Web-Dashboard-for-Frequent-Itemset-Mining-and-Apriori-Pruning-Analysis</text>
   </g></svg>
