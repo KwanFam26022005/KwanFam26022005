@@ -1,26 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 52" width="1000" height="52" role="img" aria-label="Dynamic Role and Expertise Typing Animation">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 48" width="960" height="48" role="img" aria-label="Dynamic Role and Expertise Typing Animation">
 <defs>
   <style>
     .mono {
       font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
     }
     .prompt-text {
-      font-size: 13.5px;
+      font-size: 13px;
       font-weight: 700;
       fill: #0969da;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.3px;
     }
     .type-text {
-      font-size: 13.5px;
+      font-size: 13px;
       font-weight: 600;
       fill: #0f172a;
       letter-spacing: 0.2px;
-    }
-    .tag-text {
-      font-size: 11px;
-      font-weight: 600;
-      fill: #475569;
-      letter-spacing: 0.5px;
     }
     @keyframes cursor-blink {
       0%, 45% { opacity: 1; }
@@ -34,39 +28,35 @@
 
   <!-- Animated paths for text revealing (typewriter effect) -->
   <path id="p0">
-    <animate id="d0" attributeName="d" begin="0s;d3.end" dur="4.5s" fill="remove"
-      values="m 175,32 h 0 ; m 175,32 h 760 ; m 175,32 h 760 ; m 175,32 h 0"
+    <animate id="d0" attributeName="d" begin="0s;d3.end" dur="4.2s" fill="remove"
+      values="m 155,29 h 0 ; m 155,29 h 760 ; m 155,29 h 760 ; m 155,29 h 0"
       keyTimes="0; 0.38; 0.84; 1" />
   </path>
 
   <path id="p1">
-    <animate id="d1" attributeName="d" begin="d0.end" dur="4.5s" fill="remove"
-      values="m 175,32 h 0 ; m 175,32 h 760 ; m 175,32 h 760 ; m 175,32 h 0"
+    <animate id="d1" attributeName="d" begin="d0.end" dur="4.2s" fill="remove"
+      values="m 155,29 h 0 ; m 155,29 h 760 ; m 155,29 h 760 ; m 155,29 h 0"
       keyTimes="0; 0.38; 0.84; 1" />
   </path>
 
   <path id="p2">
-    <animate id="d2" attributeName="d" begin="d1.end" dur="4.5s" fill="remove"
-      values="m 175,32 h 0 ; m 175,32 h 760 ; m 175,32 h 760 ; m 175,32 h 0"
+    <animate id="d2" attributeName="d" begin="d1.end" dur="4.2s" fill="remove"
+      values="m 155,29 h 0 ; m 155,29 h 760 ; m 155,29 h 760 ; m 155,29 h 0"
       keyTimes="0; 0.38; 0.84; 1" />
   </path>
 
   <path id="p3">
-    <animate id="d3" attributeName="d" begin="d2.end" dur="4.5s" fill="remove"
-      values="m 175,32 h 0 ; m 175,32 h 760 ; m 175,32 h 760 ; m 175,32 h 0"
+    <animate id="d3" attributeName="d" begin="d2.end" dur="4.2s" fill="remove"
+      values="m 155,29 h 0 ; m 155,29 h 760 ; m 155,29 h 760 ; m 155,29 h 0"
       keyTimes="0; 0.38; 0.84; 1" />
   </path>
 </defs>
 
 <!-- Outer Container -->
-<rect width="1000" height="52" rx="10" fill="#f8fafc" stroke="#d0d7de" stroke-width="1.2"/>
+<rect width="960" height="48" rx="8" fill="#f8fafc" stroke="#d0d7de" stroke-width="1.2"/>
 
 <!-- Terminal Command Prompt -->
-<g class="mono" transform="translate(24, 0)">
-  <text x="0" y="32" class="prompt-text">khoa@ai-lab:~$</text>
-  <rect x="124" y="19" width="36" height="20" rx="4" fill="#e2e8f0"/>
-  <text x="142" y="33" text-anchor="middle" class="tag-text">exec</text>
-</g>
+<text x="22" y="29" class="mono prompt-text">khoa@github:~$</text>
 
 <!-- Animated Typewriter Text Lines -->
 <g class="mono">
@@ -74,16 +64,16 @@
     <textPath href="#p0" xlink:href="#p0">AI Systems Engineer · Computer Vision · Agentic-RAG</textPath>
   </text>
   <text class="type-text">
-    <textPath href="#p1" xlink:href="#p1">Production OCR &amp; Meter Digit Recognition (Fail-Closed)</textPath>
+    <textPath href="#p1" xlink:href="#p1">Computer Vision &amp; Production OCR Pipelines</textPath>
   </text>
   <text class="type-text">
-    <textPath href="#p2" xlink:href="#p2">Agentic-RAG with Atomic Evidence Grounding &amp; Clinical QA</textPath>
+    <textPath href="#p2" xlink:href="#p2">Agentic-RAG &amp; Evidence Grounded AI Systems</textPath>
   </text>
   <text class="type-text">
-    <textPath href="#p3" xlink:href="#p3">Building Measurable, Verifiable AI from Research to Prod</textPath>
+    <textPath href="#p3" xlink:href="#p3">Building Measurable AI Systems from Research to Real-World</textPath>
   </text>
 </g>
 
 <!-- Blinking Cursor -->
-<rect x="965" y="18" width="8" height="17" rx="1.5" class="blinking-cursor"/>
+<rect x="926" y="16" width="7" height="16" rx="1" class="blinking-cursor"/>
 </svg>

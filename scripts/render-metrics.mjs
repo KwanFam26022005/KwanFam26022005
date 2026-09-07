@@ -90,3 +90,4 @@ ${recentRows}
 </svg>`;
 
 await writeGenerated('metrics.svg', svg);
+await writeGenerated('metrics-light.svg', svg);

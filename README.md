@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="./assets/hero-3d-experiment.svg" width="100%" alt="Pham Hong Dang Khoa — AI Systems Engineer focused on Computer Vision and Agentic-RAG" />
+  <img src="./assets/hero-light.svg" width="100%" alt="Pham Hong Dang Khoa — AI Systems Engineer focused on Computer Vision and Agentic-RAG" />
 </div>
 
 <div align="center">
-  <img src="./assets/typing-effect.svg" width="100%" alt="Technical Specialization & Roles" />
+  <img src="./assets/typing-effect.svg?v=2" width="100%" alt="Technical Specialization & Roles" />
 </div>
 
 <p align="center">
@@ -19,18 +19,18 @@
 <table>
 <tr>
 <td width="50%" valign="top">
-  <a href="https://github.com/KwanFam26022005/production-meter-reading"><img src="./generated/selected-work/production-meter-reading.svg" width="100%" alt="Production Meter Reading" /></a>
+  <a href="https://github.com/KwanFam26022005/production-meter-reading"><img src="./generated/selected-work/production-meter-reading-light.svg" width="100%" alt="Production Meter Reading" /></a>
 </td>
 <td width="50%" valign="top">
-  <a href="#selected-work--impact"><img src="./generated/selected-work/koa-agentic-rag.svg" width="100%" alt="KOA Agentic-RAG (Research Prototype)" /></a>
+  <a href="#selected-work--impact"><img src="./generated/selected-work/koa-agentic-rag-light.svg" width="100%" alt="KOA Agentic-RAG (Research Prototype)" /></a>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-  <a href="https://github.com/KwanFam26022005/tdtu-student-handbook-chatbot"><img src="./generated/selected-work/tdtu-handbook-rag.svg" width="100%" alt="TDTU Student Handbook Chatbot" /></a>
+  <a href="https://github.com/KwanFam26022005/tdtu-student-handbook-chatbot"><img src="./generated/selected-work/tdtu-handbook-rag-light.svg" width="100%" alt="TDTU Student Handbook Chatbot" /></a>
 </td>
 <td width="50%" valign="top">
-  <a href="https://github.com/KwanFam26022005/House-Management-Software-with-AI"><img src="./generated/selected-work/homestead-ai.svg" width="100%" alt="Homestead Rental Management" /></a>
+  <a href="https://github.com/KwanFam26022005/House-Management-Software-with-AI"><img src="./generated/selected-work/homestead-ai-light.svg" width="100%" alt="Homestead Rental Management" /></a>
 </td>
 </tr>
 </table>
@@ -51,7 +51,7 @@ I build applied AI systems designed with **measurable benchmarks, verifiable out
 ## `> ./profile --activity`
 
 <div align="center">
-  <img src="./generated/metrics.svg" width="100%" alt="Development activity" />
+  <img src="./generated/metrics-light.svg" width="100%" alt="Development activity" />
 </div>
 
 <details>
@@ -65,7 +65,7 @@ I build applied AI systems designed with **measurable benchmarks, verifiable out
 ## `> more --projects`
 
 <div align="center">
-  <img src="./generated/projects.svg" width="100%" alt="Research tracks and active systems" />
+  <img src="./generated/projects-light.svg" width="100%" alt="Research tracks and active systems" />
 </div>
 
 <br />
@@ -81,10 +81,10 @@ I build applied AI systems designed with **measurable benchmarks, verifiable out
 <summary><b>terminal portrait</b> (developer identity)</summary>
 <br />
 <div align="center">
-  <img src="./assets/ascii-portrait.svg" width="380" alt="ASCII developer portrait" />
+  <img src="./assets/ascii-portrait-light.svg" width="380" alt="ASCII developer portrait" />
 </div>
 </details>
 
 <div align="center">
-  <img src="./assets/footer.svg" width="100%" alt="Profile footer" />
+  <img src="./assets/footer-light.svg" width="100%" alt="Profile footer" />
 </div>

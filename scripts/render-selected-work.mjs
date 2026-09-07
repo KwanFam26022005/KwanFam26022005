@@ -98,5 +98,6 @@ function renderCard(p) {
 for (const project of PROJECTS) {
   const svg = renderCard(project);
   await writeGenerated(`selected-work/${project.id}.svg`, svg);
+  await writeGenerated(`selected-work/${project.id}-light.svg`, svg);
 }
 console.log(`Successfully generated ${PROJECTS.length} high-contrast selected work cards.`);

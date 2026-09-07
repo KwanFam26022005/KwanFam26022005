@@ -98,3 +98,4 @@ ${rightRows}
 </svg>`;
 
 await writeGenerated('projects.svg', svg);
+await writeGenerated('projects-light.svg', svg);
