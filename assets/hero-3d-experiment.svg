@@ -135,11 +135,11 @@
 
 <!-- 3. Subtitle: Role and Specializations -->
 <text x="56" y="114" class="mono hero-role">
-  AI Systems Engineer
+  Senior CS @ TDTU
   <tspan fill="#64748b"> &#183; </tspan>
-  <tspan fill="#0969da">Computer Vision</tspan>
+  <tspan fill="#0969da">AI Systems Engineer</tspan>
   <tspan fill="#64748b"> &#183; </tspan>
-  <tspan fill="#0969da">Agentic-RAG</tspan>
+  <tspan fill="#0969da">CV &amp; Agentic-RAG</tspan>
 </text>
 
 <!-- 4. Research Statement -->
@@ -176,18 +176,23 @@
 </g>
 
 <!-- 6. Coding Signature Block -->
-<g transform="translate(56, 236)" class="mono">
+<g transform="translate(56, 230)" class="mono">
   <text x="0" y="0">
+    <tspan class="code-fn">student</tspan><tspan class="code-op">.</tspan><tspan class="code-fn">major</tspan>
+    <tspan class="code-op"> = </tspan>
+    <tspan class="code-dom-val">"Computer Science @ TDTU (Year 4)"</tspan>
+  </text>
+  <text x="0" y="19">
+    <tspan class="code-fn">core</tspan><tspan class="code-op">.</tspan><tspan class="code-fn">principle</tspan>
+    <tspan class="code-op"> = </tspan>
+    <tspan class="code-dom-val">"measure &gt; verify &gt; deploy"</tspan>
+  </text>
+  <text x="0" y="38">
     <tspan class="code-fn">research</tspan><tspan class="code-op">.</tspan><tspan class="code-fn">focus</tspan>
     <tspan class="code-op"> = [</tspan>
     <tspan class="code-str-cv">"computer_vision"</tspan><tspan class="code-op">, </tspan>
     <tspan class="code-str-rag">"agentic_rag"</tspan>
     <tspan class="code-op">]</tspan>
-  </text>
-  <text x="0" y="22">
-    <tspan class="code-fn">application</tspan><tspan class="code-op">.</tspan><tspan class="code-fn">domain</tspan>
-    <tspan class="code-op"> = </tspan>
-    <tspan class="code-dom-val">"healthcare_ai"</tspan>
   </text>
 </g>
 

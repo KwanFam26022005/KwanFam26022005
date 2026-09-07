@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 48" width="960" height="48" role="img" aria-label="Dynamic Role and Expertise Typing Animation">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 48" width="960" height="48" role="img" aria-label="Dynamic Bio and Technical Specialization Typing Animation">
 <defs>
   <style>
     .mono {
@@ -28,27 +28,27 @@
 
   <!-- Animated paths for text revealing (typewriter effect) -->
   <path id="p0">
-    <animate id="d0" attributeName="d" begin="0s;d3.end" dur="4.2s" fill="remove"
+    <animate id="d0" attributeName="d" begin="0s;d3.end" dur="4.6s" fill="remove"
       values="m 155,29 h 0 ; m 155,29 h 760 ; m 155,29 h 760 ; m 155,29 h 0"
-      keyTimes="0; 0.38; 0.84; 1" />
+      keyTimes="0; 0.40; 0.85; 1" />
   </path>
 
   <path id="p1">
-    <animate id="d1" attributeName="d" begin="d0.end" dur="4.2s" fill="remove"
+    <animate id="d1" attributeName="d" begin="d0.end" dur="4.6s" fill="remove"
       values="m 155,29 h 0 ; m 155,29 h 760 ; m 155,29 h 760 ; m 155,29 h 0"
-      keyTimes="0; 0.38; 0.84; 1" />
+      keyTimes="0; 0.40; 0.85; 1" />
   </path>
 
   <path id="p2">
-    <animate id="d2" attributeName="d" begin="d1.end" dur="4.2s" fill="remove"
+    <animate id="d2" attributeName="d" begin="d1.end" dur="4.6s" fill="remove"
       values="m 155,29 h 0 ; m 155,29 h 760 ; m 155,29 h 760 ; m 155,29 h 0"
-      keyTimes="0; 0.38; 0.84; 1" />
+      keyTimes="0; 0.40; 0.85; 1" />
   </path>
 
   <path id="p3">
-    <animate id="d3" attributeName="d" begin="d2.end" dur="4.2s" fill="remove"
+    <animate id="d3" attributeName="d" begin="d2.end" dur="4.6s" fill="remove"
       values="m 155,29 h 0 ; m 155,29 h 760 ; m 155,29 h 760 ; m 155,29 h 0"
-      keyTimes="0; 0.38; 0.84; 1" />
+      keyTimes="0; 0.40; 0.85; 1" />
   </path>
 </defs>
 
@@ -61,16 +61,16 @@
 <!-- Animated Typewriter Text Lines -->
 <g class="mono">
   <text class="type-text">
-    <textPath href="#p0" xlink:href="#p0">AI Systems Engineer · Computer Vision · Agentic-RAG</textPath>
+    <textPath href="#p0" xlink:href="#p0">Hey, I'm Khoa Pham · 4th-year CS @ Ton Duc Thang University (TDTU)</textPath>
   </text>
   <text class="type-text">
-    <textPath href="#p1" xlink:href="#p1">Computer Vision &amp; Production OCR Pipelines</textPath>
+    <textPath href="#p1" xlink:href="#p1">AI Systems Engineer · Computer Vision &amp; Agentic-RAG Pipelines</textPath>
   </text>
   <text class="type-text">
-    <textPath href="#p2" xlink:href="#p2">Agentic-RAG &amp; Evidence Grounded AI Systems</textPath>
+    <textPath href="#p2" xlink:href="#p2">Engineering Principle: "Measure &gt; Verify &gt; Deploy" (Fail-Closed)</textPath>
   </text>
   <text class="type-text">
-    <textPath href="#p3" xlink:href="#p3">Building Measurable AI Systems from Research to Real-World</textPath>
+    <textPath href="#p3" xlink:href="#p3">Building Measurable, Verifiable AI from Research to Real-World</textPath>
   </text>
 </g>
 

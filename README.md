@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="./assets/hero-light.svg?v=3" width="100%" alt="Pham Hong Dang Khoa — AI Systems Engineer focused on Computer Vision and Agentic-RAG" />
+  <img src="./assets/hero-light.svg?v=4" width="100%" alt="Pham Hong Dang Khoa — 4th-year CS @ TDTU & AI Systems Engineer" />
 </div>
 
 <div align="center">
-  <img src="./assets/typing-effect.svg?v=2" width="100%" alt="Technical Specialization & Roles" />
+  <img src="./assets/typing-effect.svg?v=4" width="100%" alt="Technical Specialization & Roles" />
 </div>
 
 <p align="center">
@@ -13,6 +13,10 @@
   ·
   Ho Chi Minh City, Vietnam
 </p>
+
+> **👋 About Me**: 4th-year **Computer Science** student at **Ton Duc Thang University (TDTU)** and an **AI Systems Engineer** based in Ho Chi Minh City, Vietnam. I build verifiable, production-grade AI systems with a primary focus on **Computer Vision & OCR** (digit localization, document AI) and **Agentic-RAG** (evidence-grounded retrieval with calibrated abstention).
+> 
+> 📐 **Core Principle**: *"Measure > Verify > Deploy"* — turning probabilistic models into predictable, observable software.
 
 ## `> selected-work --impact`
 
@@ -34,14 +38,6 @@
 </td>
 </tr>
 </table>
-
-## `> about --me`
-
-Hey, I'm **Phạm Hồng Đăng Khoa (Khoa Pham)** — a 4th-year Computer Science student at Ton Duc Thang University (TDTU) and an AI Systems Engineer based in Ho Chi Minh City, Vietnam.
-
-I build verifiable, production-grade AI systems with a primary focus on **Computer Vision & OCR** (digit localization, document AI) and **Agentic-RAG** (evidence-grounded retrieval with calibrated abstention).
-
-> **Core Principle**: *"Measure > Verify > Deploy"* — turning probabilistic models into predictable, observable software.
 
 ## `> stack --core`
 
