@@ -1,325 +1,255 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="1000" height="340" role="img" aria-label="Phạm Hồng Đăng Khoa - AI Systems Engineer: Computer Vision, Agentic-RAG, Healthcare AI">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="1000" height="340" role="img" aria-label="Phạm Hồng Đăng Khoa — AI Systems Engineer focused on Computer Vision and Agentic-RAG">
 <defs>
-  <!-- Background Deep Navy Gradient -->
-  <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" stop-color="#040c18"/>
-    <stop offset="45%" stop-color="#07172a"/>
-    <stop offset="85%" stop-color="#091f35"/>
-    <stop offset="100%" stop-color="#030b16"/>
+  <!-- Deep Navy Ocean Night Sky -->
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#050e18"/>
+    <stop offset="50%" stop-color="#07131f"/>
+    <stop offset="100%" stop-color="#081a29"/>
   </linearGradient>
 
-  <!-- Right Visual Panel Gradients -->
-  <linearGradient id="panel-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" stop-color="#071b30" stop-opacity="0.85"/>
-    <stop offset="100%" stop-color="#051322" stop-opacity="0.9"/>
+  <!-- Specialization Chip Borders (Low Saturation) -->
+  <linearGradient id="chip-cv" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#55a9c9" stop-opacity="0.75"/>
+    <stop offset="100%" stop-color="#3b7a94" stop-opacity="0.3"/>
   </linearGradient>
 
-  <linearGradient id="panel-border" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" stop-color="#1e4973" stop-opacity="0.9"/>
-    <stop offset="100%" stop-color="#122f4c" stop-opacity="0.6"/>
+  <linearGradient id="chip-rag" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#9384c5" stop-opacity="0.75"/>
+    <stop offset="100%" stop-color="#695b96" stop-opacity="0.3"/>
   </linearGradient>
 
-  <!-- Specialization Chip Borders -->
-  <linearGradient id="chip-cv-border" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.85"/>
-    <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.4"/>
-  </linearGradient>
-
-  <linearGradient id="chip-rag-border" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.85"/>
-    <stop offset="100%" stop-color="#818cf8" stop-opacity="0.4"/>
-  </linearGradient>
-
-  <!-- Verification Card Background -->
-  <linearGradient id="verify-box-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" stop-color="#032025" stop-opacity="0.9"/>
-    <stop offset="100%" stop-color="#051922" stop-opacity="0.95"/>
-  </linearGradient>
-
-  <!-- Serene Moon Glow -->
-  <radialGradient id="moon-glow" cx="50%" cy="50%" r="50%">
-    <stop offset="0%" stop-color="#f0fdfa"/>
-    <stop offset="45%" stop-color="#7dd3fc"/>
-    <stop offset="85%" stop-color="#0284c7" stop-opacity="0.3"/>
-    <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
-  </radialGradient>
-
-  <!-- Subtle Blueprint Dot Grid -->
-  <pattern id="dot-grid" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
-    <circle cx="11" cy="11" r="0.75" fill="#1e3a58" opacity="0.35"/>
+  <!-- Subtle Coordinate Grid -->
+  <pattern id="grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="12" cy="12" r="0.7" fill="#163044" opacity="0.22"/>
   </pattern>
 </defs>
 
 <style>
-  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
 
-  /* Top Terminal Bar */
-  .term-prompt { font-size: 11.5px; fill: #38bdf8; font-weight: 600; }
-  .term-sep    { font-size: 11.5px; fill: #56758a; }
-  .term-path   { font-size: 11.5px; fill: #627d98; }
-  .term-cmd    { font-size: 11.5px; fill: #f1f5f9; font-weight: 500; }
-  .term-tag    { font-size: 9.5px; fill: #486581; letter-spacing: 0.5px; text-anchor: end; }
+  /* Terminal Header */
+  .term-user { font-size: 11.5px; fill: #55a9c9; font-weight: 600; }
+  .term-sep  { font-size: 11.5px; fill: #58778c; }
+  .term-path { font-size: 11.5px; fill: #8fa6b8; }
+  .term-cmd  { font-size: 11.5px; fill: #edf3f8; font-weight: 500; }
 
-  /* Main Identity */
-  .hero-name   { font-size: 29px; font-weight: 700; fill: #f8fafc; letter-spacing: -0.3px; }
-  .role-line   { font-size: 13px; font-weight: 600; fill: #94a3b8; letter-spacing: 0.2px; }
-  .hero-desc   { font-size: 12.5px; font-weight: 400; fill: #7e9bb5; }
+  /* Headline and Identity */
+  .hero-name { font-size: 30px; font-weight: 700; fill: #edf3f8; letter-spacing: -0.4px; }
+  .hero-role { font-size: 13px; font-weight: 500; fill: #8fa6b8; letter-spacing: 0.2px; }
+  .hero-desc { font-size: 12.5px; font-weight: 400; fill: #8fa6b8; }
 
   /* Primary Specialization Chips */
-  .chip-cv-txt  { font-size: 10.5px; font-weight: 700; fill: #e0f2fe; letter-spacing: 0.6px; }
-  .chip-rag-txt { font-size: 10.5px; font-weight: 700; fill: #ede9fe; letter-spacing: 0.6px; }
+  .chip-cv-txt  { font-size: 10.5px; font-weight: 600; fill: #edf3f8; letter-spacing: 0.5px; }
+  .chip-rag-txt { font-size: 10.5px; font-weight: 600; fill: #edf3f8; letter-spacing: 0.5px; }
 
-  /* Secondary Application Domain */
-  .domain-prefix { font-size: 11px; font-weight: 500; fill: #527a9e; }
-  .domain-name   { font-size: 11px; font-weight: 700; fill: #2dd4bf; }
-  .domain-sub    { font-size: 10.5px; font-weight: 400; fill: #64748b; }
+  /* Coding Signature Lines (Directly on background) */
+  .code-fn      { font-size: 11px; font-weight: 500; fill: #55a9c9; }
+  .code-op      { font-size: 11px; fill: #58778c; }
+  .code-str-cv  { font-size: 11px; fill: #edf3f8; }
+  .code-str-rag { font-size: 11px; fill: #9384c5; }
+  .code-dom     { font-size: 11px; font-weight: 500; fill: #55aa9e; }
+  .code-dom-val { font-size: 11px; fill: #edf3f8; }
+  .code-note    { font-size: 9.5px; font-weight: 400; fill: #58778c; font-style: italic; }
 
-  /* Compact Focus Code Box */
-  .code-line { font-size: 10.5px; font-weight: 500; }
-  .code-meta { font-size: 9.5px; font-weight: 500; fill: #627d98; }
-
-  /* Right Pipeline Typography */
-  .pipe-title   { font-size: 8.5px; font-weight: 600; fill: #56758a; letter-spacing: 0.8px; }
-  .pipe-cv      { font-size: 8.5px; font-weight: 700; fill: #38bdf8; letter-spacing: 0.4px; }
-  .pipe-rag     { font-size: 8.5px; font-weight: 700; fill: #a78bfa; letter-spacing: 0.4px; }
-  .pipe-meta    { font-size: 7.5px; font-weight: 500; fill: #527a9e; }
-  .token-text   { font-size: 7.5px; font-weight: 600; fill: #7dd3fc; }
-  .node-rag-lbl { font-size: 8px; font-weight: 700; fill: #ede9fe; }
-  .node-sub-lbl { font-size: 7px; font-weight: 600; }
-  .audit-title  { font-size: 9.5px; font-weight: 700; fill: #f0fdfa; letter-spacing: 0.3px; }
-  .audit-sub    { font-size: 8px; font-weight: 500; fill: #5eead4; }
-  .pipe-flow    { font-size: 8px; font-weight: 500; fill: #486581; letter-spacing: 0.4px; }
-  .pipe-acc     { font-size: 8.5px; font-weight: 600; }
+  /* Right Floating Pipeline Labels */
+  .stage-lbl { font-size: 9px; font-weight: 600; letter-spacing: 0.5px; text-anchor: middle; }
+  .stage-sub { font-size: 8px; font-weight: 400; fill: #58778c; }
 </style>
 
 <!-- Canvas Base -->
-<rect width="1000" height="340" rx="14" fill="url(#bg-gradient)"/>
-<rect width="1000" height="340" rx="14" fill="url(#dot-grid)"/>
+<rect width="1000" height="340" rx="14" fill="url(#bg)"/>
+<rect width="1000" height="340" rx="14" fill="url(#grid)"/>
 
-<!-- ================= LEFT SECTION (60-63%) ================= -->
+<!-- ================= LEFT SIDE (60-65% Negative Space & Typography) ================= -->
 
-<!-- 1. Top Terminal Command Line -->
-<g transform="translate(44, 28)" class="mono">
+<!-- 1. Single Terminal Identity Line -->
+<g transform="translate(48, 32)" class="mono">
   <text x="0" y="0">
-    <tspan class="term-prompt">khoa@github</tspan><tspan class="term-sep">:</tspan><tspan class="term-path">~$ </tspan><tspan class="term-cmd">./init --research</tspan>
+    <tspan class="term-user">khoa@github</tspan><tspan class="term-sep">:</tspan><tspan class="term-path">~$ </tspan><tspan class="term-cmd">./init --research</tspan>
   </text>
-  <!-- Blinking Cursor -->
-  <rect x="226" y="-10" width="7" height="13" rx="1" fill="#38bdf8">
+  <!-- Blinking Terminal Cursor (1.1s) -->
+  <rect x="226" y="-10" width="7" height="13" rx="1" fill="#55a9c9">
     <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>
   </rect>
-  <text x="512" y="0" class="term-tag">AI_SYS // v2.6.2</text>
 </g>
 
-<!-- 2. Name & Editorial Headline (No cursor overlap!) -->
-<text x="44" y="76" class="sans hero-name">Ph&#7841;m H&#7891;ng &#272;&#259;ng Khoa</text>
+<!-- 2. Name Headline (Editorial, clean, no overlapping elements) -->
+<text x="48" y="82" class="sans hero-name">Ph&#7841;m H&#7891;ng &#272;&#259;ng Khoa</text>
 
-<!-- 3. Role & Primary Fields Subtitle -->
-<text x="44" y="102" class="mono role-line">
+<!-- 3. Subtitle: Role & Primary Specializations -->
+<text x="48" y="110" class="mono hero-role">
   AI Systems Engineer
-  <tspan fill="#38bdf8"> &#183; </tspan>
-  <tspan fill="#bae6fd">Computer Vision</tspan>
-  <tspan fill="#a78bfa"> &#183; </tspan>
-  <tspan fill="#ddd6fe">Agentic-RAG</tspan>
+  <tspan fill="#58778c"> &#183; </tspan>
+  <tspan fill="#55a9c9">Computer Vision</tspan>
+  <tspan fill="#58778c"> &#183; </tspan>
+  <tspan fill="#9384c5">Agentic-RAG</tspan>
 </text>
 
 <!-- 4. Research Statement -->
-<text x="44" y="125" class="sans hero-desc">Building measurable, evidence-aware AI systems from research to real-world use.</text>
+<text x="48" y="134" class="sans hero-desc">Building measurable, evidence-aware AI systems from research to real-world use.</text>
 
-<!-- 5. Primary Specialization Pair (Two Compact Developer Chips) -->
-<g transform="translate(44, 148)" class="mono">
+<!-- 5. Two Compact Focus Chips (Only Two, Restrained Accent) -->
+<g transform="translate(48, 158)" class="mono">
   <!-- Chip 1: CV / OCR Systems -->
   <g>
-    <rect width="154" height="28" rx="6" fill="#071d31" stroke="url(#chip-cv-border)" stroke-width="1"/>
-    <!-- Reticle Icon -->
+    <rect width="154" height="28" rx="6" fill="#091b2c" fill-opacity="0.6" stroke="url(#chip-cv)" stroke-width="0.9"/>
+    <!-- Minimal Reticle Icon -->
     <g transform="translate(10, 7)">
-      <path d="M 0 3.5 L 0 0 L 3.5 0" fill="none" stroke="#38bdf8" stroke-width="1.2"/>
-      <path d="M 10.5 0 L 14 0 L 14 3.5" fill="none" stroke="#38bdf8" stroke-width="1.2"/>
-      <path d="M 0 10.5 L 0 14 L 3.5 14" fill="none" stroke="#38bdf8" stroke-width="1.2"/>
-      <path d="M 10.5 14 L 14 14 L 14 10.5" fill="none" stroke="#38bdf8" stroke-width="1.2"/>
-      <circle cx="7" cy="7" r="2.2" fill="#38bdf8"/>
+      <path d="M 0 3.5 L 0 0 L 3.5 0" fill="none" stroke="#55a9c9" stroke-width="1.1"/>
+      <path d="M 10.5 0 L 14 0 L 14 3.5" fill="none" stroke="#55a9c9" stroke-width="1.1"/>
+      <path d="M 0 10.5 L 0 14 L 3.5 14" fill="none" stroke="#55a9c9" stroke-width="1.1"/>
+      <path d="M 10.5 14 L 14 14 L 14 10.5" fill="none" stroke="#55a9c9" stroke-width="1.1"/>
+      <circle cx="7" cy="7" r="2" fill="#55a9c9"/>
     </g>
     <text x="32" y="18" class="chip-cv-txt">CV / OCR SYSTEMS</text>
   </g>
 
-  <!-- Chip 2: Agentic-RAG & Verification -->
+  <!-- Chip 2: Agentic-RAG / Evidence -->
   <g transform="translate(166, 0)">
-    <rect width="176" height="28" rx="6" fill="#0f1836" stroke="url(#chip-rag-border)" stroke-width="1"/>
-    <!-- Connected 3-Node Icon -->
+    <rect width="192" height="28" rx="6" fill="#0d172e" fill-opacity="0.6" stroke="url(#chip-rag)" stroke-width="0.9"/>
+    <!-- Minimal 3-Node Connected Icon -->
     <g transform="translate(10, 7)">
-      <circle cx="7" cy="2.5" r="1.8" fill="#a78bfa"/>
-      <circle cx="2" cy="11.5" r="1.8" fill="#818cf8"/>
-      <circle cx="12" cy="11.5" r="1.8" fill="#c084fc"/>
-      <line x1="7" y1="2.5" x2="2" y2="11.5" stroke="#a78bfa" stroke-width="0.9" opacity="0.8"/>
-      <line x1="7" y1="2.5" x2="12" y2="11.5" stroke="#a78bfa" stroke-width="0.9" opacity="0.8"/>
-      <line x1="2" y1="11.5" x2="12" y2="11.5" stroke="#a78bfa" stroke-width="0.9" opacity="0.8"/>
+      <circle cx="7" cy="2.5" r="1.7" fill="#9384c5"/>
+      <circle cx="2" cy="11.5" r="1.7" fill="#9384c5"/>
+      <circle cx="12" cy="11.5" r="1.7" fill="#9384c5"/>
+      <line x1="7" y1="2.5" x2="2" y2="11.5" stroke="#9384c5" stroke-width="0.8" opacity="0.7"/>
+      <line x1="7" y1="2.5" x2="12" y2="11.5" stroke="#9384c5" stroke-width="0.8" opacity="0.7"/>
+      <line x1="2" y1="11.5" x2="12" y2="11.5" stroke="#9384c5" stroke-width="0.8" opacity="0.7"/>
     </g>
-    <text x="32" y="18" class="chip-rag-txt">AGENTIC-RAG &#183; AUDIT</text>
+    <text x="32" y="18" class="chip-rag-txt">AGENTIC-RAG / EVIDENCE</text>
   </g>
 </g>
 
-<!-- 6. Secondary Application Domain Indicator -->
-<g transform="translate(44, 196)" class="mono">
+<!-- 6. Coding Signature Lines (Directly on canvas - NO bordered card) -->
+<g transform="translate(48, 222)" class="mono">
+  <!-- Line 1: research.focus -->
   <text x="0" y="0">
-    <tspan class="domain-prefix">&#8627; application domain: </tspan>
-    <tspan class="domain-name">Healthcare AI </tspan>
-    <tspan class="domain-sub">(clinical NLU &#183; EHR evidence extraction)</tspan>
+    <tspan class="code-fn">research.focus</tspan> <tspan class="code-op">=</tspan> <tspan class="code-op">[</tspan><tspan class="code-str-cv">"computer_vision"</tspan><tspan class="code-op">, </tspan><tspan class="code-str-rag">"agentic_rag"</tspan><tspan class="code-op">]</tspan>
   </text>
+  <!-- Line 2: application.domain -->
+  <text x="0" y="20">
+    <tspan class="code-dom">application.domain</tspan> <tspan class="code-op">=</tspan> <tspan class="code-dom-val">"healthcare_ai"</tspan>
+  </text>
+  <!-- Line 3: Signature note -->
+  <text x="0" y="42" class="code-note">// observe &#8594; retrieve &#8594; verify</text>
 </g>
 
-<!-- 7. Compact Research Focus Code Box -->
-<g transform="translate(44, 212)" class="mono">
-  <rect width="512" height="74" rx="7" fill="#061628" stroke="#163756" stroke-width="0.8"/>
-  <text x="16" y="22" class="code-line">
-    <tspan fill="#7dd3fc">research.focus</tspan> <tspan fill="#64748b">=</tspan> <tspan fill="#cbd5e1">[</tspan><tspan fill="#bae6fd">"computer_vision"</tspan><tspan fill="#64748b">, </tspan><tspan fill="#ddd6fe">"agentic_rag"</tspan><tspan fill="#cbd5e1">]</tspan> <tspan fill="#415a77">// primary</tspan>
-  </text>
-  <text x="16" y="42" class="code-line">
-    <tspan fill="#7dd3fc">audit_engine</tspan><tspan fill="#64748b">.</tspan><tspan fill="#2dd4bf">verify_evidence</tspan><tspan fill="#cbd5e1">(</tspan><tspan fill="#99f6e4">domain</tspan><tspan fill="#64748b">=</tspan><tspan fill="#5eead4">"healthcare"</tspan><tspan fill="#cbd5e1">)</tspan> <tspan fill="#64748b">-&gt;</tspan> <tspan fill="#2dd4bf" font-weight="700">PASS</tspan>
-  </text>
-  <text x="16" y="61" class="code-meta">
-    <tspan fill="#38bdf8">&gt;</tspan> observe <tspan fill="#415a77">&#8594;</tspan> retrieve <tspan fill="#415a77">&#8594;</tspan> verify <tspan fill="#1e3a58">|</tspan> oceanic calm &#183; clinical precision
-  </text>
-</g>
+<!-- ================= RIGHT SIDE (35-40% Floating Abstract Research Pipeline) ================= -->
+<!-- Fully floating along vertical axis x = 760: NO outer rectangular container, NO window chrome, NO fake telemetry -->
+<g>
 
-<!-- ================= RIGHT SECTION (37-40% Signature Visual) ================= -->
-<g transform="translate(584, 22)">
-  <!-- Container Panel -->
-  <rect width="372" height="268" rx="10" fill="url(#panel-bg)" stroke="url(#panel-border)" stroke-width="0.9"/>
-
-  <!-- Panel Header Tab -->
-  <g class="mono">
-    <!-- Window Dots -->
-    <circle cx="16" cy="18" r="2.2" fill="#334155"/>
-    <circle cx="24" cy="18" r="2.2" fill="#475569"/>
-    <circle cx="32" cy="18" r="2.2" fill="#64748b"/>
-    <text x="44" y="21" class="pipe-title">pipeline.arch // vision-to-evidence</text>
-
-    <!-- Serene Minimalist Moon with Gentle Aura -->
-    <g transform="translate(348, 18)">
-      <circle cx="0" cy="0" r="14" fill="#38bdf8" opacity="0.12">
-        <animate attributeName="opacity" values="0.08; 0.22; 0.08" dur="12s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="0" cy="0" r="6" fill="url(#moon-glow)"/>
-    </g>
-  </g>
-
-  <!-- Horizontal Panel Divider -->
-  <line x1="0" y1="32" x2="372" y2="32" stroke="#122f4c" stroke-width="0.8"/>
-
-  <!-- Aligned Stage Headers -->
-  <g class="mono">
-    <text x="14" y="49" class="pipe-cv">01. vision.detect()</text>
-    <text x="266" y="49" text-anchor="middle" class="pipe-rag">02. agentic_rag.retrieve()</text>
-  </g>
-
-  <!-- Stage 1: Document Scan Frame (CV / OCR) -->
-  <g transform="translate(14, 56)" class="mono">
-    <!-- Scan Frame Box -->
-    <rect width="112" height="66" rx="4" fill="#071d31" stroke="#38bdf8" stroke-width="0.8" stroke-opacity="0.7"/>
-    <!-- 4 Corner Reticles -->
-    <path d="M -3 7 L -3 -3 L 7 -3" fill="none" stroke="#38bdf8" stroke-width="1.2"/>
-    <path d="M 105 -3 L 115 -3 L 115 7" fill="none" stroke="#38bdf8" stroke-width="1.2"/>
-    <path d="M -3 59 L -3 69 L 7 69" fill="none" stroke="#38bdf8" stroke-width="1.2"/>
-    <path d="M 105 69 L 115 69 L 115 59" fill="none" stroke="#38bdf8" stroke-width="1.2"/>
-
-    <!-- Document Structure Skeleton Lines -->
-    <rect x="10" y="9" width="56" height="2" rx="1" fill="#1b3a5a"/>
-    <rect x="10" y="15" width="76" height="2" rx="1" fill="#1b3a5a"/>
-    <rect x="10" y="21" width="48" height="2" rx="1" fill="#1b3a5a"/>
-
-    <!-- Detected Token Bounding Box -->
-    <rect x="10" y="30" width="64" height="15" rx="2" fill="#0284c7" fill-opacity="0.25" stroke="#38bdf8" stroke-width="0.8"/>
-    <text x="15" y="41" class="token-text">token: [ehr_t]</text>
-
-    <!-- Subtle Vertical Scanning Laser Beam -->
-    <line x1="2" y1="4" x2="110" y2="4" stroke="#7dd3fc" stroke-width="1.1" opacity="0.8">
-      <animate attributeName="y1" values="4; 60; 4" dur="8s" repeatCount="indefinite"/>
-      <animate attributeName="y2" values="4; 60; 4" dur="8s" repeatCount="indefinite"/>
-    </line>
-
-    <!-- Subtitle below box -->
-    <text x="0" y="80" class="pipe-meta">OCR rect + text bbox</text>
-  </g>
-
-  <!-- Stage 2: Data Flow Stream to Agentic-RAG -->
-  <g class="mono">
-    <path d="M 126 90 C 152 90, 158 90, 186 90" fill="none" stroke="#1d4368" stroke-width="1.1" stroke-dasharray="3,3"/>
-    <!-- Animated Flow Particle -->
-    <circle r="2.2" fill="#38bdf8">
-      <animateMotion path="M 126 90 C 152 90, 158 90, 186 90" dur="9s" repeatCount="indefinite"/>
+  <!-- Serene Understated Moon (Subtle, integrated, non-dominant) -->
+  <g transform="translate(920, 42)">
+    <circle cx="0" cy="0" r="14" fill="#55a9c9" opacity="0.08">
+      <animate attributeName="opacity" values="0.05; 0.12; 0.05" dur="14s" repeatCount="indefinite"/>
     </circle>
-    <text x="136" y="82" class="pipe-meta">embedding</text>
+    <circle cx="0" cy="0" r="6" fill="#8fa6b8" opacity="0.35"/>
   </g>
 
-  <!-- Stage 3: Multi-Agent Retrieval & Fact Auditing Constellation -->
-  <g transform="translate(186, 56)" class="mono">
-    <!-- Inter-node Graph Connections -->
-    <line x1="80" y1="34" x2="44" y2="12" stroke="#224263" stroke-width="0.9"/>
-    <line x1="80" y1="34" x2="116" y2="12" stroke="#3c2a61" stroke-width="0.9"/>
-    <line x1="80" y1="34" x2="148" y2="34" stroke="#134e4a" stroke-width="1"/>
+  <!-- STAGE 1: OBSERVE (Computer Vision / OCR) centered at x = 760 -->
+  <g class="mono">
+    <text x="760" y="46" class="stage-lbl" fill="#55a9c9">
+      observe <tspan class="stage-sub">&#183; cv / ocr</tspan>
+    </text>
 
-    <!-- Satellite Node d1 (Document Chunk) -->
-    <circle cx="44" cy="12" r="6.5" fill="#0b2238" stroke="#38bdf8" stroke-width="0.9"/>
-    <text x="44" y="14.5" text-anchor="middle" class="node-sub-lbl" fill="#7dd3fc">d&#8321;</text>
+    <!-- Minimal Scan Boundary Motif centered at 760 (width 104, from 708 to 812) -->
+    <g transform="translate(708, 54)">
+      <rect width="104" height="42" rx="3" fill="#0a1a29" fill-opacity="0.4" stroke="#17344a" stroke-width="0.8"/>
+      <!-- 4 Corner Reticle Brackets -->
+      <path d="M -2 6 L -2 -2 L 6 -2" fill="none" stroke="#55a9c9" stroke-width="1.1"/>
+      <path d="M 98 -2 L 106 -2 L 106 6" fill="none" stroke="#55a9c9" stroke-width="1.1"/>
+      <path d="M -2 36 L -2 44 L 6 44" fill="none" stroke="#55a9c9" stroke-width="1.1"/>
+      <path d="M 98 44 L 106 44 L 106 36" fill="none" stroke="#55a9c9" stroke-width="1.1"/>
 
-    <!-- Satellite Node KB (Knowledge Graph) -->
-    <circle cx="116" cy="12" r="6.5" fill="#1e1438" stroke="#c084fc" stroke-width="0.9"/>
-    <text x="116" y="14.5" text-anchor="middle" class="node-sub-lbl" fill="#e9d5ff">KB</text>
+      <!-- 2 Subtle Document Skeleton Lines -->
+      <rect x="10" y="11" width="50" height="1.8" rx="0.9" fill="#17344a"/>
+      <rect x="10" y="17" width="68" height="1.8" rx="0.9" fill="#17344a"/>
 
-    <!-- Central Orchestrator [RAG] -->
-    <circle cx="80" cy="34" r="14" fill="#131738" stroke="#a78bfa" stroke-width="1.2"/>
-    <text x="80" y="37.5" text-anchor="middle" class="node-rag-lbl">RAG</text>
+      <!-- Single Detected Bounding Box -->
+      <rect x="10" y="24" width="42" height="11" rx="1.5" fill="#55a9c9" fill-opacity="0.12" stroke="#55a9c9" stroke-width="0.7"/>
 
-    <!-- Satellite Node V (Evidence Verifier) -->
-    <g transform="translate(148, 34)">
-      <circle cx="0" cy="0" r="8.5" fill="#042628" stroke="#2dd4bf" stroke-width="1.2">
-        <animate attributeName="r" values="8.5; 10; 8.5" dur="6s" repeatCount="indefinite"/>
+      <!-- Subtle Vertical Scanning Laser Beam (8s slow sweep) -->
+      <line x1="2" y1="4" x2="102" y2="4" stroke="#55a9c9" stroke-width="0.9" opacity="0.65">
+        <animate attributeName="y1" values="4; 38; 4" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="y2" values="4; 38; 4" dur="8s" repeatCount="indefinite"/>
+      </line>
+    </g>
+  </g>
+
+  <!-- CONNECTOR 1: Flow Line from Observe to Retrieve (x = 760) -->
+  <line x1="760" y1="102" x2="760" y2="132" stroke="#17344a" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- STAGE 2: RETRIEVE (Agentic-RAG Constellation) centered at x = 760 -->
+  <g class="mono">
+    <text x="760" y="142" class="stage-lbl" fill="#9384c5">
+      retrieve <tspan class="stage-sub">&#183; multi-agent rag</tspan>
+    </text>
+
+    <!-- Constellation Graph Centered at (760, 172) -->
+    <g transform="translate(760, 172)">
+      <!-- Connecting Graph Lines -->
+      <line x1="0" y1="0" x2="-34" y2="-12" stroke="#17344a" stroke-width="0.8"/>
+      <line x1="0" y1="0" x2="34" y2="-12" stroke="#1f2347" stroke-width="0.8"/>
+      <line x1="0" y1="0" x2="0" y2="28" stroke="#13383a" stroke-width="0.9"/>
+
+      <!-- Satellite Node 1 (Document Store) -->
+      <circle cx="-34" cy="-12" r="4.5" fill="#091b2c" stroke="#55a9c9" stroke-width="0.8"/>
+      <!-- Satellite Node 2 (Knowledge Base) -->
+      <circle cx="34" cy="-12" r="4.5" fill="#14112e" stroke="#9384c5" stroke-width="0.8"/>
+
+      <!-- Central Orchestration Node [RAG] -->
+      <circle cx="0" cy="0" r="9" fill="#0d172e" stroke="#9384c5" stroke-width="1.1"/>
+      <circle cx="0" cy="0" r="2.8" fill="#9384c5"/>
+
+      <!-- Satellite Node 3 (Evidence Bridge) -->
+      <circle cx="0" cy="28" r="4.5" fill="#091f24" stroke="#55aa9e" stroke-width="0.8"/>
+    </g>
+  </g>
+
+  <!-- CONNECTOR 2: Flow Line from Retrieve to Verify (x = 760) -->
+  <line x1="760" y1="206" x2="760" y2="230" stroke="#13383a" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- STAGE 3: VERIFY (Evidence Verification Node) centered at x = 760 -->
+  <g class="mono">
+    <!-- Verification Node with Breathing Aura -->
+    <g transform="translate(760, 248)">
+      <!-- Subtle Pulse Aura (6s) -->
+      <circle cx="0" cy="0" r="13" fill="#55aa9e" opacity="0.08">
+        <animate attributeName="r" values="12; 15.5; 12" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06; 0.16; 0.06" dur="6s" repeatCount="indefinite"/>
       </circle>
-      <text x="0" y="3" text-anchor="middle" class="node-sub-lbl" fill="#99f6e4" font-weight="700">V</text>
+      <!-- Core Node -->
+      <circle cx="0" cy="0" r="9" fill="#091f24" stroke="#55aa9e" stroke-width="1"/>
+      <!-- Clean Checkmark -->
+      <path d="M -3.5 0 L -1 2.5 L 4 -2" fill="none" stroke="#55aa9e" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
 
-    <!-- Subtitle below graph -->
-    <text x="80" y="80" text-anchor="middle" class="pipe-meta">multi-agent fact audit</text>
-  </g>
-
-  <!-- Stage 4: Evidence Grounding & Clinical Verification Output Card -->
-  <g transform="translate(14, 150)" class="mono">
-    <!-- Card Base -->
-    <rect width="344" height="54" rx="6" fill="url(#verify-box-bg)" stroke="#14b8a6" stroke-width="0.9">
-      <animate attributeName="stroke-opacity" values="0.65; 1; 0.65" dur="6s" repeatCount="indefinite"/>
-    </rect>
-
-    <!-- Checkmark Badge -->
-    <circle cx="20" cy="27" r="9" fill="#0d524d"/>
-    <path d="M 16 27 L 19 30 L 25 23" fill="none" stroke="#2dd4bf" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <!-- Verification Result Lines -->
-    <text x="38" y="22" class="audit-title">03. verify(clinical_evidence) <tspan fill="#2dd4bf">&#8594; PASS</tspan></text>
-    <text x="38" y="39" class="audit-sub">evidence: PubMed/EHR &#183; anti_hallucination: active</text>
-  </g>
-
-  <!-- Panel Footer Status Line -->
-  <g transform="translate(14, 230)" class="mono">
-    <line x1="0" y1="0" x2="344" y2="0" stroke="#133350" stroke-width="0.8"/>
-    <text x="0" y="19" class="pipe-flow">observe(scan) &#8594; retrieve(nodes) &#8594; verify(domain)</text>
-    <text x="344" y="19" text-anchor="end" class="pipe-acc">
-      <tspan fill="#527a9e">grounding:</tspan> <tspan fill="#2dd4bf" font-weight="700">99.8%</tspan>
+    <!-- Text Label Centered Below Node -->
+    <text x="760" y="272" class="stage-lbl" fill="#55aa9e">
+      verify <tspan class="stage-sub">&#183; evidence grounded</tspan>
     </text>
   </g>
+
+  <!-- UNIFIED DATA FLOW PARTICLE (Single flowing dot 9s: observe -> retrieve -> verify) -->
+  <circle r="2.2" fill="#55aa9e">
+    <animateMotion path="M 760 75 L 760 172 L 760 248" dur="9s" repeatCount="indefinite"/>
+  </circle>
+
 </g>
 
-<!-- ================= BOTTOM OCEANIC WAVE CALM (Minimal & Very Slow) ================= -->
+<!-- ================= BOTTOM OCEAN SIGNAL (Calm, Very Slow Ambient Horizon) ================= -->
 <g>
   <!-- Distant Mountain Horizon Silhouette -->
-  <path d="M 0 324 Q 280 304, 540 320 T 1000 312 L 1000 340 L 0 340 Z" fill="#071a2e" opacity="0.45"/>
+  <path d="M 0 326 Q 280 308, 540 322 T 1000 316 L 1000 340 L 0 340 Z" fill="#081c2c" opacity="0.25"/>
 
-  <!-- Wave Line 1 (18s slow drift) -->
-  <path d="M -100 324 Q 150 314, 400 324 T 900 318 T 1400 324" fill="none" stroke="#0e3a61" stroke-width="1.2" opacity="0.4">
+  <!-- Main Wave Line (18s slow drift, low opacity) -->
+  <path d="M -100 326 Q 150 316, 400 326 T 900 320 T 1400 326" fill="none" stroke="#0e2a40" stroke-width="1.1" opacity="0.22">
     <animateTransform attributeName="transform" type="translate" values="0,0; -100,0; 0,0" dur="18s" repeatCount="indefinite"/>
   </path>
 
-  <!-- Wave Line 2 (20s slow counter-drift) -->
-  <path d="M -100 332 Q 200 322, 500 332 T 1000 328 T 1500 332" fill="none" stroke="#0d9488" stroke-width="0.8" opacity="0.28">
+  <!-- Ghost Wave Line (20s slow counter-drift, low opacity) -->
+  <path d="M -100 332 Q 200 324, 500 332 T 1000 328 T 1500 332" fill="none" stroke="#133d47" stroke-width="0.8" opacity="0.15">
     <animateTransform attributeName="transform" type="translate" values="0,0; 100,0; 0,0" dur="20s" repeatCount="indefinite"/>
   </path>
 </g>
