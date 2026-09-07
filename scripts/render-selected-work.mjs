@@ -4,7 +4,6 @@ const PROJECTS = [
   {
     id: 'production-meter-reading',
     category: 'COMPUTER VISION · OCR',
-    accent: '#38bdf8',
     title: 'Production Meter Reading',
     line1: 'Two-stage pipeline: mobile capture isolates LCD meter register;',
     line2: 'PP-OCRv6 extracts readings with strict validation gates.',
@@ -15,7 +14,6 @@ const PROJECTS = [
   {
     id: 'koa-agentic-rag',
     category: 'RESEARCH PROTOTYPE · AGENTIC-RAG',
-    accent: '#a78bfa',
     title: 'KOA Agentic-RAG',
     line1: 'Bilingual clinical guideline QA with atomic evidence verification,',
     line2: 'corrective retrieval, and abstention on unsupported queries.',
@@ -26,7 +24,6 @@ const PROJECTS = [
   {
     id: 'tdtu-handbook-rag',
     category: 'DOMAIN RAG · QLoRA',
-    accent: '#2dd4bf',
     title: 'TDTU Student Handbook Chatbot',
     line1: 'Vietnamese institutional QA combining hybrid BM25 + dense retrieval,',
     line2: 'cross-encoder reranking, and domain-adapted QLoRA fine-tuning.',
@@ -37,7 +34,6 @@ const PROJECTS = [
   {
     id: 'homestead-ai',
     category: 'FULL-STACK · APPLIED AI',
-    accent: '#60a5fa',
     title: 'Homestead Rental Management',
     line1: 'Desktop operations system managing leases, billing automation,',
     line2: 'and tenant services with embedded computer vision for utility meters.',
@@ -48,47 +44,47 @@ const PROJECTS = [
 ];
 
 function renderCard(p) {
-  const badgeWidth = Math.round(p.category.length * 6.5 + 18);
+  const badgeWidth = Math.round(p.category.length * 6.2 + 28);
   
   return `<svg xmlns="http://www.w3.org/2000/svg" width="460" height="210" viewBox="0 0 460 210" role="img" aria-label="${escapeXml(p.title)}">
 <style>
   text { font-family: ${FONT_SANS}; }
   .mono { font-family: ${FONT_MONO}; }
-  .badge { font-family: ${FONT_MONO}; font-size: 10px; font-weight: 700; letter-spacing: 0.6px; }
-  .title { font-family: ${FONT_SANS}; font-size: 16.5px; font-weight: 700; fill: #f8fafc; }
-  .desc { font-family: ${FONT_SANS}; font-size: 11.5px; fill: #94a3b8; }
-  .proof-label { font-family: ${FONT_MONO}; font-size: 9.5px; font-weight: 700; fill: #52758d; letter-spacing: 0.8px; }
-  .proof-value { font-family: ${FONT_SANS}; font-size: 11.5px; font-weight: 600; }
-  .stack { font-family: ${FONT_MONO}; font-size: 10px; fill: #8eaec4; }
+  .badge { font-family: ${FONT_MONO}; font-size: 10px; font-weight: 600; letter-spacing: 0.5px; fill: #8ca4bc; }
+  .title { font-family: ${FONT_SANS}; font-size: 16.5px; font-weight: 700; fill: #edf2f7; }
+  .desc { font-family: ${FONT_SANS}; font-size: 11.5px; fill: #7d91a3; }
+  .proof-label { font-family: ${FONT_MONO}; font-size: 9.5px; font-weight: 700; fill: #50677c; letter-spacing: 0.8px; }
+  .proof-value { font-family: ${FONT_SANS}; font-size: 11.5px; font-weight: 600; fill: #d6e2eb; }
+  .stack { font-family: ${FONT_MONO}; font-size: 10px; fill: #728a9e; }
 </style>
-<rect width="460" height="210" rx="14" fill="#06111f"/>
-<rect x="10" y="10" width="440" height="190" rx="10" fill="#081829" stroke="#153a55" stroke-width="1"/>
-<rect x="10" y="10" width="440" height="3" rx="1.5" fill="${p.accent}" opacity="0.85"/>
+<rect width="460" height="210" rx="12" fill="#080d15"/>
+<rect x="8" y="8" width="444" height="194" rx="10" fill="#0b121c" stroke="#1c293a" stroke-width="1"/>
 
-<!-- Category Badge -->
-<rect x="24" y="22" width="${badgeWidth}" height="20" rx="4" fill="${p.accent}" fill-opacity="0.12" stroke="${p.accent}" stroke-opacity="0.45" stroke-width="0.8"/>
-<text x="${24 + badgeWidth / 2}" y="36" text-anchor="middle" class="badge" fill="${p.accent}">${escapeXml(p.category)}</text>
+<!-- Category Badge (Calm Matte Slate) -->
+<rect x="22" y="20" width="${badgeWidth}" height="20" rx="4" fill="#121b27" stroke="#223347" stroke-width="0.75"/>
+<circle cx="31" cy="30" r="2.2" fill="#5a7d9b"/>
+<text x="39" y="33.5" class="badge">${escapeXml(p.category)}</text>
 
-<!-- Arrow Icon -->
-<path d="M418 26 L428 26 L428 36 M428 26 L420 34" stroke="${p.accent}" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.75"/>
+<!-- Subdued Link Arrow -->
+<path d="M422 24 L430 24 L430 32 M430 24 L423 31" stroke="#486177" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 
 <!-- Title -->
-<text x="24" y="64" class="title">${escapeXml(p.title)}</text>
+<text x="22" y="62" class="title">${escapeXml(p.title)}</text>
 
 <!-- Description -->
-<text x="24" y="84" class="desc">${escapeXml(p.line1)}</text>
-<text x="24" y="101" class="desc">${escapeXml(p.line2)}</text>
+<text x="22" y="81" class="desc">${escapeXml(p.line1)}</text>
+<text x="22" y="97" class="desc">${escapeXml(p.line2)}</text>
 
-<!-- Divider -->
-<line x1="24" y1="115" x2="436" y2="115" stroke="#13344d" stroke-width="0.75"/>
+<!-- Subtle Divider -->
+<line x1="22" y1="111" x2="438" y2="111" stroke="#162230" stroke-width="0.75"/>
 
-<!-- Signal / Proof -->
-<text x="24" y="130" class="proof-label">${escapeXml(p.proofLabel)}</text>
-<text x="24" y="147" class="proof-value" fill="${p.accent}">${escapeXml(p.proofValue)}</text>
+<!-- Signal / Proof (Clean White-Slate, No Neon) -->
+<text x="22" y="127" class="proof-label">${escapeXml(p.proofLabel)}</text>
+<text x="22" y="144" class="proof-value">${escapeXml(p.proofValue)}</text>
 
-<!-- Stack Pill -->
-<rect x="24" y="162" width="412" height="26" rx="4" fill="#0b1f33" stroke="#15364f" stroke-width="0.6"/>
-<text x="34" y="179" class="stack">${escapeXml(p.stack)}</text>
+<!-- Stack Pill (Understated Inset) -->
+<rect x="22" y="158" width="416" height="26" rx="4" fill="#0e1622" stroke="#1a2736" stroke-width="0.75"/>
+<text x="32" y="175" class="stack">${escapeXml(p.stack)}</text>
 </svg>`;
 }
 
@@ -96,4 +92,4 @@ for (const project of PROJECTS) {
   const svg = renderCard(project);
   await writeGenerated(`selected-work/${project.id}.svg`, svg);
 }
-console.log(`Successfully generated ${PROJECTS.length} selected work cards.`);
+console.log(`Successfully generated ${PROJECTS.length} calm selected work cards.`);

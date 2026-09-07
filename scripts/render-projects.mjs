@@ -53,43 +53,43 @@ function repoRow(repoName, x, y, accent, tag) {
 function researchRow(x, y) {
   return `<g transform="translate(${x} ${y})">
     <line x1="0" y1="0" x2="414" y2="0" stroke="#14354d"/>
-    <circle cx="8" cy="22" r="3.5" fill="#a78bfa"/>
+    <circle cx="8" cy="22" r="3.5" fill="#5e84a6"/>
     <text x="22" y="20" class="repo">KOA Agentic-RAG</text>
     <text x="22" y="39" class="desc">Bilingual evidence-verified clinical guideline QA research prototype.</text>
-    <text x="330" y="20" class="tag" fill="#a78bfa">RESEARCH</text>
+    <text x="330" y="20" class="tag" fill="#7ba2c2">RESEARCH</text>
   </g>`;
 }
 
 const leftRows = [
   researchRow(32, 108),
-  ...agenticNames.slice(0, 2).map((name, i) => repoRow(name, 32, 170 + i * 62, '#a78bfa', AGENTIC_TAGS[name] ?? 'AGENTIC'))
+  ...agenticNames.slice(0, 2).map((name, i) => repoRow(name, 32, 170 + i * 62, '#6289ab', AGENTIC_TAGS[name] ?? 'AGENTIC'))
 ].join('\n');
 
-const rightRows = visionNames.slice(0, 3).map((name, i) => repoRow(name, 510, 108 + i * 62, '#38bdf8', VISION_TAGS[name] ?? 'VISION')).join('\n');
+const rightRows = visionNames.slice(0, 3).map((name, i) => repoRow(name, 510, 108 + i * 62, '#527899', VISION_TAGS[name] ?? 'VISION')).join('\n');
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="330" viewBox="0 0 960 330" role="img" aria-label="Research and engineering tracks">
 <style>
   text { font-family: ${FONT_SANS}; }
   .mono { font-family: ${FONT_MONO}; }
   .sans { font-family: ${FONT_SANS}; }
-  .prompt { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #6f9ab4; }
+  .prompt { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #5b7994; }
   .lane { font-family: ${FONT_SANS}; font-size: 13px; font-weight: 700; letter-spacing: .8px; }
-  .sub { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #64859b; }
+  .sub { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #5a7b94; }
   .repo { font-family: ${FONT_SANS}; font-size: 12px; font-weight: 600; fill: #eef8ff; }
-  .desc { font-family: ${FONT_SANS}; font-size: 10.5px; font-weight: 400; fill: #88a5b8; }
+  .desc { font-family: ${FONT_SANS}; font-size: 10.5px; font-weight: 400; fill: #7f9bb0; }
   .tag { font-family: ${FONT_MONO}; font-size: 9px; font-weight: 700; letter-spacing: .6px; text-anchor: end; }
 </style>
 <rect width="960" height="330" rx="18" fill="#06111f"/>
 <rect x="12" y="12" width="936" height="306" rx="14" fill="#081829" stroke="#153a55"/>
 <text x="30" y="36" class="mono prompt">&gt; ls ./research-tracks --featured</text>
-<rect x="247" y="26" width="6" height="12" rx="1" fill="#5eead4"><animate attributeName="opacity" values="1;.12;1" dur="1.15s" repeatCount="indefinite"/></rect>
+<rect x="247" y="26" width="6" height="12" rx="1" fill="#6b93b5"><animate attributeName="opacity" values="1;.12;1" dur="1.15s" repeatCount="indefinite"/></rect>
 
 <g transform="translate(32 72)">
-  <text class="sans lane" fill="#a78bfa">01 / AGENTIC-RAG · EVIDENCE SYSTEMS</text>
+  <text class="sans lane" fill="#82a6c4">01 / AGENTIC-RAG · EVIDENCE SYSTEMS</text>
   <text y="20" class="mono sub">retrieval · verification · healthcare knowledge</text>
 </g>
 <g transform="translate(510 72)">
-  <text class="sans lane" fill="#7dd3fc">02 / COMPUTER VISION · OCR SYSTEMS</text>
+  <text class="sans lane" fill="#82a6c4">02 / COMPUTER VISION · OCR SYSTEMS</text>
   <text y="20" class="mono sub">document AI · inspection · production inference</text>
 </g>
 <line x1="480" y1="66" x2="480" y2="298" stroke="#123149"/>
