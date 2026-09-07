@@ -1,109 +1,119 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="370" viewBox="0 0 1000 370" role="img" aria-label="Khoa Pham - AI Systems Research Lab">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="370" viewBox="0 0 1000 370" role="img" aria-label="Pham Hong Dang Khoa - Healthcare AI &amp; Ocean Systems Lab">
 <defs>
-  <radialGradient id="hero-glow" cx="50%" cy="40%" r="65%">
-    <stop offset="0%" stop-color="#0e1f38"/>
-    <stop offset="60%" stop-color="#081324"/>
-    <stop offset="100%" stop-color="#060c18"/>
+  <radialGradient id="ocean-depths" cx="50%" cy="30%" r="75%">
+    <stop offset="0%" stop-color="#0e2a4a"/>
+    <stop offset="45%" stop-color="#081c33"/>
+    <stop offset="100%" stop-color="#041224"/>
   </radialGradient>
-  <pattern id="hero-grid" width="36" height="36" patternUnits="userSpaceOnUse">
-    <path d="M36 0H0V36" fill="none" stroke="#16273d" stroke-width="0.8" opacity="0.45"/>
+  <linearGradient id="wave-teal" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.8"/>
+    <stop offset="50%" stop-color="#2dd4bf" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#06d6a0" stop-opacity="0.8"/>
+  </linearGradient>
+  <linearGradient id="wave-blue" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#0284c7" stop-opacity="0.8"/>
+    <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0.8"/>
+  </linearGradient>
+  <pattern id="sea-mesh" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 0 20 Q 10 15, 20 20 T 40 20" fill="none" stroke="#102e50" stroke-width="0.7" opacity="0.35"/>
   </pattern>
-  <linearGradient id="cv-grad" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%" stop-color="#38bdf8"/>
-    <stop offset="100%" stop-color="#2dd4bf"/>
-  </linearGradient>
-  <linearGradient id="rag-grad" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%" stop-color="#8b5cf6"/>
-    <stop offset="100%" stop-color="#c084fc"/>
-  </linearGradient>
 </defs>
 <style>
   .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
   .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-  .pulse-cv { animation: pulseCv 3s ease-in-out infinite; }
-  .pulse-rag { animation: pulseRag 3s ease-in-out infinite; }
-  .trace-cv { stroke: #38bdf8; stroke-width: 1.4; fill: none; stroke-dasharray: 6 10; animation: flow 6s linear infinite; opacity: 0.55; }
-  .trace-rag { stroke: #8b5cf6; stroke-width: 1.4; fill: none; stroke-dasharray: 6 10; animation: flow 6s linear infinite; opacity: 0.55; }
-  .cursor { animation: blink 1.1s steps(1) infinite; }
-  @keyframes flow { to { stroke-dashoffset: -64; } }
-  @keyframes pulseCv { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
-  @keyframes pulseRag { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+  .pulse-teal { animation: pulseSea 3.5s ease-in-out infinite; }
+  .pulse-blue { animation: pulseSea 3.5s ease-in-out 1.7s infinite; }
+  .wave-1 { stroke: url(#wave-teal); stroke-width: 1.6; fill: none; stroke-dasharray: 8 10; animation: oceanFlow 8s linear infinite; opacity: 0.65; }
+  .wave-2 { stroke: url(#wave-blue); stroke-width: 1.6; fill: none; stroke-dasharray: 8 10; animation: oceanFlow 9s linear reverse infinite; opacity: 0.65; }
+  .heartbeat { stroke: #14b8a6; stroke-width: 1.3; fill: none; opacity: 0.75; }
+  @keyframes oceanFlow { to { stroke-dashoffset: -72; } }
+  @keyframes pulseSea { 0%, 100% { opacity: 0.45; transform: scale(1); } 50% { opacity: 1; transform: scale(1.08); } }
+  .cursor { animation: blink 1.2s steps(1) infinite; }
   @keyframes blink { 50% { opacity: 0; } }
 </style>
 
-<!-- Canvas Background -->
-<rect width="1000" height="370" rx="20" fill="url(#hero-glow)"/>
-<rect width="1000" height="370" rx="20" fill="url(#hero-grid)"/>
+<!-- Deep Ocean Canvas -->
+<rect width="1000" height="370" rx="20" fill="url(#ocean-depths)"/>
+<rect width="1000" height="370" rx="20" fill="url(#sea-mesh)"/>
 
-<!-- Data Flow Lines -->
+<!-- Harmonious Ocean Waves & Clinical Pulse Swell -->
 <g>
-  <path class="trace-cv" d="M60 210 C180 170 240 250 360 215 S500 180 620 220 S800 250 940 190"/>
-  <path class="trace-rag" d="M60 120 C200 80 300 150 440 110 S640 80 760 125 S860 160 940 115"/>
+  <path class="wave-1" d="M 40 185 Q 160 130, 280 185 T 520 185 T 760 185 T 960 170"/>
+  <path class="wave-2" d="M 40 135 Q 180 190, 320 135 T 560 135 T 800 135 T 960 145"/>
+  <!-- Subtle Clinical Heartbeat Wave in the Background -->
+  <path class="heartbeat" d="M 680 72 L 720 72 L 726 62 L 734 84 L 742 56 L 748 76 L 754 72 L 800 72" opacity="0.4"/>
 </g>
 
-<!-- Animated Flow Nodes -->
-<g class="pulse-cv" fill="#38bdf8">
-  <circle cx="60" cy="210" r="3.5"/>
-  <circle cx="360" cy="215" r="3.5"/>
-  <circle cx="620" cy="220" r="3.5"/>
-  <circle cx="940" cy="190" r="3.5"/>
+<!-- Pulsing Ocean Current Nodes -->
+<g class="pulse-teal" fill="#14b8a6">
+  <circle cx="280" cy="185" r="3.5"/>
+  <circle cx="520" cy="185" r="3.5"/>
+  <circle cx="760" cy="185" r="3.5"/>
 </g>
-<g class="pulse-rag" fill="#8b5cf6">
-  <circle cx="60" cy="120" r="3.5"/>
-  <circle cx="440" cy="110" r="3.5"/>
-  <circle cx="760" cy="125" r="3.5"/>
-  <circle cx="940" cy="115" r="3.5"/>
+<g class="pulse-blue" fill="#38bdf8">
+  <circle cx="180" cy="190" r="3.5"/>
+  <circle cx="440" cy="135" r="3.5"/>
+  <circle cx="800" cy="135" r="3.5"/>
 </g>
 
-<!-- Top Telemetry Badge -->
-<g transform="translate(685 36)" class="mono">
-  <rect width="255" height="32" rx="16" fill="#0b1626" stroke="#1e293b"/>
-  <circle cx="18" cy="16" r="4" fill="#38bdf8"/>
-  <circle cx="30" cy="16" r="4" fill="#8b5cf6"/>
-  <text x="44" y="20" font-size="10.5" font-weight="600" fill="#9fb3c8">SYSTEMS LAB // ACTIVE NODE</text>
+<!-- Top Oceanic Badge -->
+<g transform="translate(680 34)" class="mono">
+  <rect width="260" height="32" rx="16" fill="#09223d" stroke="#16426a"/>
+  <circle cx="18" cy="16" r="4.5" fill="#14b8a6"/>
+  <circle cx="32" cy="16" r="4.5" fill="#38bdf8"/>
+  <text x="46" y="20" font-size="10.5" font-weight="600" fill="#93c5fd">HEALTHCARE AI // OCEAN LAB</text>
 </g>
 
-<!-- Profile Identity -->
-<g transform="translate(60 48)">
+<!-- Profile Header -->
+<g transform="translate(60 46)">
   <g class="mono">
-    <text font-size="11.5" font-weight="700" letter-spacing="3" fill="#38bdf8">KHOA PHAM <tspan fill="#64748b">//</tspan> <tspan fill="#8b5cf6">AI SYSTEMS RESEARCH</tspan></text>
+    <text font-size="12" font-weight="700" letter-spacing="2.5px" fill="#14b8a6">PHAM HONG DANG KHOA <tspan fill="#38bdf8">//</tspan> <tspan fill="#7dd3fc">HEALTHCARE &amp; VISION</tspan></text>
   </g>
-  <text y="54" class="sans" font-size="44" font-weight="800" fill="#f8fafc" letter-spacing="-0.5px">Khoa Pham</text>
-  <text y="88" class="mono" font-size="14.5" font-weight="600" fill="#9fb3c8">AI Systems Engineer · Computer Science Student · Applied Research</text>
-  <text y="122" class="mono" font-size="12.5" fill="#cbd5e1">&gt; engineering verifiable machine learning pipelines &amp; agentic reasoning architectures<tspan class="cursor" fill="#38bdf8">_</tspan></text>
+  <text y="54" class="sans" font-size="42" font-weight="800" fill="#f0f9ff" letter-spacing="-0.5px">Pham Hong Dang Khoa</text>
+  <text y="88" class="sans" font-size="16" font-weight="500" fill="#93c5fd">AI Systems Engineer · Healthcare AI &amp; Clinical Informatics · Computer Vision</text>
+  <text y="120" class="mono" font-size="12.5" fill="#cbd5e1">&gt; building clinical language systems &amp; document vision with oceanic serenity<tspan class="cursor" fill="#14b8a6">_</tspan></text>
 </g>
 
-<!-- Dual-Lane Pillar Cards -->
+<!-- Ocean Dual Pillar Cards -->
 <g transform="translate(60 216)">
-  <!-- Pillar 1: Computer Vision & OCR -->
+  <!-- Pillar 1: Healthcare AI & Clinical NLU -->
   <g>
-    <rect width="425" height="116" rx="14" fill="#0b1424" stroke="#1e293b"/>
-    <line x1="0" y1="16" x2="0" y2="100" stroke="url(#cv-grad)" stroke-width="4" stroke-linecap="round"/>
-    <rect x="18" y="16" width="10" height="10" rx="2" fill="#38bdf8"/>
-    <text x="36" y="25" class="mono" font-size="11" font-weight="700" letter-spacing="1.5px" fill="#38bdf8">TRACK 01: CV / OCR SYSTEMS</text>
-    <text x="18" y="55" class="sans" font-size="14.5" font-weight="700" fill="#e5eefb">Computer Vision &amp; Document AI</text>
-    <text x="18" y="77" class="mono" font-size="11" fill="#9fb3c8">PP-OCRv6 · Quality Gates · Fail-Closed Services</text>
-    <g transform="translate(18 90)">
-      <rect width="78" height="16" rx="8" fill="#38bdf818" stroke="#38bdf844"/>
-      <text x="39" y="11.5" text-anchor="middle" class="mono" font-size="9" font-weight="700" fill="#38bdf8">PRODUCTION</text>
-      <rect x="86" y="0" width="86" height="16" rx="8" fill="#2dd4bf18" stroke="#2dd4bf44"/>
-      <text x="129" y="11.5" text-anchor="middle" class="mono" font-size="9" font-weight="700" fill="#2dd4bf">EVALUATION</text>
+    <rect width="425" height="116" rx="14" fill="#0a2139" stroke="#163f66"/>
+    <line x1="0" y1="16" x2="0" y2="100" stroke="url(#wave-teal)" stroke-width="4" stroke-linecap="round"/>
+    <!-- Medical Cross Icon -->
+    <g transform="translate(20 18)">
+      <rect x="3" y="0" width="4" height="10" rx="1.5" fill="#14b8a6"/>
+      <rect x="0" y="3" width="10" height="4" rx="1.5" fill="#14b8a6"/>
+    </g>
+    <text x="38" y="26" class="mono" font-size="11" font-weight="700" letter-spacing="1.5px" fill="#14b8a6">TRACK 01: HEALTHCARE AI &amp; NLU</text>
+    <text x="20" y="55" class="sans" font-size="14.5" font-weight="700" fill="#f0f9ff">Clinical NLP &amp; Evidence-Verified RAG</text>
+    <text x="20" y="77" class="mono" font-size="11" fill="#94a3b8">Medical-NLU-Pipeline · Clinical Guidelines · Fact Verification</text>
+    <g transform="translate(20 90)">
+      <rect width="92" height="16" rx="8" fill="#14b8a61a" stroke="#14b8a644"/>
+      <text x="46" y="11.5" text-anchor="middle" class="mono" font-size="9" font-weight="700" fill="#14b8a6">HEALTHCARE</text>
+      <rect x="100" y="0" width="88" height="16" rx="8" fill="#2dd4bf1a" stroke="#2dd4bf44"/>
+      <text x="144" y="11.5" text-anchor="middle" class="mono" font-size="9" font-weight="700" fill="#2dd4bf">EVIDENCE RAG</text>
     </g>
   </g>
 
-  <!-- Pillar 2: Agentic-RAG & Verified AI -->
+  <!-- Pillar 2: Computer Vision & Document Systems -->
   <g transform="translate(455 0)">
-    <rect width="425" height="116" rx="14" fill="#0b1424" stroke="#1e293b"/>
-    <line x1="0" y1="16" x2="0" y2="100" stroke="url(#rag-grad)" stroke-width="4" stroke-linecap="round"/>
-    <rect x="18" y="16" width="10" height="10" rx="2" fill="#8b5cf6"/>
-    <text x="36" y="25" class="mono" font-size="11" font-weight="700" letter-spacing="1.5px" fill="#8b5cf6">TRACK 02: AGENTIC-RAG</text>
-    <text x="18" y="55" class="sans" font-size="14.5" font-weight="700" fill="#e5eefb">Evidence-Verified Reasoning</text>
-    <text x="18" y="77" class="mono" font-size="11" fill="#9fb3c8">Corrective Retrieval · Citation Auditing · NLU</text>
-    <g transform="translate(18 90)">
-      <rect width="72" height="16" rx="8" fill="#8b5cf618" stroke="#8b5cf644"/>
-      <text x="36" y="11.5" text-anchor="middle" class="mono" font-size="9" font-weight="700" fill="#8b5cf6">RESEARCH</text>
-      <rect x="80" y="0" width="84" height="16" rx="8" fill="#c084fc18" stroke="#c084fc44"/>
-      <text x="122" y="11.5" text-anchor="middle" class="mono" font-size="9" font-weight="700" fill="#c084fc">VERIFICATION</text>
+    <rect width="425" height="116" rx="14" fill="#0a2139" stroke="#163f66"/>
+    <line x1="0" y1="16" x2="0" y2="100" stroke="url(#wave-blue)" stroke-width="4" stroke-linecap="round"/>
+    <!-- Eye / Document Vision Icon -->
+    <g transform="translate(20 19)">
+      <circle cx="5" cy="5" r="4.5" fill="none" stroke="#38bdf8" stroke-width="1.3"/>
+      <circle cx="5" cy="5" r="2" fill="#38bdf8"/>
+    </g>
+    <text x="38" y="26" class="mono" font-size="11" font-weight="700" letter-spacing="1.5px" fill="#38bdf8">TRACK 02: VISION &amp; DOCUMENT AI</text>
+    <text x="20" y="55" class="sans" font-size="14.5" font-weight="700" fill="#f0f9ff">OCR Pipelines &amp; Document Intake</text>
+    <text x="20" y="77" class="mono" font-size="11" fill="#94a3b8">Invoice-engine · PP-OCRv6 · Quality Gates · FastAPI</text>
+    <g transform="translate(20 90)">
+      <rect width="84" height="16" rx="8" fill="#0284c71a" stroke="#0284c744"/>
+      <text x="42" y="11.5" text-anchor="middle" class="mono" font-size="9" font-weight="700" fill="#38bdf8">DOCUMENT AI</text>
+      <rect x="92" y="0" width="76" height="16" rx="8" fill="#38bdf81a" stroke="#38bdf844"/>
+      <text x="130" y="11.5" text-anchor="middle" class="mono" font-size="9" font-weight="700" fill="#7dd3fc">PRODUCTION</text>
     </g>
   </g>
 </g>

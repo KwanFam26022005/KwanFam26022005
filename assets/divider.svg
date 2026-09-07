@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="28" viewBox="0 0 1000 28">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="30" viewBox="0 0 1000 30">
 <style>
-  .line { stroke: #1e293b; stroke-width: 1; fill: none; stroke-dasharray: 8 10; }
-  .dot-cv { fill: #38bdf8; }
-  .dot-rag { fill: #8b5cf6; }
+  .ocean-line { stroke: #164069; stroke-width: 1.2; fill: none; stroke-dasharray: 8 10; }
+  .dot-teal { fill: #14b8a6; }
+  .dot-blue { fill: #38bdf8; }
 </style>
-<path class="line" d="M0 14H1000"/>
-<circle class="dot-cv" cx="490" cy="14" r="3"/>
-<circle class="dot-rag" cx="510" cy="14" r="3"/>
+<path class="ocean-line" d="M0 15 Q 250 10, 500 15 T 1000 15"/>
+<circle class="dot-teal" cx="490" cy="15" r="3.5"/>
+<circle class="dot-blue" cx="510" cy="15" r="3.5"/>
 </svg>
