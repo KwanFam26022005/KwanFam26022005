@@ -1,27 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="340" viewBox="0 0 1000 340" role="img" aria-label="Pham Hong Dang Khoa - Healthcare AI and Ocean Systems">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="380" viewBox="0 0 1000 380" role="img" aria-label="Pham Hong Dang Khoa - Healthcare AI, Agentic-RAG, and Computer Vision">
 <defs>
   <linearGradient id="ocean-bg" x1="0%" y1="0%" x2="100%" y2="100%">
     <stop offset="0%" stop-color="#051324"/>
     <stop offset="50%" stop-color="#0a233f"/>
     <stop offset="100%" stop-color="#06182c"/>
   </linearGradient>
-  
-  <linearGradient id="wave-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" stop-color="#0284c7" stop-opacity="0.35"/>
-    <stop offset="50%" stop-color="#0ea5e9" stop-opacity="0.25"/>
-    <stop offset="100%" stop-color="#0369a1" stop-opacity="0.35"/>
-  </linearGradient>
 
-  <linearGradient id="wave-grad-2" x1="0%" y1="0%" x2="100%" y2="0%">
+  <linearGradient id="wave-teal" x1="0%" y1="0%" x2="100%" y2="0%">
     <stop offset="0%" stop-color="#0d9488" stop-opacity="0.35"/>
     <stop offset="50%" stop-color="#14b8a6" stop-opacity="0.3"/>
     <stop offset="100%" stop-color="#0f766e" stop-opacity="0.35"/>
   </linearGradient>
 
-  <linearGradient id="wave-grad-3" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2"/>
-    <stop offset="50%" stop-color="#2dd4bf" stop-opacity="0.25"/>
-    <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.15"/>
+  <linearGradient id="wave-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#0284c7" stop-opacity="0.35"/>
+    <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.25"/>
+    <stop offset="100%" stop-color="#0369a1" stop-opacity="0.35"/>
   </linearGradient>
 
   <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -36,75 +30,225 @@
   .subtitle { font-weight: 500; fill: #93c5fd; }
   .body { font-weight: 400; fill: #cbd5e1; }
   .pill-text { font-weight: 600; font-size: 11px; fill: #e0f2fe; }
-  .card-title { font-weight: 700; font-size: 14px; fill: #f0f9ff; }
-  .card-desc { font-weight: 400; font-size: 12px; fill: #94a3b8; }
+  .card-title { font-weight: 700; font-size: 13.5px; fill: #f0f9ff; }
+  .card-sub { font-weight: 500; font-size: 11.5px; fill: #94a3b8; }
+  .card-tag { font-weight: 600; font-size: 10.5px; }
+
+  /* 1. HEALTHCARE ANIMATION: Vital Heartbeat &amp; Flowing ECG */
+  .heartbeat-icon {
+    transform-origin: 26px 26px;
+    animation: pulseHeart 1.4s ease-in-out infinite;
+  }
+  .ecg-line {
+    stroke: #14b8a6;
+    stroke-width: 1.6;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 80;
+    animation: flowEcg 2.4s linear infinite;
+  }
+  @keyframes pulseHeart {
+    0%, 100% { transform: scale(1); }
+    15% { transform: scale(1.18); }
+    30% { transform: scale(1.05); }
+    45% { transform: scale(1.14); }
+    60% { transform: scale(1); }
+  }
+  @keyframes flowEcg {
+    0% { stroke-dashoffset: 160; opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { stroke-dashoffset: 0; opacity: 0.3; }
+  }
+
+  /* 2. AGENTIC-RAG ANIMATION: Multi-Agent Orbital Loop */
+  .orbit-ring {
+    transform-origin: 26px 26px;
+    animation: rotateOrbit 7s linear infinite;
+  }
+  .orbit-pulse {
+    animation: pulseOrb 2.2s ease-in-out infinite alternate;
+  }
+  @keyframes rotateOrbit {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  @keyframes pulseOrb {
+    0% { transform: scale(0.9); opacity: 0.7; }
+    100% { transform: scale(1.1); opacity: 1; }
+  }
+
+  /* 3. COMPUTER VISION ANIMATION: Camera Focus &amp; Reticle Breathing */
+  .reticle-corner {
+    transform-origin: 26px 26px;
+    animation: focusReticle 2.2s ease-in-out infinite;
+  }
+  .lens-iris {
+    animation: pulseIris 2.2s ease-in-out infinite;
+  }
+  @keyframes focusReticle {
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.14); opacity: 1; }
+  }
+  @keyframes pulseIris {
+    0%, 100% { r: 4; opacity: 0.5; }
+    50% { r: 6.5; opacity: 1; }
+  }
+
+  /* 4. OCEAN WAVE SWAY ANIMATION */
+  .wave-sway-1 {
+    animation: swayOne 9s ease-in-out infinite alternate;
+  }
+  .wave-sway-2 {
+    animation: swayTwo 11s ease-in-out infinite alternate;
+  }
+  @keyframes swayOne {
+    0% { transform: translateX(0px); }
+    100% { transform: translateX(-35px); }
+  }
+  @keyframes swayTwo {
+    0% { transform: translateX(0px); }
+    100% { transform: translateX(35px); }
+  }
 </style>
 
 <!-- Deep Ocean Canvas -->
-<rect width="1000" height="340" rx="18" fill="url(#ocean-bg)"/>
+<rect width="1000" height="380" rx="20" fill="url(#ocean-bg)"/>
 
-<!-- Organic Layered Ocean Waves (Bezier Curves) -->
-<path d="M 0 240 Q 250 190, 500 240 T 1000 220 L 1000 340 L 0 340 Z" fill="url(#wave-grad-1)"/>
-<path d="M 0 265 Q 260 215, 520 260 T 1000 245 L 1000 340 L 0 340 Z" fill="url(#wave-grad-2)"/>
-<path d="M 0 290 Q 280 250, 540 285 T 1000 270 L 1000 340 L 0 340 Z" fill="url(#wave-grad-3)"/>
-
-<!-- Elegant Fine Wave Crest Lines -->
-<path d="M 0 240 Q 250 190, 500 240 T 1000 220" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.45"/>
-<path d="M 0 265 Q 260 215, 520 260 T 1000 245" fill="none" stroke="#2dd4bf" stroke-width="1" opacity="0.35"/>
+<!-- Living Ocean Waves (Undulating Bezier Paths) -->
+<g class="wave-sway-1">
+  <path d="M -50 280 Q 200 230, 480 280 T 1050 260 L 1050 380 L -50 380 Z" fill="url(#wave-blue)"/>
+  <path d="M -50 280 Q 200 230, 480 280 T 1050 260" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.45"/>
+</g>
+<g class="wave-sway-2">
+  <path d="M -50 305 Q 220 260, 500 305 T 1050 290 L 1050 380 L -50 380 Z" fill="url(#wave-teal)"/>
+  <path d="M -50 305 Q 220 260, 500 305 T 1050 290" fill="none" stroke="#2dd4bf" stroke-width="1.1" opacity="0.4"/>
+</g>
 
 <!-- Profile Identity Header -->
-<g transform="translate(56 42)" class="sans">
-  <!-- Topic Pills -->
+<g transform="translate(56 36)" class="sans">
+  <!-- Topic Badges -->
   <g>
-    <rect width="132" height="26" rx="13" fill="#0c2a47" stroke="#1d4d77"/>
-    <circle cx="14" cy="13" r="4" fill="#38bdf8"/>
-    <text x="26" y="17" class="pill-text">Ocean &amp; Deep Navy</text>
+    <rect width="132" height="25" rx="12.5" fill="#0c2a47" stroke="#1d4d77"/>
+    <circle cx="14" cy="12.5" r="3.5" fill="#38bdf8"/>
+    <text x="25" y="16.5" class="pill-text">Ocean &amp; Deep Navy</text>
 
     <g transform="translate(142 0)">
-      <rect width="124" height="26" rx="13" fill="#0c2a47" stroke="#1d4d77"/>
-      <circle cx="14" cy="13" r="4" fill="#14b8a6"/>
-      <text x="26" y="17" class="pill-text">Healthcare AI</text>
+      <rect width="112" height="25" rx="12.5" fill="#0c2a47" stroke="#1d4d77"/>
+      <circle cx="14" cy="12.5" r="3.5" fill="#14b8a6"/>
+      <text x="25" y="16.5" class="pill-text">Healthcare AI</text>
+    </g>
+
+    <g transform="translate(264 0)">
+      <rect width="112" height="25" rx="12.5" fill="#0c2a47" stroke="#1d4d77"/>
+      <circle cx="14" cy="12.5" r="3.5" fill="#818cf8"/>
+      <text x="25" y="16.5" class="pill-text">Agentic-RAG</text>
+    </g>
+
+    <g transform="translate(386 0)">
+      <rect width="128" height="25" rx="12.5" fill="#0c2a47" stroke="#1d4d77"/>
+      <circle cx="14" cy="12.5" r="3.5" fill="#38bdf8"/>
+      <text x="25" y="16.5" class="pill-text">Computer Vision</text>
     </g>
   </g>
 
   <!-- Name -->
-  <text y="72" font-size="38" class="title">Phạm Hồng Đăng Khoa</text>
+  <text y="68" font-size="36" class="title">Phạm Hồng Đăng Khoa</text>
   
   <!-- Subtitle -->
-  <text y="102" font-size="16" class="subtitle">AI Systems Engineer · Healthcare AI &amp; Computer Vision</text>
+  <text y="97" font-size="15" class="subtitle">AI Systems Engineer · Healthcare AI · Agentic-RAG · Computer Vision</text>
   
   <!-- Philosophy statement -->
-  <text y="132" font-size="13" class="body">Building reliable, evidence-grounded AI systems for medicine and computer vision with oceanic clarity.</text>
+  <text y="125" font-size="12.5" class="body">Developing verifiable, evidence-grounded AI architectures with oceanic calm and clinical precision.</text>
 </g>
 
-<!-- Two Clean, Non-Industrial Cards -->
-<g transform="translate(56 200)" class="sans">
-  <!-- Card 1: Healthcare AI -->
+<!-- Triple Animated Focus Cards -->
+<g transform="translate(56 195)" class="sans">
+
+  <!-- ================= 1. HEALTHCARE AI CARD ================= -->
   <g>
-    <rect width="428" height="96" rx="12" fill="#091f36" fill-opacity="0.88" stroke="url(#card-border)"/>
-    <line x1="0" y1="16" x2="0" y2="80" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
-    <!-- Medical Cross -->
-    <g transform="translate(20 18)">
-      <rect x="3" y="0" width="4" height="10" rx="1.5" fill="#14b8a6"/>
-      <rect x="0" y="3" width="10" height="4" rx="1.5" fill="#14b8a6"/>
-      <text x="18" y="9" class="card-title">Healthcare AI &amp; Clinical Informatics</text>
+    <rect width="282" height="120" rx="14" fill="#091f36" fill-opacity="0.9" stroke="url(#card-border)"/>
+    <line x1="0" y1="18" x2="0" y2="102" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Animated Medical Vital Icon -->
+    <g transform="translate(18 16)">
+      <!-- Pulsing Medical Cross Badge -->
+      <g class="heartbeat-icon">
+        <rect x="18" y="2" width="5" height="15" rx="2" fill="#14b8a6"/>
+        <rect x="13" y="7" width="15" height="5" rx="2" fill="#14b8a6"/>
+      </g>
+      <!-- Real-time Flowing ECG Wave -->
+      <path class="ecg-line" d="M 46 10 L 58 10 L 62 4 L 67 17 L 72 2 L 76 13 L 80 10 L 98 10"/>
     </g>
-    <text x="20" y="52" class="card-desc">Medical-NLU entity extraction · Evidence-verified clinical RAG</text>
-    <text x="20" y="72" font-size="11" font-weight="500" fill="#2dd4bf">Clinical NLP · Medical Records · Hallucination Auditing</text>
+
+    <g transform="translate(18 56)">
+      <text class="card-title">Healthcare AI</text>
+      <text y="20" class="card-sub">Clinical NLU &amp; EHR Mining</text>
+      <text y="42" class="card-tag" fill="#2dd4bf">Medical-NLU · Evidence-RAG</text>
+    </g>
   </g>
 
-  <!-- Card 2: Computer Vision -->
-  <g transform="translate(460 0)">
-    <rect width="428" height="96" rx="12" fill="#091f36" fill-opacity="0.88" stroke="url(#card-border)"/>
-    <line x1="0" y1="16" x2="0" y2="80" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round"/>
-    <!-- Eye / Document Lens Icon -->
-    <g transform="translate(20 18)">
-      <circle cx="5" cy="5" r="4.5" fill="none" stroke="#38bdf8" stroke-width="1.4"/>
-      <circle cx="5" cy="5" r="2" fill="#38bdf8"/>
-      <text x="18" y="9" class="card-title">Computer Vision &amp; Document Intelligence</text>
+  <!-- ================= 2. AGENTIC-RAG CARD ================= -->
+  <g transform="translate(303 0)">
+    <rect width="282" height="120" rx="14" fill="#091f36" fill-opacity="0.9" stroke="url(#card-border)"/>
+    <line x1="0" y1="18" x2="0" y2="102" stroke="#818cf8" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Animated Multi-Agent Orbit Icon -->
+    <g transform="translate(18 16)">
+      <!-- Center Knowledge Core -->
+      <circle cx="26" cy="14" r="5" fill="#818cf8" class="orbit-pulse"/>
+      <!-- Rotating Orbit Track with 3 Agent Nodes -->
+      <g class="orbit-ring">
+        <circle cx="26" cy="26" r="14" fill="none" stroke="#818cf8" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.6"/>
+        <!-- Agent Node 1: Query -->
+        <circle cx="26" cy="12" r="3" fill="#38bdf8"/>
+        <!-- Agent Node 2: Retrieval -->
+        <circle cx="38" cy="32" r="3" fill="#14b8a6"/>
+        <!-- Agent Node 3: Verification -->
+        <circle cx="14" cy="32" r="3" fill="#c084fc"/>
+      </g>
+      <!-- Verification Beam Line -->
+      <line x1="56" y1="14" x2="94" y2="14" stroke="#818cf8" stroke-width="1.3" stroke-dasharray="4 3" opacity="0.7"/>
     </g>
-    <text x="20" y="52" class="card-desc">Invoice-engine intake · PP-OCRv6 recognition · Quality gating</text>
-    <text x="20" y="72" font-size="11" font-weight="500" fill="#7dd3fc">Document AI · Production FastAPI · Deterministic Validation</text>
+
+    <g transform="translate(18 56)">
+      <text class="card-title">Agentic-RAG</text>
+      <text y="20" class="card-sub">Multi-Agent &amp; Fact Auditing</text>
+      <text y="42" class="card-tag" fill="#a5b4fc">Citation Gates · Anti-Hallucination</text>
+    </g>
   </g>
+
+  <!-- ================= 3. COMPUTER VISION CARD ================= -->
+  <g transform="translate(606 0)">
+    <rect width="282" height="120" rx="14" fill="#091f36" fill-opacity="0.9" stroke="url(#card-border)"/>
+    <line x1="0" y1="18" x2="0" y2="102" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Animated Camera Lens &amp; Reticle Breathing -->
+    <g transform="translate(18 16)">
+      <!-- Expanding &amp; Locking Reticle Corners -->
+      <g class="reticle-corner">
+        <!-- Top-Left Corner -->
+        <path d="M 12 8 L 8 8 L 8 12" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+        <!-- Top-Right Corner -->
+        <path d="M 36 8 L 40 8 L 40 12" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+        <!-- Bottom-Left Corner -->
+        <path d="M 12 24 L 8 24 L 8 20" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+        <!-- Bottom-Right Corner -->
+        <path d="M 36 24 L 40 24 L 40 20" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+      </g>
+      <!-- Center Sensor Iris Breathing -->
+      <circle cx="24" cy="16" r="4.5" fill="#38bdf8" class="lens-iris"/>
+      <circle cx="24" cy="16" r="9" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.4"/>
+      <!-- Scan Beam -->
+      <line x1="56" y1="16" x2="94" y2="16" stroke="#38bdf8" stroke-width="1.3" opacity="0.7"/>
+    </g>
+
+    <g transform="translate(18 56)">
+      <text class="card-title">Computer Vision</text>
+      <text y="20" class="card-sub">Document OCR &amp; Inspection</text>
+      <text y="42" class="card-tag" fill="#7dd3fc">PP-OCRv6 · Invoice-engine</text>
+    </g>
+  </g>
+
 </g>
 </svg>
