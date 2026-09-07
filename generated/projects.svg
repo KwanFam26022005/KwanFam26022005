@@ -30,8 +30,8 @@
     <text x="20" y="28" class="project-title">Medical NLU Pipeline</text>
     <rect x="352" y="14" width="78" height="18" rx="9" fill="#14b8a618" stroke="#14b8a644"/>
     <text x="391" y="27" text-anchor="middle" font-size="9.5" font-weight="600" fill="#14b8a6">HEALTH AI</text>
-    <text x="20" y="50" class="meta">Python · ★ 0</text>
-    <text x="20" y="74" class="desc">Clinical and medical natural language understanding pipeline …</text>
+    <text x="20" y="50" class="meta">Jupyter Notebook · ★ 0</text>
+    <text x="20" y="74" class="desc">Clinical NLU pipeline for medical entity extraction and class…</text>
     <text x="20" y="98" class="link">github.com/KwanFam26022005/Medical-NLU-Pipeline</text>
   </g>
 <g transform="translate(24 202)">
@@ -41,7 +41,7 @@
     <rect x="352" y="14" width="78" height="18" rx="9" fill="#14b8a618" stroke="#14b8a644"/>
     <text x="391" y="27" text-anchor="middle" font-size="9.5" font-weight="600" fill="#14b8a6">HEALTH AI</text>
     <text x="20" y="50" class="meta">Python · ★ 0</text>
-    <text x="20" y="74" class="desc">Student handbook assistant with domain-specific retrieval-aug…</text>
+    <text x="20" y="74" class="desc">Domain-specific assistant using retrieval-augmented generatio…</text>
     <text x="20" y="98" class="link">github.com/KwanFam26022005/tdtu-student-handbook-chatbot</text>
   </g>
 <g transform="translate(24 336)">
@@ -50,7 +50,7 @@
     <text x="20" y="28" class="project-title">FIM / Apriori Mining Dashboard</text>
     <rect x="352" y="14" width="78" height="18" rx="9" fill="#14b8a618" stroke="#14b8a644"/>
     <text x="391" y="27" text-anchor="middle" font-size="9.5" font-weight="600" fill="#14b8a6">HEALTH AI</text>
-    <text x="20" y="50" class="meta">Python · ★ 0</text>
+    <text x="20" y="50" class="meta">PHP · ★ 0</text>
     <text x="20" y="74" class="desc">Interactive web dashboard for Apriori mining, pruning analysi…</text>
     <text x="20" y="98" class="link">github.com/KwanFam26022005/Interactive-Web-Dashboard-for-Frequent-Itemset-Mining-and-Apriori-Pruning-Analysis</text>
   </g>
@@ -61,7 +61,7 @@
     <rect x="352" y="14" width="78" height="18" rx="9" fill="#38bdf818" stroke="#38bdf844"/>
     <text x="391" y="27" text-anchor="middle" font-size="9.5" font-weight="600" fill="#38bdf8">VISION AI</text>
     <text x="20" y="50" class="meta">Python · ★ 0</text>
-    <text x="20" y="74" class="desc">Local-first document intake, validation, persistence and huma…</text>
+    <text x="20" y="74" class="desc">Local-first Vietnamese business document parser with determin…</text>
     <text x="20" y="98" class="link">github.com/KwanFam26022005/Invoice-engine</text>
   </g>
 <g transform="translate(490 202)">
@@ -71,7 +71,7 @@
     <rect x="352" y="14" width="78" height="18" rx="9" fill="#38bdf818" stroke="#38bdf844"/>
     <text x="391" y="27" text-anchor="middle" font-size="9.5" font-weight="600" fill="#38bdf8">VISION AI</text>
     <text x="20" y="50" class="meta">Python · ★ 0</text>
-    <text x="20" y="74" class="desc">Production-oriented pipeline engineering for LCD electricity-…</text>
+    <text x="20" y="74" class="desc">Production LCD meter OCR pipeline with explicit quality gates…</text>
     <text x="20" y="98" class="link">github.com/KwanFam26022005/meter-reading-engine-v2</text>
   </g>
 <g transform="translate(490 336)">
@@ -81,7 +81,7 @@
     <rect x="352" y="14" width="78" height="18" rx="9" fill="#38bdf818" stroke="#38bdf844"/>
     <text x="391" y="27" text-anchor="middle" font-size="9.5" font-weight="600" fill="#38bdf8">VISION AI</text>
     <text x="20" y="50" class="meta">Python · ★ 0</text>
-    <text x="20" y="74" class="desc">FastAPI inference and inspection adapter for the frozen meter…</text>
+    <text x="20" y="74" class="desc">FastAPI inference microservice with revision verification and…</text>
     <text x="20" y="98" class="link">github.com/KwanFam26022005/meter-reading-inference-service</text>
   </g>
 </svg>

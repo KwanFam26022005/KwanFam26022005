@@ -23,7 +23,7 @@
   <text y="22" class="metric">14</text>
   <text y="42" class="muted">PUBLIC REPOS</text>
   <g transform="translate(120 0)">
-    <text y="22" class="metric">8</text>
+    <text y="22" class="metric">9</text>
     <text y="42" class="muted">ACTIVE / 30D</text>
   </g>
   <g transform="translate(245 0)">
@@ -39,34 +39,38 @@
 <text x="44" y="190" class="label">Python</text>
   <rect x="156" y="179" width="180" height="7" rx="3.5" class="track"/>
   <rect x="156" y="179" width="180" height="7" rx="3.5" fill="#14b8a6"/>
-  <text x="348" y="190" class="muted">8 repos</text>
+  <text x="348" y="190" class="muted">7 repos</text>
 <text x="44" y="219" class="label">TypeScript</text>
   <rect x="156" y="208" width="180" height="7" rx="3.5" class="track"/>
-  <rect x="156" y="208" width="68" height="7" rx="3.5" fill="#38bdf8"/>
-  <text x="348" y="219" class="muted">3 repos</text>
-<text x="44" y="248" class="label">JavaScript</text>
+  <rect x="156" y="208" width="51" height="7" rx="3.5" fill="#38bdf8"/>
+  <text x="348" y="219" class="muted">2 repos</text>
+<text x="44" y="248" class="label">Jupyter Notebook</text>
   <rect x="156" y="237" width="180" height="7" rx="3.5" class="track"/>
-  <rect x="156" y="237" width="45" height="7" rx="3.5" fill="#06d6a0"/>
+  <rect x="156" y="237" width="51" height="7" rx="3.5" fill="#06d6a0"/>
   <text x="348" y="248" class="muted">2 repos</text>
-<text x="44" y="277" class="label">PHP</text>
+<text x="44" y="277" class="label">JavaScript</text>
   <rect x="156" y="266" width="180" height="7" rx="3.5" class="track"/>
-  <rect x="156" y="266" width="23" height="7" rx="3.5" fill="#60a5fa"/>
+  <rect x="156" y="266" width="26" height="7" rx="3.5" fill="#60a5fa"/>
   <text x="348" y="277" class="muted">1 repos</text>
+<text x="44" y="306" class="label">PHP</text>
+  <rect x="156" y="295" width="180" height="7" rx="3.5" class="track"/>
+  <rect x="156" y="295" width="26" height="7" rx="3.5" fill="#2dd4bf"/>
+  <text x="348" y="306" class="muted">1 repos</text>
 <text x="496" y="166" class="kicker-vision">RECENT COMMITS</text>
 <circle cx="496" cy="185" r="4" fill="#14b8a6"/>
   <line x1="496" y1="190" x2="496" y2="228" class="trace"/>
-  <text x="516" y="190" class="repo">meter-reading-engine-v2</text>
-  <text x="516" y="207" class="muted">pushed 2026-09-06</text>
+  <text x="516" y="190" class="repo">KwanFam26022005</text>
+  <text x="516" y="207" class="muted">pushed 2026-09-07</text>
 <circle cx="496" cy="229" r="4" fill="#38bdf8"/>
   <line x1="496" y1="234" x2="496" y2="272" class="trace"/>
-  <text x="516" y="234" class="repo">meter-reading-inference-service</text>
-  <text x="516" y="251" class="muted">pushed 2026-09-05</text>
+  <text x="516" y="234" class="repo">Final-web</text>
+  <text x="516" y="251" class="muted">pushed 2026-09-06</text>
 <circle cx="496" cy="273" r="4" fill="#14b8a6"/>
   <line x1="496" y1="278" x2="496" y2="316" class="trace"/>
-  <text x="516" y="278" class="repo">meter-reading-pipeline-visualizer</text>
-  <text x="516" y="295" class="muted">pushed 2026-09-04</text>
+  <text x="516" y="278" class="repo">Interactive-Web-Dashboard-for-Frequent-Itemset-Mining-and-Apriori-Pruning-Analysis</text>
+  <text x="516" y="295" class="muted">pushed 2026-09-05</text>
 <circle cx="496" cy="317" r="4" fill="#38bdf8"/>
   <line x1="496" y1="322" x2="496" y2="360" class="trace"/>
-  <text x="516" y="322" class="repo">Medical-NLU-Pipeline</text>
-  <text x="516" y="339" class="muted">pushed 2026-09-03</text>
+  <text x="516" y="322" class="repo">production-meter-reading</text>
+  <text x="516" y="339" class="muted">pushed 2026-08-26</text>
 </svg>
