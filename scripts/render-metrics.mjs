@@ -1,5 +1,5 @@
 import { getProfileData, offlineProfile } from './github-data.mjs';
-import { bar, escapeXml, readConfig, writeGenerated } from './utils.mjs';
+import { bar, escapeXml, readConfig, truncate, writeGenerated } from './utils.mjs';
 
 const config = await readConfig();
 let data;
@@ -32,7 +32,7 @@ const recentRows = recent.map((repo, i) => {
   const y = 142 + i * 31;
   const date = String(repo.pushed_at ?? '').slice(5, 10);
   return `<text x="500" y="${y}" class="date">${escapeXml(date)}</text>
-  <text x="552" y="${y}" class="repo">${escapeXml(repo.name)}</text>
+  <text x="552" y="${y}" class="repo">${escapeXml(truncate(repo.name, 38))}</text>
   <text x="882" y="${y}" text-anchor="end" class="muted">push</text>`;
 }).join('\n');
 
