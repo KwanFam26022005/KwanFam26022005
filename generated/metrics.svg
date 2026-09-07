@@ -3,18 +3,18 @@
   text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
   .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
   .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
-  .prompt { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 10.5px; fill: #79c0ff; font-weight: 600; }
-  .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 17px; font-weight: 700; fill: #ffffff; }
-  .stat { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 13px; font-weight: 700; fill: #f0f6fc; }
-  .muted { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 9.5px; fill: #719ec2; }
-  .key { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 10.5px; fill: #b8d4eb; }
-  .date { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 10px; fill: #6e99bd; }
-  .repo { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 10.5px; fill: #e2edf7; }
+  .prompt { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 10.5px; fill: #0969da; font-weight: 600; }
+  .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 17px; font-weight: 700; fill: #0f172a; }
+  .stat { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 13px; font-weight: 700; fill: #0f172a; }
+  .muted { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 9.5px; fill: #64748b; }
+  .key { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 10.5px; fill: #334155; font-weight: 500; }
+  .date { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 10px; fill: #64748b; }
+  .repo { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 10.5px; fill: #0f172a; }
 </style>
-<rect width="960" height="280" rx="18" fill="#040c16"/>
-<rect x="12" y="12" width="936" height="256" rx="14" fill="#0b1b2d" stroke="#22486e" stroke-width="1.2"/>
+<rect width="960" height="280" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+<rect x="12" y="12" width="936" height="256" rx="10" fill="#f8fafc" stroke="#d0d7de" stroke-width="1"/>
 <text x="30" y="36" class="mono prompt">khoa@github:~$ ./profile --activity</text>
-<rect x="254" y="26" width="6" height="12" rx="1" fill="#79c0ff"><animate attributeName="opacity" values="1;.12;1" dur="1.15s" repeatCount="indefinite"/></rect>
+<rect x="254" y="26" width="6" height="12" rx="1" fill="#0969da"><animate attributeName="opacity" values="1;.12;1" dur="1.15s" repeatCount="indefinite"/></rect>
 <text x="30" y="64" class="sans title">Development signal</text>
 <text x="824" y="36" class="mono muted">2026-09-07</text>
 
@@ -27,24 +27,24 @@
 <g class="mono">
 <text x="42" y="142" class="key">Python</text>
   <text x="154" y="142" class="muted">07 repos</text>
-  <rect x="218" y="134" width="155" height="5" rx="2.5" fill="#0d243a"/>
-  <rect x="218" y="134" width="155" height="5" rx="2.5" fill="#58a6ff"/>
+  <rect x="218" y="134" width="155" height="5" rx="2.5" fill="#e2e8f0"/>
+  <rect x="218" y="134" width="155" height="5" rx="2.5" fill="#0969da"/>
 <text x="42" y="167" class="key">TypeScript</text>
   <text x="154" y="167" class="muted">02 repos</text>
-  <rect x="218" y="159" width="155" height="5" rx="2.5" fill="#0d243a"/>
-  <rect x="218" y="159" width="44" height="5" rx="2.5" fill="#468ec9"/>
+  <rect x="218" y="159" width="155" height="5" rx="2.5" fill="#e2e8f0"/>
+  <rect x="218" y="159" width="44" height="5" rx="2.5" fill="#2563eb"/>
 <text x="42" y="192" class="key">Jupyter Notebook</text>
   <text x="154" y="192" class="muted">02 repos</text>
-  <rect x="218" y="184" width="155" height="5" rx="2.5" fill="#0d243a"/>
-  <rect x="218" y="184" width="44" height="5" rx="2.5" fill="#3777a8"/>
+  <rect x="218" y="184" width="155" height="5" rx="2.5" fill="#e2e8f0"/>
+  <rect x="218" y="184" width="44" height="5" rx="2.5" fill="#3b82f6"/>
 <text x="42" y="217" class="key">JavaScript</text>
   <text x="154" y="217" class="muted">01 repos</text>
-  <rect x="218" y="209" width="155" height="5" rx="2.5" fill="#0d243a"/>
-  <rect x="218" y="209" width="22" height="5" rx="2.5" fill="#2a6087"/>
+  <rect x="218" y="209" width="155" height="5" rx="2.5" fill="#e2e8f0"/>
+  <rect x="218" y="209" width="22" height="5" rx="2.5" fill="#60a5fa"/>
 <text x="42" y="242" class="key">PHP</text>
   <text x="154" y="242" class="muted">01 repos</text>
-  <rect x="218" y="234" width="155" height="5" rx="2.5" fill="#0d243a"/>
-  <rect x="218" y="234" width="22" height="5" rx="2.5" fill="#1f4c6e"/>
+  <rect x="218" y="234" width="155" height="5" rx="2.5" fill="#e2e8f0"/>
+  <rect x="218" y="234" width="22" height="5" rx="2.5" fill="#93c5fd"/>
 </g>
 <text x="490" y="118" class="mono prompt">&gt; recent --pushes</text>
 <g class="mono">

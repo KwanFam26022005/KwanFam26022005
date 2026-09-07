@@ -2,6 +2,10 @@
   <img src="./assets/hero-3d-experiment.svg" width="100%" alt="Pham Hong Dang Khoa — AI Systems Engineer focused on Computer Vision and Agentic-RAG" />
 </div>
 
+<div align="center">
+  <img src="./assets/typing-effect.svg" width="100%" alt="Technical Specialization & Roles" />
+</div>
+
 <p align="center">
   <a href="https://www.linkedin.com/in/pham-hong-dang-khoa-40a3a0379">LinkedIn</a>
   ·

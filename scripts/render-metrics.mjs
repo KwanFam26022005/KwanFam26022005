@@ -17,14 +17,14 @@ const langs = data.languages.slice(0, 5);
 const maxLang = Math.max(...langs.map(([, count]) => count), 1);
 const recent = data.recent.slice(0, 4);
 const updated = new Date().toISOString().slice(0, 10);
-const accents = ['#58a6ff', '#468ec9', '#3777a8', '#2a6087', '#1f4c6e'];
+const accents = ['#0969da', '#2563eb', '#3b82f6', '#60a5fa', '#93c5fd'];
 
 const languageRows = langs.map(([name, count], i) => {
   const y = 142 + i * 25;
   const width = bar(count, maxLang, 155);
   return `<text x="42" y="${y}" class="key">${escapeXml(name)}</text>
   <text x="154" y="${y}" class="muted">${String(count).padStart(2, '0')} repos</text>
-  <rect x="218" y="${y - 8}" width="155" height="5" rx="2.5" fill="#0d243a"/>
+  <rect x="218" y="${y - 8}" width="155" height="5" rx="2.5" fill="#e2e8f0"/>
   <rect x="218" y="${y - 8}" width="${width}" height="5" rx="2.5" fill="${accents[i % accents.length]}"/>`;
 }).join('\n');
 
@@ -60,18 +60,18 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="280" vi
   text { font-family: ${FONT_MONO}; }
   .mono { font-family: ${FONT_MONO}; }
   .sans { font-family: ${FONT_SANS}; }
-  .prompt { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #79c0ff; font-weight: 600; }
-  .title { font-family: ${FONT_SANS}; font-size: 17px; font-weight: 700; fill: #ffffff; }
-  .stat { font-family: ${FONT_MONO}; font-size: 13px; font-weight: 700; fill: #f0f6fc; }
-  .muted { font-family: ${FONT_MONO}; font-size: 9.5px; fill: #719ec2; }
-  .key { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #b8d4eb; }
-  .date { font-family: ${FONT_MONO}; font-size: 10px; fill: #6e99bd; }
-  .repo { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #e2edf7; }
+  .prompt { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #0969da; font-weight: 600; }
+  .title { font-family: ${FONT_SANS}; font-size: 17px; font-weight: 700; fill: #0f172a; }
+  .stat { font-family: ${FONT_MONO}; font-size: 13px; font-weight: 700; fill: #0f172a; }
+  .muted { font-family: ${FONT_MONO}; font-size: 9.5px; fill: #64748b; }
+  .key { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #334155; font-weight: 500; }
+  .date { font-family: ${FONT_MONO}; font-size: 10px; fill: #64748b; }
+  .repo { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #0f172a; }
 </style>
-<rect width="960" height="280" rx="18" fill="#040c16"/>
-<rect x="12" y="12" width="936" height="256" rx="14" fill="#0b1b2d" stroke="#22486e" stroke-width="1.2"/>
+<rect width="960" height="280" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+<rect x="12" y="12" width="936" height="256" rx="10" fill="#f8fafc" stroke="#d0d7de" stroke-width="1"/>
 <text x="30" y="36" class="mono prompt">khoa@github:~$ ./profile --activity</text>
-<rect x="254" y="26" width="6" height="12" rx="1" fill="#79c0ff"><animate attributeName="opacity" values="1;.12;1" dur="1.15s" repeatCount="indefinite"/></rect>
+<rect x="254" y="26" width="6" height="12" rx="1" fill="#0969da"><animate attributeName="opacity" values="1;.12;1" dur="1.15s" repeatCount="indefinite"/></rect>
 <text x="30" y="64" class="sans title">Development signal</text>
 <text x="824" y="36" class="mono muted">${updated}</text>
 

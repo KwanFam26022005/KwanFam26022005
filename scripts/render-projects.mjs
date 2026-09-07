@@ -42,47 +42,47 @@ function repoRow(repoName, x, y, accent, tag) {
   const desc = repo.description || DEFAULT_DESCRIPTIONS[repo.name] || 'Systems research repository.';
   const display = repo.name.replaceAll('-', ' ');
   return `<g transform="translate(${x} ${y})">
-    <line x1="0" y1="0" x2="414" y2="0" stroke="#1d3d5c"/>
-    <circle cx="8" cy="22" r="3.5" fill="#58a6ff"/>
+    <line x1="0" y1="0" x2="414" y2="0" stroke="#e2e8f0"/>
+    <circle cx="8" cy="22" r="3.5" fill="#2563eb"/>
     <text x="22" y="20" class="repo">${escapeXml(truncate(display, 34))}</text>
     <text x="22" y="39" class="desc">${escapeXml(truncate(desc, 58))}</text>
-    <text x="330" y="20" class="tag" fill="#79c0ff">${tag}</text>
+    <text x="414" y="20" class="tag">${tag}</text>
   </g>`;
 }
 
 function researchRow(x, y) {
   return `<g transform="translate(${x} ${y})">
-    <line x1="0" y1="0" x2="414" y2="0" stroke="#1d3d5c"/>
-    <circle cx="8" cy="22" r="3.5" fill="#58a6ff"/>
+    <line x1="0" y1="0" x2="414" y2="0" stroke="#e2e8f0"/>
+    <circle cx="8" cy="22" r="3.5" fill="#2563eb"/>
     <text x="22" y="20" class="repo">KOA Agentic-RAG</text>
     <text x="22" y="39" class="desc">Bilingual evidence-verified clinical guideline QA research prototype.</text>
-    <text x="330" y="20" class="tag" fill="#79c0ff">RESEARCH</text>
+    <text x="414" y="20" class="tag">RESEARCH</text>
   </g>`;
 }
 
 const leftRows = [
   researchRow(32, 108),
-  ...agenticNames.slice(0, 2).map((name, i) => repoRow(name, 32, 170 + i * 62, '#58a6ff', AGENTIC_TAGS[name] ?? 'AGENTIC'))
+  ...agenticNames.slice(0, 2).map((name, i) => repoRow(name, 32, 170 + i * 62, '#0969da', AGENTIC_TAGS[name] ?? 'AGENTIC'))
 ].join('\n');
 
-const rightRows = visionNames.slice(0, 3).map((name, i) => repoRow(name, 510, 108 + i * 62, '#58a6ff', VISION_TAGS[name] ?? 'VISION')).join('\n');
+const rightRows = visionNames.slice(0, 3).map((name, i) => repoRow(name, 510, 108 + i * 62, '#0969da', VISION_TAGS[name] ?? 'VISION')).join('\n');
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="330" viewBox="0 0 960 330" role="img" aria-label="Research and engineering tracks">
 <style>
   text { font-family: ${FONT_SANS}; }
   .mono { font-family: ${FONT_MONO}; }
   .sans { font-family: ${FONT_SANS}; }
-  .prompt { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #79c0ff; font-weight: 600; }
-  .lane { font-family: ${FONT_SANS}; font-size: 13px; font-weight: 700; letter-spacing: .8px; fill: #79c0ff; }
-  .sub { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #7fa6c7; }
-  .repo { font-family: ${FONT_SANS}; font-size: 12px; font-weight: 600; fill: #ffffff; }
-  .desc { font-family: ${FONT_SANS}; font-size: 10.5px; font-weight: 400; fill: #97b8d4; }
-  .tag { font-family: ${FONT_MONO}; font-size: 9px; font-weight: 700; letter-spacing: .6px; text-anchor: end; fill: #79c0ff; }
+  .prompt { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #0969da; font-weight: 600; }
+  .lane { font-family: ${FONT_SANS}; font-size: 13px; font-weight: 700; letter-spacing: .8px; fill: #0969da; }
+  .sub { font-family: ${FONT_MONO}; font-size: 10.5px; fill: #64748b; }
+  .repo { font-family: ${FONT_SANS}; font-size: 12px; font-weight: 600; fill: #0f172a; }
+  .desc { font-family: ${FONT_SANS}; font-size: 10.5px; font-weight: 400; fill: #475569; }
+  .tag { font-family: ${FONT_MONO}; font-size: 9px; font-weight: 700; letter-spacing: .6px; text-anchor: end; fill: #0969da; }
 </style>
-<rect width="960" height="330" rx="18" fill="#040c16"/>
-<rect x="12" y="12" width="936" height="306" rx="14" fill="#0b1b2d" stroke="#22486e" stroke-width="1.2"/>
+<rect width="960" height="330" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+<rect x="12" y="12" width="936" height="306" rx="10" fill="#f8fafc" stroke="#d0d7de" stroke-width="1"/>
 <text x="30" y="36" class="mono prompt">&gt; ls ./research-tracks --featured</text>
-<rect x="247" y="26" width="6" height="12" rx="1" fill="#79c0ff"><animate attributeName="opacity" values="1;.12;1" dur="1.15s" repeatCount="indefinite"/></rect>
+<rect x="247" y="26" width="6" height="12" rx="1" fill="#0969da"><animate attributeName="opacity" values="1;.12;1" dur="1.15s" repeatCount="indefinite"/></rect>
 
 <g transform="translate(32 72)">
   <text class="sans lane">01 / AGENTIC-RAG · EVIDENCE SYSTEMS</text>
@@ -92,7 +92,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="330" vi
   <text class="sans lane">02 / COMPUTER VISION · OCR SYSTEMS</text>
   <text y="20" class="mono sub">document AI · inspection · production inference</text>
 </g>
-<line x1="480" y1="66" x2="480" y2="298" stroke="#1d3d5c"/>
+<line x1="480" y1="66" x2="480" y2="298" stroke="#e2e8f0"/>
 ${leftRows}
 ${rightRows}
 </svg>`;
