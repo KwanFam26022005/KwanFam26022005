@@ -35,34 +35,34 @@
     <circle cx="8" cy="22" r="3.5" fill="#a78bfa"/>
     <text x="22" y="20" class="repo">tdtu student handbook chatbot</text>
     <text x="22" y="39" class="desc">Domain-specific assistant using retrieval-augmented gener…</text>
-    <text x="330" y="20" class="tag" fill="#a78bfa">AGENTIC</text>
+    <text x="330" y="20" class="tag" fill="#a78bfa">RAG</text>
   </g>
 <g transform="translate(32 232)">
     <line x1="0" y1="0" x2="414" y2="0" stroke="#14354d"/>
     <circle cx="8" cy="22" r="3.5" fill="#a78bfa"/>
     <text x="22" y="20" class="repo">Medical NLU Pipeline</text>
     <text x="22" y="39" class="desc">Clinical and medical natural-language understanding exper…</text>
-    <text x="330" y="20" class="tag" fill="#a78bfa">AGENTIC</text>
+    <text x="330" y="20" class="tag" fill="#a78bfa">CLINICAL NLP</text>
   </g>
 <g transform="translate(510 108)">
     <line x1="0" y1="0" x2="414" y2="0" stroke="#14354d"/>
     <circle cx="8" cy="22" r="3.5" fill="#38bdf8"/>
     <text x="22" y="20" class="repo">meter reading engine v2</text>
     <text x="22" y="39" class="desc">Production-oriented LCD meter OCR pipeline with explicit …</text>
-    <text x="330" y="20" class="tag" fill="#38bdf8">VISION</text>
+    <text x="330" y="20" class="tag" fill="#38bdf8">OCR</text>
   </g>
 <g transform="translate(510 170)">
     <line x1="0" y1="0" x2="414" y2="0" stroke="#14354d"/>
     <circle cx="8" cy="22" r="3.5" fill="#38bdf8"/>
     <text x="22" y="20" class="repo">Invoice engine</text>
     <text x="22" y="39" class="desc">Local-first Vietnamese business-document processing with …</text>
-    <text x="330" y="20" class="tag" fill="#38bdf8">VISION</text>
+    <text x="330" y="20" class="tag" fill="#38bdf8">DOCUMENT AI</text>
   </g>
 <g transform="translate(510 232)">
     <line x1="0" y1="0" x2="414" y2="0" stroke="#14354d"/>
     <circle cx="8" cy="22" r="3.5" fill="#38bdf8"/>
     <text x="22" y="20" class="repo">meter reading inference service</text>
     <text x="22" y="39" class="desc">FastAPI inference adapter with revision checks, readiness…</text>
-    <text x="330" y="20" class="tag" fill="#38bdf8">VISION</text>
+    <text x="330" y="20" class="tag" fill="#38bdf8">INFERENCE</text>
   </g>
 </svg>
