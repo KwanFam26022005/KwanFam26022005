@@ -37,7 +37,7 @@
 
 ## `> about --me`
 
-Hey, I'm **Phạm Hồng Đăng Khoa (Khoa Pham)** — an AI Systems Engineer based in Ho Chi Minh City, Vietnam.
+Hey, I'm **Phạm Hồng Đăng Khoa (Khoa Pham)** — a 4th-year Computer Science student at Ton Duc Thang University (TDTU) and an AI Systems Engineer based in Ho Chi Minh City, Vietnam.
 
 I build verifiable, production-grade AI systems with a primary focus on **Computer Vision & OCR** (digit localization, document AI) and **Agentic-RAG** (evidence-grounded retrieval with calibrated abstention).
 
