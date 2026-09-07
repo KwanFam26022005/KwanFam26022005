@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" width="1000" height="330" role="img" aria-label="Phạm Hồng Đăng Khoa — AI Systems Engineer focused on Computer Vision and Agentic-RAG">
+<defs>
+  <!-- Deep Oceanic Navy Canvas Gradients -->
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#040c16"/>
+    <stop offset="50%" stop-color="#071320"/>
+    <stop offset="100%" stop-color="#091b2c"/>
+  </linearGradient>
+
+  <!-- Restrained Specialization Borders -->
+  <linearGradient id="chip-cv" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#55a9c9" stop-opacity="0.85"/>
+    <stop offset="100%" stop-color="#3b7a94" stop-opacity="0.3"/>
+  </linearGradient>
+
+  <linearGradient id="chip-rag" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#9384c5" stop-opacity="0.85"/>
+    <stop offset="100%" stop-color="#695b96" stop-opacity="0.3"/>
+  </linearGradient>
+
+  <!-- 3D Platform Facet Gradients -->
+  <linearGradient id="plat-top" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0d2438"/>
+    <stop offset="50%" stop-color="#0a1c2e"/>
+    <stop offset="100%" stop-color="#081726"/>
+  </linearGradient>
+  <linearGradient id="plat-left" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#0a1d2e"/>
+    <stop offset="100%" stop-color="#06121d"/>
+  </linearGradient>
+  <linearGradient id="plat-right" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#122f47"/>
+    <stop offset="100%" stop-color="#091b2c"/>
+  </linearGradient>
+
+  <!-- 3D Verification Prism Gradients -->
+  <linearGradient id="prism-top" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1f544e"/>
+    <stop offset="100%" stop-color="#123d38"/>
+  </linearGradient>
+  <linearGradient id="prism-left" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#15423d"/>
+    <stop offset="100%" stop-color="#0a2421"/>
+  </linearGradient>
+  <linearGradient id="prism-right" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#1b4d47"/>
+    <stop offset="100%" stop-color="#0e2e2a"/>
+  </linearGradient>
+
+  <!-- Isometric Scan Gradient -->
+  <linearGradient id="scan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#55a9c9" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#55a9c9" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#55a9c9" stop-opacity="0"/>
+  </linearGradient>
+
+  <!-- Coordinate Matrix Pattern -->
+  <pattern id="grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="12" cy="12" r="0.7" fill="#24455e"/>
+  </pattern>
+
+  <linearGradient id="grid-fade" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.07"/>
+    <stop offset="45%" stop-color="#ffffff" stop-opacity="0.10"/>
+    <stop offset="70%" stop-color="#ffffff" stop-opacity="0.16"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0.20"/>
+  </linearGradient>
+
+  <mask id="grid-mask">
+    <rect width="1000" height="330" fill="url(#grid-fade)"/>
+  </mask>
+</defs>
+
+<style>
+  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+
+  /* Terminal Command Line */
+  .term-user { font-size: 12px; fill: #62b9d8; font-weight: 600; }
+  .term-sep  { font-size: 12px; fill: #5c7991; }
+  .term-path { font-size: 12px; fill: #97b0c4; }
+  .term-cmd  { font-size: 12px; fill: #edf3f8; font-weight: 500; }
+
+  /* Headline and Identity */
+  .hero-name { font-size: 30px; font-weight: 700; fill: #edf3f8; letter-spacing: -0.4px; }
+  .hero-role { font-size: 13.5px; font-weight: 500; fill: #96adc2; letter-spacing: 0.2px; }
+  .hero-desc { font-size: 12.5px; font-weight: 400; fill: #8fa6b8; }
+
+  /* Focus Chips */
+  .chip-cv-txt  { font-size: 11px; font-weight: 600; fill: #edf3f8; letter-spacing: 0.5px; }
+  .chip-rag-txt { font-size: 11px; font-weight: 600; fill: #edf3f8; letter-spacing: 0.5px; }
+
+  /* Code Signature Lines */
+  .code-fn      { font-size: 12px; font-weight: 500; fill: #6cbfe0; }
+  .code-op      { font-size: 12px; fill: #5c7991; }
+  .code-str-cv  { font-size: 12px; fill: #edf3f8; }
+  .code-str-rag { font-size: 12px; fill: #b2a1e8; }
+  .code-dom-val { font-size: 12px; fill: #edf3f8; }
+
+  /* 3D Tier Hierarchy Labels */
+  .stage-tag { font-size: 9px; font-weight: 700; letter-spacing: 1px; }
+  .stage-lbl { font-size: 11.5px; font-weight: 600; letter-spacing: 0.5px; }
+  .stage-sub { font-size: 9.5px; font-weight: 400; fill: #7e9bb3; }
+
+  /* Motion System 1: Terminal cursor blink (1.1s) */
+  @keyframes blink {
+    0%, 45% { opacity: 1; }
+    50%, 95% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  .cursor-anim { animation: blink 1.1s infinite; }
+
+  /* Motion System 2: Calm 3D Object Idle Float (12s) */
+  @keyframes core-float {
+    0%, 100% { transform: translateY(0px); }
+    50%      { transform: translateY(-5px); }
+  }
+  .float-core { animation: core-float 12s ease-in-out infinite; }
+
+  /* Motion System 3: Observation Plane Scan Sweep (7.2s) */
+  @keyframes scan-sweep {
+    0%   { transform: translate(-70px, -35px); opacity: 0; }
+    15%  { opacity: 0.75; }
+    85%  { opacity: 0.75; }
+    100% { transform: translate(70px, 35px); opacity: 0; }
+  }
+  .scan-line-anim { animation: scan-sweep 7.2s ease-in-out infinite; }
+
+  /* Motion System 4: Verification Core Pulse (6s) */
+  @keyframes verify-pulse {
+    0%, 100% { transform: scale(1); opacity: 0.35; }
+    50%      { transform: scale(1.16); opacity: 0.75; }
+  }
+  .pulse-anim {
+    transform-origin: 760px 62px;
+    animation: verify-pulse 6s ease-in-out infinite;
+  }
+
+  /* Motion System 5: Ambient Ocean Drift (19s) */
+  @keyframes ocean-drift {
+    0%   { transform: translateX(0px); }
+    50%  { transform: translateX(-50px); }
+    100% { transform: translateX(0px); }
+  }
+  .wave-motion { animation: ocean-drift 19s ease-in-out infinite; }
+</style>
+
+<!-- Canvas Base Background -->
+<rect width="1000" height="330" rx="14" fill="url(#bg)"/>
+<rect width="1000" height="330" rx="14" fill="url(#grid)" mask="url(#grid-mask)"/>
+
+<!-- ================= LEFT COLUMN: IDENTITY & CODE SPECIFICATION ================= -->
+
+<!-- 1. Authentic Terminal Line -->
+<g transform="translate(56, 36)" class="mono">
+  <text x="0" y="0">
+    <tspan class="term-user">khoa@github</tspan><tspan class="term-sep">:</tspan><tspan class="term-path">~$ </tspan><tspan class="term-cmd">./init --research</tspan>
+  </text>
+  <rect x="234" y="-10.5" width="7.5" height="13.5" rx="1" fill="#62b9d8" class="cursor-anim"/>
+</g>
+
+<!-- 2. Primary Developer Identity -->
+<text x="56" y="86" class="sans hero-name">Ph&#7841;m H&#7891;ng &#272;&#259;ng Khoa</text>
+
+<!-- 3. Subtitle: Role and Specializations -->
+<text x="56" y="114" class="mono hero-role">
+  AI Systems Engineer
+  <tspan fill="#5c7991"> &#183; </tspan>
+  <tspan fill="#55a9c9">Computer Vision</tspan>
+  <tspan fill="#5c7991"> &#183; </tspan>
+  <tspan fill="#9384c5">Agentic-RAG</tspan>
+</text>
+
+<!-- 4. Research Statement -->
+<text x="56" y="138" class="sans hero-desc">Building measurable, evidence-aware AI systems from research to real-world use.</text>
+
+<!-- 5. Two Primary Focus Chips -->
+<g transform="translate(56, 164)" class="mono">
+  <!-- Chip 1: CV / OCR Systems -->
+  <g>
+    <rect width="158" height="29" rx="6" fill="#08192a" fill-opacity="0.8" stroke="url(#chip-cv)" stroke-width="1.1"/>
+    <g transform="translate(11, 7.5)">
+      <path d="M 0 4 L 0 0 L 4 0" fill="none" stroke="#55a9c9" stroke-width="1.4" stroke-linecap="round"/>
+      <path d="M 10 0 L 14 0 L 14 4" fill="none" stroke="#55a9c9" stroke-width="1.4" stroke-linecap="round"/>
+      <path d="M 0 10 L 0 14 L 4 14" fill="none" stroke="#55a9c9" stroke-width="1.4" stroke-linecap="round"/>
+      <path d="M 10 14 L 14 14 L 14 10" fill="none" stroke="#55a9c9" stroke-width="1.4" stroke-linecap="round"/>
+      <circle cx="7" cy="7" r="1.6" fill="#55a9c9"/>
+    </g>
+    <text x="35" y="18.5" class="chip-cv-txt">CV / OCR SYSTEMS</text>
+  </g>
+
+  <!-- Chip 2: Agentic-RAG / Evidence -->
+  <g transform="translate(170, 0)">
+    <rect width="198" height="29" rx="6" fill="#111328" fill-opacity="0.8" stroke="url(#chip-rag)" stroke-width="1.1"/>
+    <g transform="translate(11, 7.5)">
+      <line x1="2" y1="12" x2="7" y2="3" stroke="#9384c5" stroke-width="1.3"/>
+      <line x1="12" y1="12" x2="7" y2="3" stroke="#9384c5" stroke-width="1.3"/>
+      <line x1="2" y1="12" x2="12" y2="12" stroke="#9384c5" stroke-width="1.3"/>
+      <circle cx="7" cy="3" r="1.9" fill="#9384c5"/>
+      <circle cx="2" cy="12" r="1.7" fill="#151833" stroke="#9384c5" stroke-width="1.1"/>
+      <circle cx="12" cy="12" r="1.7" fill="#151833" stroke="#9384c5" stroke-width="1.1"/>
+    </g>
+    <text x="35" y="18.5" class="chip-rag-txt">AGENTIC-RAG / EVIDENCE</text>
+  </g>
+</g>
+
+<!-- 6. Coding Signature Block -->
+<g transform="translate(56, 236)" class="mono">
+  <text x="0" y="0">
+    <tspan class="code-fn">research</tspan><tspan class="code-op">.</tspan><tspan class="code-fn">focus</tspan>
+    <tspan class="code-op"> = [</tspan>
+    <tspan class="code-str-cv">"computer_vision"</tspan><tspan class="code-op">, </tspan>
+    <tspan class="code-str-rag">"agentic_rag"</tspan>
+    <tspan class="code-op">]</tspan>
+  </text>
+  <text x="0" y="22">
+    <tspan class="code-fn">application</tspan><tspan class="code-op">.</tspan><tspan class="code-fn">domain</tspan>
+    <tspan class="code-op"> = </tspan>
+    <tspan class="code-dom-val">"healthcare_ai"</tspan>
+  </text>
+</g>
+
+<!-- Visual Connecting Guide between Left Spec and 3D Core -->
+<path d="M 426 178 C 500 178, 555 160, 620 160"
+      fill="none" stroke="#55a9c9" stroke-width="1.1" stroke-dasharray="2 4" opacity="0.25"/>
+
+<!-- ================= RIGHT COLUMN: 3D RESEARCH CORE (ISOMETRIC COMPOSITION) ================= -->
+<g class="float-core">
+
+  <!-- Vertical Coordinate Axes (Technical alignment wireframes) -->
+  <line x1="760" y1="45" x2="760" y2="255" stroke="#1d425c" stroke-width="1.0" stroke-dasharray="3 3" opacity="0.4"/>
+  <line x1="630" y1="215" x2="890" y2="215" stroke="#1d425c" stroke-width="0.8" stroke-dasharray="2 4" opacity="0.25"/>
+
+  <!-- ================= TIER 1 (BOTTOM): OBSERVATION & SCAN PLANE (CV / OCR) ================= -->
+  <!-- Center: (760, 225), Isometric footprint: 260px wide, 70px high, 14px depth -->
+  <g id="tier-1-observe">
+    <!-- Platform Shadow -->
+    <polygon points="760,202 895,236 760,270 625,236" fill="#03080e" opacity="0.6"/>
+
+    <!-- Left Side Depth Facet -->
+    <polygon points="630,225 760,258 760,272 630,239" fill="url(#plat-left)" stroke="#19394f" stroke-width="0.9"/>
+
+    <!-- Right Side Depth Facet -->
+    <polygon points="760,258 890,225 890,239 760,272" fill="url(#plat-right)" stroke="#224d6d" stroke-width="0.9"/>
+
+    <!-- Top Isometric Plane Face -->
+    <polygon points="760,192 890,225 760,258 630,225" fill="url(#plat-top)" stroke="#326b91" stroke-width="1.2"/>
+
+    <!-- Internal Isometric Grid Lines on Observation Platform -->
+    <path d="M 662,217 L 760,242 L 858,217" fill="none" stroke="#1c4766" stroke-width="0.9" opacity="0.7"/>
+    <path d="M 695,209 L 760,225 L 825,209" fill="none" stroke="#1c4766" stroke-width="0.9" opacity="0.7"/>
+    <path d="M 728,200 L 760,209 L 792,200" fill="none" stroke="#1c4766" stroke-width="0.9" opacity="0.5"/>
+
+    <!-- Feature Target Bounding Brackets (Isometric OCR Region 1: centered at 685, 222) -->
+    <g transform="translate(675, 216)">
+      <polygon points="0,6 20,11 40,6 20,1" fill="#082033" fill-opacity="0.8" stroke="#55a9c9" stroke-width="0.9"/>
+      <circle cx="20" cy="6" r="1.5" fill="#55a9c9"/>
+    </g>
+
+    <!-- Feature Target Bounding Brackets (Isometric OCR Region 2: centered at 785, 236) -->
+    <g transform="translate(775, 230)">
+      <polygon points="0,6 26,12.5 52,6 26,-0.5" fill="#082033" fill-opacity="0.8" stroke="#55a9c9" stroke-width="1.0"/>
+      <circle cx="26" cy="6" r="1.7" fill="#7ed4f0"/>
+      <line x1="8" y1="5.5" x2="44" y2="6.5" stroke="#3b7a99" stroke-width="0.8"/>
+    </g>
+
+    <!-- Subtle Moving Scan Line Sweep on Observation Plane -->
+    <g class="scan-line-anim">
+      <line x1="680" y1="205" x2="840" y2="245" stroke="url(#scan-grad)" stroke-width="2.2"/>
+    </g>
+
+    <!-- Tier 1 Metadata & Technical Label -->
+    <g class="mono" transform="translate(900, 240)">
+      <text x="0" y="-4" class="stage-tag" fill="#55a9c9">01 · OBSERVE</text>
+      <text x="0" y="9" class="stage-lbl" fill="#d7eff7">Computer Vision / OCR</text>
+      <text x="0" y="21" class="stage-sub">Spatial &amp; Document AI</text>
+    </g>
+  </g>
+
+  <!-- Isometric Inter-Tier Uplinks (Observe to Retrieve) -->
+  <path d="M 685,215 C 685,185 710,165 730,150" fill="none" stroke="#25516e" stroke-width="1.1" stroke-dasharray="2 3"/>
+  <path d="M 785,225 C 785,190 770,170 760,148" fill="none" stroke="#3c4775" stroke-width="1.1" stroke-dasharray="2 3"/>
+
+  <!-- ================= TIER 2 (MIDDLE): RETRIEVAL NETWORK (AGENTIC-RAG) ================= -->
+  <!-- Hovering at Y ≈ 130 to 160, centered at (760, 142) -->
+  <g id="tier-2-retrieve">
+    <!-- Hovering Reference Hexagon (Faint coordinate ring) -->
+    <polygon points="760,118 825,134 825,150 760,166 695,150 695,134"
+             fill="none" stroke="#3c3761" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.55"/>
+
+    <!-- Knowledge Network Interconnect Edges -->
+    <line x1="695" y1="138" x2="760" y2="142" stroke="#5a4e8c" stroke-width="1.4"/>
+    <line x1="825" y1="132" x2="760" y2="142" stroke="#5a4e8c" stroke-width="1.4"/>
+    <line x1="720" y1="158" x2="760" y2="142" stroke="#3a5c78" stroke-width="1.2"/>
+    <line x1="800" y1="156" x2="760" y2="142" stroke="#336968" stroke-width="1.3"/>
+
+    <!-- Peripheral Knowledge Nodes with 3D Depth Rings -->
+    <!-- Node A: Evidence Document (CV / OCR input bridge) -->
+    <g transform="translate(695, 138)">
+      <circle cx="0" cy="0" r="6" fill="#091b2c" stroke="#55a9c9" stroke-width="1.4"/>
+      <circle cx="0" cy="0" r="2.2" fill="#55a9c9"/>
+    </g>
+
+    <!-- Node B: Parametric Knowledge Base -->
+    <g transform="translate(825, 132)">
+      <circle cx="0" cy="0" r="6" fill="#13102b" stroke="#9384c5" stroke-width="1.4"/>
+      <circle cx="0" cy="0" r="2.2" fill="#9384c5"/>
+    </g>
+
+    <!-- Node C: Clinical Domain Knowledge (Healthcare AI) -->
+    <g transform="translate(800, 156)">
+      <circle cx="0" cy="0" r="5" fill="#092323" stroke="#55aa9e" stroke-width="1.3"/>
+      <circle cx="0" cy="0" r="1.8" fill="#55aa9e"/>
+    </g>
+
+    <!-- Node D: Synthesized Context Frame -->
+    <g transform="translate(720, 158)">
+      <circle cx="0" cy="0" r="4.5" fill="#0b1b2d" stroke="#6893b0" stroke-width="1.2"/>
+      <circle cx="0" cy="0" r="1.6" fill="#bad7ed"/>
+    </g>
+
+    <!-- Central Multi-Agent Orchestrator Node (Hub) -->
+    <g transform="translate(760, 142)">
+      <!-- Outer Orbit Halo -->
+      <circle cx="0" cy="0" r="12" fill="#1e183d" fill-opacity="0.6" stroke="#9384c5" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="7.5" fill="#0d0a21" stroke="#b6a8e8" stroke-width="1.3"/>
+      <circle cx="0" cy="0" r="3" fill="#edf3f8"/>
+    </g>
+
+    <!-- Tier 2 Metadata & Technical Label -->
+    <g class="mono" transform="translate(605, 130)" text-anchor="end">
+      <text x="0" y="-4" class="stage-tag" fill="#9384c5">02 · RETRIEVE</text>
+      <text x="0" y="9" class="stage-lbl" fill="#ede8fb">Agentic-RAG Systems</text>
+      <text x="0" y="21" class="stage-sub">Multi-Hop &amp; Grounding</text>
+    </g>
+  </g>
+
+  <!-- Isometric Inter-Tier Uplinks (Retrieve to Verify) -->
+  <path d="M 760,130 L 760,92" fill="none" stroke="#486073" stroke-width="1.3" stroke-dasharray="2 3"/>
+
+  <!-- ================= TIER 3 (TOP): VERIFICATION CORE (EVIDENCE GROUNDED) ================= -->
+  <!-- Hovering at Y ≈ 50 to 85, centered at (760, 65) -->
+  <g id="tier-3-verify">
+    <!-- Breathing Verification Halo -->
+    <circle cx="760" cy="62" r="24" fill="#124540" class="pulse-anim"/>
+
+    <!-- Isometric Verification Prism (3D faceted volume) -->
+    <!-- Top Face: (760, 44) -> (782, 55) -> (760, 66) -> (738, 55) -->
+    <polygon points="760,44 782,55 760,66 738,55" fill="url(#prism-top)" stroke="#55aa9e" stroke-width="1.3"/>
+
+    <!-- Left Side Facet: (738, 55) -> (760, 66) -> (760, 84) -> (738, 73) -->
+    <polygon points="738,55 760,66 760,84 738,73" fill="url(#prism-left)" stroke="#38776f" stroke-width="1.0"/>
+
+    <!-- Right Side Facet: (760, 66) -> (782, 55) -> (782, 73) -> (760, 84) -->
+    <polygon points="760,66 782,55 782,73 760,84" fill="url(#prism-right)" stroke="#2f635c" stroke-width="1.0"/>
+
+    <!-- Verified Badge Check Mark (Centered on top prism apex) -->
+    <g transform="translate(760, 55)">
+      <circle cx="0" cy="0" r="9" fill="#082320" stroke="#55aa9e" stroke-width="1.4"/>
+      <path d="M -3.5 -0.2 L -1.0 2.4 L 4.2 -2.6" fill="none" stroke="#a0f5e7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Tier 3 Metadata & Technical Label -->
+    <g class="mono" transform="translate(900, 62)">
+      <text x="0" y="-4" class="stage-tag" fill="#55aa9e">03 · VERIFY</text>
+      <text x="0" y="9" class="stage-lbl" fill="#e0f8f4">Evidence Verification</text>
+      <text x="0" y="21" class="stage-sub">Clinical &amp; Fact Gates</text>
+    </g>
+  </g>
+
+  <!-- ================= TECHNICAL MOTION: CONTINUOUS DATA SIGNAL (8.8s) ================= -->
+  <!-- Signal journeys: Observe (785, 230) -> Hub (760, 142) -> Verify (760, 55) -->
+  <circle r="3" fill="#8ef2e2">
+    <animateMotion path="M 785,230 C 785,190 770,165 760,142 C 760,120 760,85 760,55"
+                   dur="8.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity"
+             values="0; 0.95; 0.8; 0.98; 0"
+             keyTimes="0; 0.2; 0.55; 0.85; 1"
+             dur="8.8s" repeatCount="indefinite"/>
+    <animate attributeName="r"
+             values="2.2; 3.2; 2.5; 3.5; 1.5"
+             keyTimes="0; 0.2; 0.55; 0.85; 1"
+             dur="8.8s" repeatCount="indefinite"/>
+  </circle>
+
+</g>
+
+<!-- ================= AMBIENT OCEAN MOTIF (CALM BASE) ================= -->
+<g>
+  <!-- Deep Horizon Ambient Silhouette -->
+  <path d="M 0 304 Q 260 288, 520 302 T 1000 296 L 1000 330 L 0 330 Z" fill="#081a29" opacity="0.3"/>
+
+  <!-- Static Ghost Wave Line -->
+  <path d="M 0 315 Q 240 307, 500 315 T 1000 311" fill="none" stroke="#0b2438" stroke-width="0.9" opacity="0.16"/>
+
+  <!-- Animated Primary Ocean Wave (19s Drift) -->
+  <g class="wave-motion">
+    <path d="M -100 309 Q 150 299, 400 309 T 900 303 T 1400 309"
+          fill="none" stroke="#143e5c" stroke-width="1.3" opacity="0.3"/>
+  </g>
+</g>
+
+</svg>
