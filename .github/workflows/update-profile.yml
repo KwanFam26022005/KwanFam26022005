@@ -1,6 +1,16 @@
 name: Update profile telemetry
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/render-metrics.mjs"
+      - "scripts/render-projects.mjs"
+      - "scripts/github-data.mjs"
+      - "scripts/utils.mjs"
+      - "config/profile.json"
+      - ".github/workflows/update-profile.yml"
   schedule:
     - cron: "17 0 * * *"
   workflow_dispatch:
