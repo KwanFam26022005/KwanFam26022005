@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/hero-calm.svg" width="100%" alt="Pham Hong Dang Khoa — AI Systems Engineer focused on Computer Vision and Agentic-RAG" />
+  <img src="./assets/hero-3d-experiment.svg" width="100%" alt="Pham Hong Dang Khoa — AI Systems Engineer focused on Computer Vision and Agentic-RAG" />
 </div>
 
 <p align="center">
@@ -77,7 +77,7 @@ Tôi xây dựng các hệ thống AI theo hướng **đo được, kiểm chứ
 </div>
 
 <div align="center">
-  <img src="./generated/contrib-heatmap.svg" width="100%" alt="Contribution heatmap" />
+  <img src="./profile-3d-contrib/profile-ocean-3d.svg" width="100%" alt="3D Contribution terrain" />
 </div>
 
 <div align="center">
