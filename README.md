@@ -35,9 +35,17 @@
 </tr>
 </table>
 
-## `> about --focus`
+## `> about --me`
 
-I build applied AI systems designed with **measurable benchmarks, verifiable outputs, and explicit operating boundaries**. My primary focus spans **Computer Vision & OCR** (production localization and recognition pipelines) and **Agentic-RAG & Evidence Verification** (retrieval with claim-level validation and abstention). Healthcare informatics serves as a core research domain for knowledge grounding.
+Hey there, I'm **Phạm Hồng Đăng Khoa (Khoa Pham)** — an applied AI Systems Engineer and researcher based in Ho Chi Minh City, Vietnam.
+
+I build intelligent systems designed with **measurable benchmarks, verifiable outputs, and explicit operating boundaries**. Rather than treating machine learning as an unconstrained black box, my work focuses on engineering deterministic safety gates, observable telemetry, and fail-closed architectures around modern neural networks.
+
+My technical focus centers on two specialized pillars:
+- 👁️ **Computer Vision & Document Intelligence**: Designing end-to-end localization, digit recognition, and OCR pipelines (PP-OCRv6, OpenCV, PyTorch, YOLO). I build systems engineered for hostile real-world conditions — from low-light mobile capture of reflective LCD utility meters to automated Vietnamese business document processing with strict quality review gates.
+- 🧠 **Agentic-RAG & Evidence Grounding**: Developing multi-agent retrieval architectures with atomic claim verification and corrective retrieval. Combining hybrid dense-sparse search (BGE-M3 + BM25), cross-encoder reranking, and domain-adapted QLoRA fine-tuning, I specialize in systems that enforce evidence attribution and calibrated abstention on unsupported queries, particularly in clinical and institutional knowledge domains.
+
+> **Engineering Principle**: *"Measure > Verify > Deploy"* — Models are probabilistic, but software systems must be predictable. I bridge cutting-edge research prototypes with high-throughput production backends (FastAPI, Docker, CI/CD) and robust full-stack desktop software (.NET 8, C#, WPF, TypeScript).
 
 ## `> stack --core`
 
