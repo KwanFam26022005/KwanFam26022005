@@ -240,9 +240,10 @@
     </g>
 
     <!-- Tier 1 Metadata & Technical Label -->
-    <g class="mono" transform="translate(805, 248)">
+    <g class="mono" transform="translate(895, 218)">
+      <line x1="-16" y1="5" x2="-4" y2="5" stroke="#0969da" stroke-width="1.2"/>
       <text x="0" y="-4" class="stage-tag">01 · OBSERVE</text>
-      <text x="0" y="11" class="stage-lbl">CV / OCR</text>
+      <text x="0" y="12" class="stage-lbl">CV / OCR</text>
     </g>
   </g>
 

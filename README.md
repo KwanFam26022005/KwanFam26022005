@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/hero-light.svg" width="100%" alt="Pham Hong Dang Khoa — AI Systems Engineer focused on Computer Vision and Agentic-RAG" />
+  <img src="./assets/hero-light.svg?v=3" width="100%" alt="Pham Hong Dang Khoa — AI Systems Engineer focused on Computer Vision and Agentic-RAG" />
 </div>
 
 <div align="center">
