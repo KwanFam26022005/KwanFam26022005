@@ -1,40 +1,56 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="460" height="210" viewBox="0 0 460 210" role="img" aria-label="Production Meter Reading">
+<defs>
+  <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#102338"/>
+    <stop offset="100%" stop-color="#091726"/>
+  </linearGradient>
+</defs>
 <style>
   text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
   .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-  .badge { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 10px; font-weight: 600; letter-spacing: 0.5px; fill: #8ca4bc; }
-  .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 16.5px; font-weight: 700; fill: #edf2f7; }
-  .desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 11.5px; fill: #7d91a3; }
-  .proof-label { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 9.5px; font-weight: 700; fill: #50677c; letter-spacing: 0.8px; }
-  .proof-value { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 11.5px; font-weight: 600; fill: #d6e2eb; }
-  .stack { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 10px; fill: #728a9e; }
+  .badge { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 10px; font-weight: 600; letter-spacing: 0.5px; fill: #b8daf5; }
+  .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 16.5px; font-weight: 700; fill: #ffffff; }
+  .desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 11.5px; fill: #a5bfd6; }
+  .proof-label { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 9.5px; font-weight: 700; fill: #6f9cc2; letter-spacing: 0.8px; }
+  .proof-value { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 11.5px; font-weight: 600; fill: #f0f6fc; }
+  .stack { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 10px; fill: #8eb4d4; }
 </style>
-<rect width="460" height="210" rx="12" fill="#080d15"/>
-<rect x="8" y="8" width="444" height="194" rx="10" fill="#0b121c" stroke="#1c293a" stroke-width="1"/>
 
-<!-- Category Badge (Calm Matte Slate) -->
-<rect x="22" y="20" width="158" height="20" rx="4" fill="#121b27" stroke="#223347" stroke-width="0.75"/>
-<circle cx="31" cy="30" r="2.2" fill="#5a7d9b"/>
-<text x="39" y="33.5" class="badge">COMPUTER VISION · OCR</text>
+<!-- Outer Backdrop & Elevated Card Shell -->
+<rect width="460" height="210" rx="12" fill="#040b13"/>
+<rect x="5" y="5" width="450" height="200" rx="10" fill="url(#card-grad)" stroke="#23466a" stroke-width="1.2"/>
+<!-- Subtle Top Rim Light (Tactile Elevation) -->
+<line x1="16" y1="6" x2="444" y2="6" stroke="#3b6e9e" stroke-width="1.2" stroke-linecap="round" opacity="0.65"/>
 
-<!-- Subdued Link Arrow -->
-<path d="M422 24 L430 24 L430 32 M430 24 L423 31" stroke="#486177" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<!-- Category Badge (High Contrast Pill) -->
+<rect x="20" y="18" width="160" height="22" rx="5" fill="#142e4a" stroke="#2b5987" stroke-width="1"/>
+<circle cx="31" cy="29" r="2.5" fill="#58a6ff"/>
+<text x="40" y="32.5" class="badge">COMPUTER VISION · OCR</text>
+
+<!-- Subdued Link Arrow Pill -->
+<g transform="translate(420, 18)">
+  <rect width="22" height="22" rx="5" fill="#142e4a" stroke="#2b5987" stroke-width="1"/>
+  <path d="M7 15 L15 7 M15 7 L9 7 M15 7 L15 13" stroke="#7eb5e0" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</g>
 
 <!-- Title -->
-<text x="22" y="62" class="title">Production Meter Reading</text>
+<text x="20" y="65" class="title">Production Meter Reading</text>
 
 <!-- Description -->
-<text x="22" y="81" class="desc">Two-stage pipeline: mobile capture isolates LCD meter register;</text>
-<text x="22" y="97" class="desc">PP-OCRv6 extracts readings with strict validation gates.</text>
+<text x="20" y="84" class="desc">Two-stage pipeline: mobile capture isolates LCD meter register;</text>
+<text x="20" y="100" class="desc">PP-OCRv6 extracts readings with strict validation gates.</text>
 
 <!-- Subtle Divider -->
-<line x1="22" y1="111" x2="438" y2="111" stroke="#162230" stroke-width="0.75"/>
+<line x1="20" y1="114" x2="440" y2="114" stroke="#1d3b59" stroke-width="1"/>
 
-<!-- Signal / Proof (Clean White-Slate, No Neon) -->
-<text x="22" y="127" class="proof-label">ENGINEERING EVIDENCE</text>
-<text x="22" y="144" class="proof-value">Controlled localization → OCR → review pipeline · Fail-closed</text>
+<!-- Signal / Proof -->
+<text x="20" y="130" class="proof-label">ENGINEERING EVIDENCE</text>
+<g transform="translate(20, 147)">
+  <path d="M0 2 L4 5.5 L0 9" stroke="#58a6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="12" y="7.5" class="proof-value">Controlled localization → OCR → review pipeline · Fail-closed</text>
+</g>
 
-<!-- Stack Pill (Understated Inset) -->
-<rect x="22" y="158" width="416" height="26" rx="4" fill="#0e1622" stroke="#1a2736" stroke-width="0.75"/>
-<text x="32" y="175" class="stack">Python · PP-OCRv6 · FastAPI · OpenCV · PyTorch</text>
+<!-- Stack Pill (High Contrast Inset) -->
+<rect x="20" y="161" width="420" height="26" rx="5" fill="#091624" stroke="#1f3d5c" stroke-width="1"/>
+<text x="32" y="178" class="stack">Python · PP-OCRv6 · FastAPI · OpenCV · PyTorch</text>
 </svg>

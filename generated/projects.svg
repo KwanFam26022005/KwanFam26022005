@@ -3,67 +3,67 @@
   text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
   .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
   .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
-  .prompt { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 10.5px; fill: #5b7994; }
-  .lane { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: .8px; }
-  .sub { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 10.5px; fill: #5a7b94; }
-  .repo { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 12px; font-weight: 600; fill: #eef8ff; }
-  .desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 10.5px; font-weight: 400; fill: #7f9bb0; }
-  .tag { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 9px; font-weight: 700; letter-spacing: .6px; text-anchor: end; }
+  .prompt { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 10.5px; fill: #79c0ff; font-weight: 600; }
+  .lane { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: .8px; fill: #79c0ff; }
+  .sub { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 10.5px; fill: #7fa6c7; }
+  .repo { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 12px; font-weight: 600; fill: #ffffff; }
+  .desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 10.5px; font-weight: 400; fill: #97b8d4; }
+  .tag { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 9px; font-weight: 700; letter-spacing: .6px; text-anchor: end; fill: #79c0ff; }
 </style>
-<rect width="960" height="330" rx="18" fill="#06111f"/>
-<rect x="12" y="12" width="936" height="306" rx="14" fill="#081829" stroke="#153a55"/>
+<rect width="960" height="330" rx="18" fill="#040c16"/>
+<rect x="12" y="12" width="936" height="306" rx="14" fill="#0b1b2d" stroke="#22486e" stroke-width="1.2"/>
 <text x="30" y="36" class="mono prompt">&gt; ls ./research-tracks --featured</text>
-<rect x="247" y="26" width="6" height="12" rx="1" fill="#6b93b5"><animate attributeName="opacity" values="1;.12;1" dur="1.15s" repeatCount="indefinite"/></rect>
+<rect x="247" y="26" width="6" height="12" rx="1" fill="#79c0ff"><animate attributeName="opacity" values="1;.12;1" dur="1.15s" repeatCount="indefinite"/></rect>
 
 <g transform="translate(32 72)">
-  <text class="sans lane" fill="#82a6c4">01 / AGENTIC-RAG · EVIDENCE SYSTEMS</text>
+  <text class="sans lane">01 / AGENTIC-RAG · EVIDENCE SYSTEMS</text>
   <text y="20" class="mono sub">retrieval · verification · healthcare knowledge</text>
 </g>
 <g transform="translate(510 72)">
-  <text class="sans lane" fill="#82a6c4">02 / COMPUTER VISION · OCR SYSTEMS</text>
+  <text class="sans lane">02 / COMPUTER VISION · OCR SYSTEMS</text>
   <text y="20" class="mono sub">document AI · inspection · production inference</text>
 </g>
-<line x1="480" y1="66" x2="480" y2="298" stroke="#123149"/>
+<line x1="480" y1="66" x2="480" y2="298" stroke="#1d3d5c"/>
 <g transform="translate(32 108)">
-    <line x1="0" y1="0" x2="414" y2="0" stroke="#14354d"/>
-    <circle cx="8" cy="22" r="3.5" fill="#5e84a6"/>
+    <line x1="0" y1="0" x2="414" y2="0" stroke="#1d3d5c"/>
+    <circle cx="8" cy="22" r="3.5" fill="#58a6ff"/>
     <text x="22" y="20" class="repo">KOA Agentic-RAG</text>
     <text x="22" y="39" class="desc">Bilingual evidence-verified clinical guideline QA research prototype.</text>
-    <text x="330" y="20" class="tag" fill="#7ba2c2">RESEARCH</text>
+    <text x="330" y="20" class="tag" fill="#79c0ff">RESEARCH</text>
   </g>
 <g transform="translate(32 170)">
-    <line x1="0" y1="0" x2="414" y2="0" stroke="#14354d"/>
-    <circle cx="8" cy="22" r="3.5" fill="#6289ab"/>
+    <line x1="0" y1="0" x2="414" y2="0" stroke="#1d3d5c"/>
+    <circle cx="8" cy="22" r="3.5" fill="#58a6ff"/>
     <text x="22" y="20" class="repo">tdtu student handbook chatbot</text>
     <text x="22" y="39" class="desc">Domain-specific assistant using retrieval-augmented gener…</text>
-    <text x="330" y="20" class="tag" fill="#6289ab">RAG</text>
+    <text x="330" y="20" class="tag" fill="#79c0ff">RAG</text>
   </g>
 <g transform="translate(32 232)">
-    <line x1="0" y1="0" x2="414" y2="0" stroke="#14354d"/>
-    <circle cx="8" cy="22" r="3.5" fill="#6289ab"/>
+    <line x1="0" y1="0" x2="414" y2="0" stroke="#1d3d5c"/>
+    <circle cx="8" cy="22" r="3.5" fill="#58a6ff"/>
     <text x="22" y="20" class="repo">Medical NLU Pipeline</text>
     <text x="22" y="39" class="desc">Clinical and medical natural-language understanding exper…</text>
-    <text x="330" y="20" class="tag" fill="#6289ab">CLINICAL NLP</text>
+    <text x="330" y="20" class="tag" fill="#79c0ff">CLINICAL NLP</text>
   </g>
 <g transform="translate(510 108)">
-    <line x1="0" y1="0" x2="414" y2="0" stroke="#14354d"/>
-    <circle cx="8" cy="22" r="3.5" fill="#527899"/>
+    <line x1="0" y1="0" x2="414" y2="0" stroke="#1d3d5c"/>
+    <circle cx="8" cy="22" r="3.5" fill="#58a6ff"/>
     <text x="22" y="20" class="repo">meter reading engine v2</text>
     <text x="22" y="39" class="desc">Production-oriented LCD meter OCR pipeline with explicit …</text>
-    <text x="330" y="20" class="tag" fill="#527899">OCR</text>
+    <text x="330" y="20" class="tag" fill="#79c0ff">OCR</text>
   </g>
 <g transform="translate(510 170)">
-    <line x1="0" y1="0" x2="414" y2="0" stroke="#14354d"/>
-    <circle cx="8" cy="22" r="3.5" fill="#527899"/>
+    <line x1="0" y1="0" x2="414" y2="0" stroke="#1d3d5c"/>
+    <circle cx="8" cy="22" r="3.5" fill="#58a6ff"/>
     <text x="22" y="20" class="repo">Invoice engine</text>
     <text x="22" y="39" class="desc">Local-first Vietnamese business-document processing with …</text>
-    <text x="330" y="20" class="tag" fill="#527899">DOCUMENT AI</text>
+    <text x="330" y="20" class="tag" fill="#79c0ff">DOCUMENT AI</text>
   </g>
 <g transform="translate(510 232)">
-    <line x1="0" y1="0" x2="414" y2="0" stroke="#14354d"/>
-    <circle cx="8" cy="22" r="3.5" fill="#527899"/>
+    <line x1="0" y1="0" x2="414" y2="0" stroke="#1d3d5c"/>
+    <circle cx="8" cy="22" r="3.5" fill="#58a6ff"/>
     <text x="22" y="20" class="repo">meter reading inference service</text>
     <text x="22" y="39" class="desc">FastAPI inference adapter with revision checks, readiness…</text>
-    <text x="330" y="20" class="tag" fill="#527899">INFERENCE</text>
+    <text x="330" y="20" class="tag" fill="#79c0ff">INFERENCE</text>
   </g>
 </svg>
