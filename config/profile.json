@@ -1,0 +1,18 @@
+{
+  "username": "KwanFam26022005",
+  "displayName": "Khoa Pham",
+  "tagline": "AI Systems · Applied Research · Computer Vision",
+  "featuredRepositories": [
+    "meter-reading-engine-v2",
+    "meter-reading-inference-service",
+    "Invoice-engine",
+    "Interactive-Web-Dashboard-for-Frequent-Itemset-Mining-and-Apriori-Pruning-Analysis"
+  ],
+  "domains": [
+    "Computer Vision & OCR",
+    "Agentic RAG & NLP",
+    "Document Intelligence",
+    "Data Mining & Visualization",
+    "AI Systems Architecture"
+  ]
+}

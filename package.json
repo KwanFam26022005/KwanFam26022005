@@ -1,0 +1,11 @@
+{
+  "name": "kwanfam26022005-profile",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "node scripts/render-metrics.mjs && node scripts/render-projects.mjs",
+    "render:offline": "PROFILE_OFFLINE=1 node scripts/render-metrics.mjs && PROFILE_OFFLINE=1 node scripts/render-projects.mjs",
+    "check": "node --check scripts/utils.mjs && node --check scripts/github-data.mjs && node --check scripts/render-metrics.mjs && node --check scripts/render-projects.mjs"
+  }
+}

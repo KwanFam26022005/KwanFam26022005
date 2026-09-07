@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="380" viewBox="0 0 960 380" role="img" aria-label="Live GitHub telemetry">
+<style>
+  :root{color-scheme:dark}.bg{fill:#071018}.panel{fill:#0a141d;stroke:#1d3343}.kicker{font:600 12px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:2px;fill:#64d8ff}.title{font:700 23px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#edf8ff}.metric{font:700 27px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#f7fcff}.label{font:600 13px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#c9e6f5}.repo{font:600 13px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#e7f6ff}.muted{font:500 11px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#6f8b9d}.track{fill:#132432}.fill{fill:#47c7f2}.node{fill:#75e6ff}.trace{stroke:#234459;stroke-width:1}.scan{fill:url(#scan);opacity:.22;animation:scan 5s linear infinite}@keyframes scan{from{transform:translateY(-70px)}to{transform:translateY(430px)}}
+</style>
+<defs><linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5ee3ff" stop-opacity="0"/><stop offset=".5" stop-color="#5ee3ff" stop-opacity=".45"/><stop offset="1" stop-color="#5ee3ff" stop-opacity="0"/></linearGradient></defs>
+<rect width="960" height="380" rx="20" class="bg"/><rect x="18" y="18" width="924" height="344" rx="16" class="panel"/>
+<text x="42" y="55" class="kicker">LIVE SYSTEM TELEMETRY</text><text x="42" y="84" class="title">GitHub activity snapshot</text><text x="765" y="56" class="muted">UPDATED 2026-09-07</text>
+<g transform="translate(42 105)"><text y="22" class="metric">13</text><text y="43" class="muted">PUBLIC REPOS</text><g transform="translate(112 0)"><text y="22" class="metric">8</text><text y="43" class="muted">ACTIVE / 30D</text></g><g transform="translate(230 0)"><text y="22" class="metric">0</text><text y="43" class="muted">TOTAL STARS</text></g><g transform="translate(332 0)"><text y="22" class="metric">0</text><text y="43" class="muted">FORKS</text></g></g>
+<text x="42" y="164" class="kicker">PRIMARY LANGUAGES</text><text x="44" y="188" class="label">Python</text>
+  <rect x="150" y="176" width="180" height="8" rx="4" class="track"/>
+  <rect x="150" y="176" width="180" height="8" rx="4" class="fill"/>
+  <text x="342" y="188" class="muted">6 repos</text>
+<text x="44" y="217" class="label">JavaScript</text>
+  <rect x="150" y="205" width="180" height="8" rx="4" class="track"/>
+  <rect x="150" y="205" width="90" height="8" rx="4" class="fill"/>
+  <text x="342" y="217" class="muted">3 repos</text>
+<text x="44" y="246" class="label">TypeScript</text>
+  <rect x="150" y="234" width="180" height="8" rx="4" class="track"/>
+  <rect x="150" y="234" width="60" height="8" rx="4" class="fill"/>
+  <text x="342" y="246" class="muted">2 repos</text>
+<text x="44" y="275" class="label">PHP</text>
+  <rect x="150" y="263" width="180" height="8" rx="4" class="track"/>
+  <rect x="150" y="263" width="30" height="8" rx="4" class="fill"/>
+  <text x="342" y="275" class="muted">1 repos</text>
+<text x="470" y="164" class="kicker">RECENTLY PUSHED</text><circle cx="490" cy="183" r="4" class="node"/>
+  <line x1="490" y1="188" x2="490" y2="228" class="trace"/>
+  <text x="510" y="188" class="repo">meter-reading-engine-v2</text>
+  <text x="510" y="206" class="muted">push 2026-09-06</text>
+<circle cx="490" cy="228" r="4" class="node"/>
+  <line x1="490" y1="233" x2="490" y2="273" class="trace"/>
+  <text x="510" y="233" class="repo">meter-reading-inference-service</text>
+  <text x="510" y="251" class="muted">push 2026-09-05</text>
+<circle cx="490" cy="273" r="4" class="node"/>
+  <line x1="490" y1="278" x2="490" y2="318" class="trace"/>
+  <text x="510" y="278" class="repo">Invoice-engine</text>
+  <text x="510" y="296" class="muted">push 2026-09-04</text>
+<circle cx="490" cy="318" r="4" class="node"/>
+  <line x1="490" y1="323" x2="490" y2="363" class="trace"/>
+  <text x="510" y="323" class="repo">Interactive-Web-Dashboard-for-Frequent-Itemset-Mining-and-Apriori-Pruning-Analysis</text>
+  <text x="510" y="341" class="muted">push 2026-09-03</text>
+<rect x="0" y="-70" width="960" height="70" class="scan"/>
+</svg>
