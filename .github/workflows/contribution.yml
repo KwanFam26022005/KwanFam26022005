@@ -1,15 +1,6 @@
-name: Update contribution heatmap
+name: Update contribution heatmap (fallback)
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "scripts/render-contributions.mjs"
-      - "config/profile.json"
-      - ".github/workflows/contribution.yml"
-  schedule:
-    - cron: "41 0 * * *"
   workflow_dispatch:
 
 permissions:
