@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/hero-animated.svg" width="100%" alt="Pham Hong Dang Khoa - Healthcare AI &amp; Ocean Systems" />
+  <img src="./assets/hero-oceanic.svg" width="100%" alt="Pham Hong Dang Khoa - Healthcare AI, Agentic-RAG &amp; Computer Vision" />
 </div>
 
 <div align="center">
