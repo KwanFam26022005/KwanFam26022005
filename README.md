@@ -37,15 +37,11 @@
 
 ## `> about --me`
 
-Hey there, I'm **Phạm Hồng Đăng Khoa (Khoa Pham)** — an applied AI Systems Engineer and researcher based in Ho Chi Minh City, Vietnam.
+Hey, I'm **Phạm Hồng Đăng Khoa (Khoa Pham)** — an AI Systems Engineer based in Ho Chi Minh City, Vietnam.
 
-I build intelligent systems designed with **measurable benchmarks, verifiable outputs, and explicit operating boundaries**. Rather than treating machine learning as an unconstrained black box, my work focuses on engineering deterministic safety gates, observable telemetry, and fail-closed architectures around modern neural networks.
+I build verifiable, production-grade AI systems with a primary focus on **Computer Vision & OCR** (digit localization, document AI) and **Agentic-RAG** (evidence-grounded retrieval with calibrated abstention).
 
-My technical focus centers on two specialized pillars:
-- 👁️ **Computer Vision & Document Intelligence**: Designing end-to-end localization, digit recognition, and OCR pipelines (PP-OCRv6, OpenCV, PyTorch, YOLO). I build systems engineered for hostile real-world conditions — from low-light mobile capture of reflective LCD utility meters to automated Vietnamese business document processing with strict quality review gates.
-- 🧠 **Agentic-RAG & Evidence Grounding**: Developing multi-agent retrieval architectures with atomic claim verification and corrective retrieval. Combining hybrid dense-sparse search (BGE-M3 + BM25), cross-encoder reranking, and domain-adapted QLoRA fine-tuning, I specialize in systems that enforce evidence attribution and calibrated abstention on unsupported queries, particularly in clinical and institutional knowledge domains.
-
-> **Engineering Principle**: *"Measure > Verify > Deploy"* — Models are probabilistic, but software systems must be predictable. I bridge cutting-edge research prototypes with high-throughput production backends (FastAPI, Docker, CI/CD) and robust full-stack desktop software (.NET 8, C#, WPF, TypeScript).
+> **Core Principle**: *"Measure > Verify > Deploy"* — turning probabilistic models into predictable, observable software.
 
 ## `> stack --core`
 
