@@ -1,76 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-label="Development Activity Telemetry">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="280" viewBox="0 0 960 280" role="img" aria-label="Development activity">
 <style>
-  :root { color-scheme: dark; }
-  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-  .bg { fill: #051324; }
-  .panel { fill: #081e35; stroke: #153b60; }
-  .kicker { font: 700 11.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; letter-spacing: 1px; fill: #14b8a6; }
-  .kicker-vision { font: 700 11.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; letter-spacing: 1px; fill: #38bdf8; }
-  .title { font: 700 20px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; fill: #f8fafc; }
-  .metric { font: 700 25px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; fill: #f0fdfa; }
-  .label { font: 500 12.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; fill: #cbd5e1; }
-  .repo { font: 600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; fill: #f8fafc; }
-  .muted { font: 400 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; fill: #7ba1c2; }
-  .track { fill: #0d2847; }
-  .trace { stroke: #153e66; stroke-width: 1.5; }
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+  .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+  .prompt{font-size:10.5px;fill:#6f9ab4}
+  .title{font-size:17px;font-weight:700;fill:#f8fafc}
+  .stat{font-size:13px;font-weight:700;fill:#dff4ff}
+  .muted{font-size:9.5px;fill:#5f8196}
+  .key{font-size:10.5px;fill:#bad7e8}
+  .date{font-size:10px;fill:#5e8ba5}
+  .repo{font-size:10.5px;fill:#d8e9f5}
 </style>
-<rect width="960" height="360" rx="18" class="bg"/>
-<rect x="14" y="14" width="932" height="332" rx="14" class="panel"/>
-<text x="42" y="50" class="kicker">ACTIVITY TELEMETRY</text>
-<text x="42" y="76" class="title">Development &amp; Research Activity</text>
-<text x="760" y="50" class="muted">SNAPSHOT 2026-09-07</text>
-<g transform="translate(42 98)">
-  <text y="22" class="metric">14</text>
-  <text y="42" class="muted">PUBLIC REPOS</text>
-  <g transform="translate(120 0)">
-    <text y="22" class="metric">9</text>
-    <text y="42" class="muted">ACTIVE / 30D</text>
-  </g>
-  <g transform="translate(245 0)">
-    <text y="22" class="metric">0</text>
-    <text y="42" class="muted">STARS</text>
-  </g>
-  <g transform="translate(350 0)">
-    <text y="22" class="metric">0</text>
-    <text y="42" class="muted">FORKS</text>
-  </g>
+<rect width="960" height="280" rx="18" fill="#06111f"/>
+<rect x="12" y="12" width="936" height="256" rx="14" fill="#081829" stroke="#153a55"/>
+<text x="30" y="36" class="mono prompt">khoa@github:~$ ./profile --activity</text>
+<rect x="254" y="26" width="6" height="12" rx="1" fill="#5eead4"><animate attributeName="opacity" values="1;.12;1" dur="1.15s" repeatCount="indefinite"/></rect>
+<text x="30" y="64" class="sans title">Development signal</text>
+<text x="824" y="36" class="mono muted">2026-09-07</text>
+
+<g transform="translate(30 84)" class="mono">
+  <text class="stat">repos 14</text>
+  <text x="104" class="stat">active/30d 8</text>
+  <text x="244" class="stat">stars 0</text>
+  <text x="332" class="stat">forks 0</text>
 </g>
-<text x="42" y="166" class="kicker">PRIMARY TECH STACK</text>
-<text x="44" y="190" class="label">Python</text>
-  <rect x="156" y="179" width="180" height="7" rx="3.5" class="track"/>
-  <rect x="156" y="179" width="180" height="7" rx="3.5" fill="#14b8a6"/>
-  <text x="348" y="190" class="muted">7 repos</text>
-<text x="44" y="219" class="label">TypeScript</text>
-  <rect x="156" y="208" width="180" height="7" rx="3.5" class="track"/>
-  <rect x="156" y="208" width="51" height="7" rx="3.5" fill="#38bdf8"/>
-  <text x="348" y="219" class="muted">2 repos</text>
-<text x="44" y="248" class="label">Jupyter Notebook</text>
-  <rect x="156" y="237" width="180" height="7" rx="3.5" class="track"/>
-  <rect x="156" y="237" width="51" height="7" rx="3.5" fill="#06d6a0"/>
-  <text x="348" y="248" class="muted">2 repos</text>
-<text x="44" y="277" class="label">JavaScript</text>
-  <rect x="156" y="266" width="180" height="7" rx="3.5" class="track"/>
-  <rect x="156" y="266" width="26" height="7" rx="3.5" fill="#60a5fa"/>
-  <text x="348" y="277" class="muted">1 repos</text>
-<text x="44" y="306" class="label">PHP</text>
-  <rect x="156" y="295" width="180" height="7" rx="3.5" class="track"/>
-  <rect x="156" y="295" width="26" height="7" rx="3.5" fill="#2dd4bf"/>
-  <text x="348" y="306" class="muted">1 repos</text>
-<text x="496" y="166" class="kicker-vision">RECENT COMMITS</text>
-<circle cx="496" cy="185" r="4" fill="#14b8a6"/>
-  <line x1="496" y1="190" x2="496" y2="228" class="trace"/>
-  <text x="516" y="190" class="repo">KwanFam26022005</text>
-  <text x="516" y="207" class="muted">pushed 2026-09-07</text>
-<circle cx="496" cy="229" r="4" fill="#38bdf8"/>
-  <line x1="496" y1="234" x2="496" y2="272" class="trace"/>
-  <text x="516" y="234" class="repo">Final-web</text>
-  <text x="516" y="251" class="muted">pushed 2026-09-06</text>
-<circle cx="496" cy="273" r="4" fill="#14b8a6"/>
-  <line x1="496" y1="278" x2="496" y2="316" class="trace"/>
-  <text x="516" y="278" class="repo">Interactive-Web-Dashboard-for-Frequent-Itemset-Mining-and-Apriori-Pruning-Analysis</text>
-  <text x="516" y="295" class="muted">pushed 2026-09-05</text>
-<circle cx="496" cy="317" r="4" fill="#38bdf8"/>
-  <line x1="496" y1="322" x2="496" y2="360" class="trace"/>
-  <text x="516" y="322" class="repo">production-meter-reading</text>
-  <text x="516" y="339" class="muted">pushed 2026-08-26</text>
+
+<text x="30" y="118" class="mono prompt">&gt; languages --by-repository</text>
+<text x="42" y="142" class="key">Python</text>
+  <text x="154" y="142" class="muted">08 repos</text>
+  <rect x="218" y="134" width="155" height="5" rx="2.5" fill="#0e2a40"/>
+  <rect x="218" y="134" width="155" height="5" rx="2.5" fill="#38bdf8"/>
+<text x="42" y="167" class="key">TypeScript</text>
+  <text x="154" y="167" class="muted">03 repos</text>
+  <rect x="218" y="159" width="155" height="5" rx="2.5" fill="#0e2a40"/>
+  <rect x="218" y="159" width="58" height="5" rx="2.5" fill="#a78bfa"/>
+<text x="42" y="192" class="key">JavaScript</text>
+  <text x="154" y="192" class="muted">02 repos</text>
+  <rect x="218" y="184" width="155" height="5" rx="2.5" fill="#0e2a40"/>
+  <rect x="218" y="184" width="39" height="5" rx="2.5" fill="#2dd4bf"/>
+<text x="42" y="217" class="key">PHP</text>
+  <text x="154" y="217" class="muted">01 repos</text>
+  <rect x="218" y="209" width="155" height="5" rx="2.5" fill="#0e2a40"/>
+  <rect x="218" y="209" width="19" height="5" rx="2.5" fill="#60a5fa"/>
+<text x="490" y="118" class="mono prompt">&gt; recent --pushes</text>
+<text x="500" y="142" class="date">09-06</text>
+  <text x="552" y="142" class="repo">meter-reading-engine-v2</text>
+  <text x="882" y="142" text-anchor="end" class="muted">push</text>
+<text x="500" y="173" class="date">09-05</text>
+  <text x="552" y="173" class="repo">meter-reading-inference-service</text>
+  <text x="882" y="173" text-anchor="end" class="muted">push</text>
+<text x="500" y="204" class="date">09-04</text>
+  <text x="552" y="204" class="repo">meter-reading-pipeline-visualizer</text>
+  <text x="882" y="204" text-anchor="end" class="muted">push</text>
+<text x="500" y="235" class="date">09-03</text>
+  <text x="552" y="235" class="repo">Medical-NLU-Pipeline</text>
+  <text x="882" y="235" text-anchor="end" class="muted">push</text>
 </svg>
