@@ -10,65 +10,39 @@
   Ho Chi Minh City, Vietnam
 </p>
 
-## `> whoami --research`
-
-<table>
-<tr>
-<td width="40%" valign="top">
-  <img src="./assets/ascii-portrait.svg" width="100%" alt="ASCII portrait" />
-</td>
-<td width="60%" valign="top">
-  <img src="./assets/info-card.svg" width="100%" alt="Developer identity card" />
-</td>
-</tr>
-</table>
-
-Tôi xây dựng các hệ thống AI theo hướng **đo được, kiểm chứng được và có ranh giới vận hành rõ ràng**. Hai trục chính hiện tại là **Computer Vision / OCR** và **Agentic-RAG / Evidence Verification**; Healthcare AI là miền ứng dụng nghiên cứu quan trọng, đặc biệt với tri thức lâm sàng và truy xuất có dẫn chứng.
-
-## `> research --active`
+## `> selected-work --impact`
 
 <table>
 <tr>
 <td width="50%" valign="top">
-
-### `01 / COMPUTER VISION · OCR`
-- Production-oriented OCR pipelines
-- Document AI & inspection
-- Quality gates, geometry, validation
-- Inference services & visual telemetry
-
-**Current systems:** `meter-reading-engine-v2` · `Invoice-engine` · `meter-reading-inference-service`
-
+  <a href="https://github.com/KwanFam26022005/production-meter-reading"><img src="./generated/selected-work/production-meter-reading.svg" width="100%" alt="Production Meter Reading" /></a>
 </td>
 <td width="50%" valign="top">
-
-### `02 / AGENTIC-RAG · EVIDENCE`
-- Retrieval with explicit evidence
-- Atomic / claim-level verification
-- Corrective retrieval & abstention
-- Clinical knowledge QA and source awareness
-
-**Research direction:** `KOA Agentic-RAG` · `Medical-NLU-Pipeline` · `tdtu-student-handbook-chatbot`
-
+  <a href="#selected-work--impact"><img src="./generated/selected-work/koa-agentic-rag.svg" width="100%" alt="KOA Agentic-RAG (Research Prototype)" /></a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+  <a href="https://github.com/KwanFam26022005/tdtu-student-handbook-chatbot"><img src="./generated/selected-work/tdtu-handbook-rag.svg" width="100%" alt="TDTU Student Handbook Chatbot" /></a>
+</td>
+<td width="50%" valign="top">
+  <a href="https://github.com/KwanFam26022005/House-Management-Software-with-AI"><img src="./generated/selected-work/homestead-ai.svg" width="100%" alt="Homestead Rental Management" /></a>
 </td>
 </tr>
 </table>
 
-## `> ls ./featured-systems`
+## `> about --focus`
 
-<div align="center">
-  <img src="./generated/projects.svg" width="100%" alt="Featured research and engineering systems" />
-</div>
+I build applied AI systems designed with **measurable benchmarks, verifiable outputs, and explicit operating boundaries**. My primary focus spans **Computer Vision & OCR** (production localization and recognition pipelines) and **Agentic-RAG & Evidence Verification** (retrieval with claim-level validation and abstention). Healthcare informatics serves as a core research domain for knowledge grounding.
 
-## `> cat ./toolchain`
+## `> stack --core`
 
-| Layer | Current stack |
-|---|---|
-| **Vision / OCR** | Python · PP-OCRv6 · OpenCV · inference pipelines · document inspection |
-| **Agentic / NLP** | RAG · evidence verification · retrieval · Clinical NLU |
-| **Systems** | FastAPI · Docker · GitHub Actions · fail-closed validation patterns |
-| **Data** | DuckDB · MySQL · Pandas |
-| **Web / Visualization** | TypeScript · React / Next.js · ECharts · D3.js |
+| Domain | Technologies & Frameworks | Focus Areas |
+|---|---|---|
+| **Computer Vision & OCR** | Python · PP-OCRv6 · OpenCV · PyTorch · YOLO | Localization · Digit extraction · Quality gates · Document inspection |
+| **Agentic-RAG & NLP** | BGE-M3 · FAISS · BM25 · Cross-Encoder · QLoRA | Hybrid retrieval · Evidence verification · Reranking · Domain fine-tuning |
+| **Production AI Systems** | FastAPI · Docker · GitHub Actions · REST APIs | Fail-closed validation · Telemetry · Model serving · Health probes |
+| **Software Engineering** | C# · .NET 8 · WPF · ASP.NET Core · TypeScript | Desktop systems · Full-stack architecture · Relational DB (MySQL, DuckDB) |
 
 ## `> ./profile --activity`
 
@@ -76,9 +50,36 @@ Tôi xây dựng các hệ thống AI theo hướng **đo được, kiểm chứ
   <img src="./generated/metrics.svg" width="100%" alt="Development activity" />
 </div>
 
+<details>
+<summary><b>Explore GitHub activity in 3D</b> (profile-ocean-3d terrain)</summary>
+<br />
 <div align="center">
   <img src="./profile-3d-contrib/profile-ocean-3d.svg" width="100%" alt="3D Contribution terrain" />
 </div>
+</details>
+
+## `> more --projects`
+
+<div align="center">
+  <img src="./generated/projects.svg" width="100%" alt="Research tracks and active systems" />
+</div>
+
+<br />
+
+| Repository | Focus Area | Description |
+|---|---|---|
+| [**Medical-NLU-Pipeline**](https://github.com/KwanFam26022005/Medical-NLU-Pipeline) | Clinical NLP | Clinical natural-language understanding experiments, entity extraction, and evaluation. |
+| [**Invoice-engine**](https://github.com/KwanFam26022005/Invoice-engine) | Document AI | Local-first Vietnamese business document processing with deterministic validation. |
+| [**meter-reading-inference-service**](https://github.com/KwanFam26022005/meter-reading-inference-service) | Production Inference | FastAPI inference adapter with revision checks, readiness probes, and fail-closed behavior. |
+| [**Interactive-Web-Dashboard**](https://github.com/KwanFam26022005/Interactive-Web-Dashboard-for-Frequent-Itemset-Mining) | Data Analytics | Web-based analytics platform for data mining algorithms and interactive visualizations. |
+
+<details>
+<summary><b>terminal portrait</b> (developer identity)</summary>
+<br />
+<div align="center">
+  <img src="./assets/ascii-portrait.svg" width="380" alt="ASCII developer portrait" />
+</div>
+</details>
 
 <div align="center">
   <img src="./assets/footer.svg" width="100%" alt="Profile footer" />

@@ -100,8 +100,7 @@
 
   /* 3D Tier Hierarchy Labels */
   .stage-tag { font-size: 9px; font-weight: 700; letter-spacing: 1px; }
-  .stage-lbl { font-size: 11.5px; font-weight: 600; letter-spacing: 0.5px; }
-  .stage-sub { font-size: 9.5px; font-weight: 400; fill: #7e9bb3; }
+  .stage-lbl { font-size: 11px; font-weight: 600; letter-spacing: 0.5px; }
 
   /* Motion System 1: Terminal cursor blink (1.1s) */
   @keyframes blink {
@@ -253,10 +252,9 @@
     </g>
 
     <!-- Tier 1 Metadata & Technical Label -->
-    <g class="mono" transform="translate(900, 240)">
-      <text x="0" y="-4" class="stage-tag" fill="#55a9c9">01 · OBSERVE</text>
-      <text x="0" y="9" class="stage-lbl" fill="#d7eff7">Computer Vision / OCR</text>
-      <text x="0" y="21" class="stage-sub">Spatial &amp; Document AI</text>
+    <g class="mono" transform="translate(805, 248)">
+      <text x="0" y="-3" class="stage-tag" fill="#55a9c9">01 · OBSERVE</text>
+      <text x="0" y="10" class="stage-lbl" fill="#d7eff7">CV / OCR</text>
     </g>
   </g>
 
@@ -311,10 +309,9 @@
     </g>
 
     <!-- Tier 2 Metadata & Technical Label -->
-    <g class="mono" transform="translate(605, 130)" text-anchor="end">
-      <text x="0" y="-4" class="stage-tag" fill="#9384c5">02 · RETRIEVE</text>
-      <text x="0" y="9" class="stage-lbl" fill="#ede8fb">Agentic-RAG Systems</text>
-      <text x="0" y="21" class="stage-sub">Multi-Hop &amp; Grounding</text>
+    <g class="mono" transform="translate(680, 138)" text-anchor="end">
+      <text x="0" y="-3" class="stage-tag" fill="#9384c5">02 · RETRIEVE</text>
+      <text x="0" y="10" class="stage-lbl" fill="#ede8fb">Agentic-RAG</text>
     </g>
   </g>
 
@@ -344,10 +341,9 @@
     </g>
 
     <!-- Tier 3 Metadata & Technical Label -->
-    <g class="mono" transform="translate(900, 62)">
-      <text x="0" y="-4" class="stage-tag" fill="#55aa9e">03 · VERIFY</text>
-      <text x="0" y="9" class="stage-lbl" fill="#e0f8f4">Evidence Verification</text>
-      <text x="0" y="21" class="stage-sub">Clinical &amp; Fact Gates</text>
+    <g class="mono" transform="translate(805, 58)">
+      <text x="0" y="-3" class="stage-tag" fill="#55aa9e">03 · VERIFY</text>
+      <text x="0" y="10" class="stage-lbl" fill="#e0f8f4">Evidence grounding</text>
     </g>
   </g>
 
