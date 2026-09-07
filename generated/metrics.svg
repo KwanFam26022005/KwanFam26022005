@@ -19,10 +19,8 @@
 <text x="824" y="36" class="mono muted">2026-09-07</text>
 
 <g transform="translate(30 84)" class="mono">
-  <text class="stat">repos 14</text>
-  <text x="104" class="stat">active/30d 9</text>
-  <text x="244" class="stat">stars 0</text>
-  <text x="332" class="stat">forks 0</text>
+  <text x="0" class="stat">repos 14</text>
+  <text x="94" class="stat">active/30d 9</text>
 </g>
 
 <text x="30" y="118" class="mono prompt">&gt; languages --by-repository</text>

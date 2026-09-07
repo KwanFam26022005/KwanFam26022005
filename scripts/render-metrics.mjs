@@ -36,6 +36,25 @@ const recentRows = recent.map((repo, i) => {
   <text x="882" y="${y}" text-anchor="end" class="muted">push</text>`;
 }).join('\n');
 
+const statItems = [
+  { label: 'repos', value: data.stats.publicRepos },
+  { label: 'active/30d', value: data.stats.recentlyUpdated }
+];
+if (data.stats.stars > 0) {
+  statItems.push({ label: 'stars', value: data.stats.stars });
+}
+if (data.stats.forks > 0) {
+  statItems.push({ label: 'forks', value: data.stats.forks });
+}
+
+let curStatX = 0;
+const statElements = statItems.map(item => {
+  const text = `${item.label} ${item.value}`;
+  const el = `<text x="${curStatX}" class="stat">${escapeXml(text)}</text>`;
+  curStatX += Math.round(text.length * 8.8 + 24);
+  return el;
+}).join('\n  ');
+
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="280" viewBox="0 0 960 280" role="img" aria-label="Development activity">
 <style>
   text { font-family: ${FONT_MONO}; }
@@ -57,10 +76,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="280" vi
 <text x="824" y="36" class="mono muted">${updated}</text>
 
 <g transform="translate(30 84)" class="mono">
-  <text class="stat">repos ${data.stats.publicRepos}</text>
-  <text x="104" class="stat">active/30d ${data.stats.recentlyUpdated}</text>
-  <text x="244" class="stat">stars ${data.stats.stars}</text>
-  <text x="332" class="stat">forks ${data.stats.forks}</text>
+  ${statElements}
 </g>
 
 <text x="30" y="118" class="mono prompt">&gt; languages --by-repository</text>

@@ -7,6 +7,7 @@ on:
     paths:
       - "scripts/render-metrics.mjs"
       - "scripts/render-projects.mjs"
+      - "scripts/render-selected-work.mjs"
       - "scripts/github-data.mjs"
       - "scripts/utils.mjs"
       - "config/profile.json"

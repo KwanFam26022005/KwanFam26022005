@@ -13,9 +13,9 @@ export async function readConfig() {
 }
 
 export async function writeGenerated(name, content) {
-  const dir = path.join(root, 'generated');
-  await fs.mkdir(dir, { recursive: true });
-  await fs.writeFile(path.join(dir, name), content.replace(/\r\n/g, '\n'), 'utf8');
+  const fullPath = path.join(root, 'generated', name);
+  await fs.mkdir(path.dirname(fullPath), { recursive: true });
+  await fs.writeFile(fullPath, content.replace(/\r\n/g, '\n'), 'utf8');
 }
 
 export function escapeXml(value = '') {
