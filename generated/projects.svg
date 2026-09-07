@@ -1,87 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="485" viewBox="0 0 960 485" role="img" aria-label="Featured Systems Tracks">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="330" viewBox="0 0 960 330" role="img" aria-label="Research and engineering tracks">
 <style>
-  :root { color-scheme: dark; }
-  .bg { fill: #051324; }
-  .panel { fill: #081e35; stroke: #153b60; }
-  .card { fill: #0a2542; }
-  .lane-hdr { font: 700 12px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; letter-spacing: 1px; }
-  .lane-health { fill: #14b8a6; }
-  .lane-vision { fill: #38bdf8; }
-  .project-title { font: 700 13.5px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; fill: #f8fafc; }
-  .meta { font: 500 11px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; fill: #2dd4bf; }
-  .desc { font: 400 11.5px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; fill: #94a3b8; }
-  .link { font: 500 10px ui-monospace,SFMono-Regular,Menlo,monospace; fill: #60a5fa; }
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+  .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+  .prompt{font-size:10.5px;fill:#6f9ab4}
+  .lane{font-size:13px;font-weight:700;letter-spacing:.8px}
+  .sub{font-size:10.5px;fill:#64859b}
+  .repo{font:650 12px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;fill:#eef8ff}
+  .desc{font:10.5px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;fill:#88a5b8}
+  .tag{font:700 9px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.6px;text-anchor:end}
 </style>
-<rect width="960" height="485" rx="18" class="bg"/>
-<rect x="14" y="14" width="932" height="457" rx="14" class="panel"/>
-<!-- Healthcare Lane Header -->
-<g transform="translate(24 42)">
-  <circle cx="6" cy="-4" r="4.5" fill="#14b8a6"/>
-  <text x="18" y="0" class="lane-hdr lane-health">TRACK 01: HEALTHCARE AI &amp; CLINICAL INFORMATICS</text>
+<rect width="960" height="330" rx="18" fill="#06111f"/>
+<rect x="12" y="12" width="936" height="306" rx="14" fill="#081829" stroke="#153a55"/>
+<text x="30" y="36" class="mono prompt">&gt; ls ./research-tracks --featured</text>
+<rect x="247" y="26" width="6" height="12" rx="1" fill="#5eead4"><animate attributeName="opacity" values="1;.12;1" dur="1.15s" repeatCount="indefinite"/></rect>
+
+<g transform="translate(32 72)">
+  <text class="sans lane" fill="#a78bfa">01 / AGENTIC-RAG · EVIDENCE SYSTEMS</text>
+  <text y="20" class="mono sub">retrieval · verification · healthcare knowledge</text>
 </g>
-<!-- Vision Lane Header -->
-<g transform="translate(490 42)">
-  <circle cx="6" cy="-4" r="4.5" fill="#38bdf8"/>
-  <text x="18" y="0" class="lane-hdr lane-vision">TRACK 02: COMPUTER VISION &amp; DOCUMENT AI</text>
+<g transform="translate(510 72)">
+  <text class="sans lane" fill="#7dd3fc">02 / COMPUTER VISION · OCR SYSTEMS</text>
+  <text y="20" class="mono sub">document AI · inspection · production inference</text>
 </g>
-<g transform="translate(24 68)">
-    <rect width="446" height="120" rx="12" class="card" stroke="#153b60"/>
-    <line x1="0" y1="14" x2="0" y2="106" stroke="#14b8a6" stroke-width="3" stroke-linecap="round"/>
-    <text x="20" y="28" class="project-title">Medical NLU Pipeline</text>
-    <rect x="352" y="14" width="78" height="18" rx="9" fill="#14b8a618" stroke="#14b8a644"/>
-    <text x="391" y="27" text-anchor="middle" font-size="9.5" font-weight="600" fill="#14b8a6">HEALTH AI</text>
-    <text x="20" y="50" class="meta">Jupyter Notebook · ★ 0</text>
-    <text x="20" y="74" class="desc">Clinical NLU pipeline for medical entity extraction and class…</text>
-    <text x="20" y="98" class="link">github.com/KwanFam26022005/Medical-NLU-Pipeline</text>
+<line x1="480" y1="66" x2="480" y2="298" stroke="#123149"/>
+<g transform="translate(32 108)">
+    <line x1="0" y1="0" x2="414" y2="0" stroke="#14354d"/>
+    <circle cx="8" cy="22" r="3.5" fill="#a78bfa"/>
+    <text x="22" y="20" class="repo">KOA Agentic-RAG</text>
+    <text x="22" y="39" class="desc">Bilingual evidence-verified clinical guideline QA research prototype.</text>
+    <text x="330" y="20" class="tag" fill="#a78bfa">RESEARCH</text>
   </g>
-<g transform="translate(24 202)">
-    <rect width="446" height="120" rx="12" class="card" stroke="#153b60"/>
-    <line x1="0" y1="14" x2="0" y2="106" stroke="#14b8a6" stroke-width="3" stroke-linecap="round"/>
-    <text x="20" y="28" class="project-title">tdtu student handbook chatbot</text>
-    <rect x="352" y="14" width="78" height="18" rx="9" fill="#14b8a618" stroke="#14b8a644"/>
-    <text x="391" y="27" text-anchor="middle" font-size="9.5" font-weight="600" fill="#14b8a6">HEALTH AI</text>
-    <text x="20" y="50" class="meta">Python · ★ 0</text>
-    <text x="20" y="74" class="desc">Domain-specific assistant using retrieval-augmented generatio…</text>
-    <text x="20" y="98" class="link">github.com/KwanFam26022005/tdtu-student-handbook-chatbot</text>
+<g transform="translate(32 170)">
+    <line x1="0" y1="0" x2="414" y2="0" stroke="#14354d"/>
+    <circle cx="8" cy="22" r="3.5" fill="#a78bfa"/>
+    <text x="22" y="20" class="repo">tdtu student handbook chatbot</text>
+    <text x="22" y="39" class="desc">Student handbook assistant with domain-specific retrieval…</text>
+    <text x="330" y="20" class="tag" fill="#a78bfa">AGENTIC</text>
   </g>
-<g transform="translate(24 336)">
-    <rect width="446" height="120" rx="12" class="card" stroke="#153b60"/>
-    <line x1="0" y1="14" x2="0" y2="106" stroke="#14b8a6" stroke-width="3" stroke-linecap="round"/>
-    <text x="20" y="28" class="project-title">FIM / Apriori Mining Dashboard</text>
-    <rect x="352" y="14" width="78" height="18" rx="9" fill="#14b8a618" stroke="#14b8a644"/>
-    <text x="391" y="27" text-anchor="middle" font-size="9.5" font-weight="600" fill="#14b8a6">HEALTH AI</text>
-    <text x="20" y="50" class="meta">PHP · ★ 0</text>
-    <text x="20" y="74" class="desc">Interactive web dashboard for Apriori mining, pruning analysi…</text>
-    <text x="20" y="98" class="link">github.com/KwanFam26022005/Interactive-Web-Dashboard-for-Frequent-Itemset-Mining-and-Apriori-Pruning-Analysis</text>
+<g transform="translate(32 232)">
+    <line x1="0" y1="0" x2="414" y2="0" stroke="#14354d"/>
+    <circle cx="8" cy="22" r="3.5" fill="#a78bfa"/>
+    <text x="22" y="20" class="repo">Medical NLU Pipeline</text>
+    <text x="22" y="39" class="desc">Clinical and medical natural language understanding pipel…</text>
+    <text x="330" y="20" class="tag" fill="#a78bfa">AGENTIC</text>
   </g>
-<g transform="translate(490 68)">
-    <rect width="446" height="120" rx="12" class="card" stroke="#153b60"/>
-    <line x1="0" y1="14" x2="0" y2="106" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
-    <text x="20" y="28" class="project-title">Invoice engine</text>
-    <rect x="352" y="14" width="78" height="18" rx="9" fill="#38bdf818" stroke="#38bdf844"/>
-    <text x="391" y="27" text-anchor="middle" font-size="9.5" font-weight="600" fill="#38bdf8">VISION AI</text>
-    <text x="20" y="50" class="meta">Python · ★ 0</text>
-    <text x="20" y="74" class="desc">Local-first Vietnamese business document parser with determin…</text>
-    <text x="20" y="98" class="link">github.com/KwanFam26022005/Invoice-engine</text>
+<g transform="translate(510 108)">
+    <line x1="0" y1="0" x2="414" y2="0" stroke="#14354d"/>
+    <circle cx="8" cy="22" r="3.5" fill="#38bdf8"/>
+    <text x="22" y="20" class="repo">meter reading engine v2</text>
+    <text x="22" y="39" class="desc">Production-oriented pipeline engineering for LCD electric…</text>
+    <text x="330" y="20" class="tag" fill="#38bdf8">VISION</text>
   </g>
-<g transform="translate(490 202)">
-    <rect width="446" height="120" rx="12" class="card" stroke="#153b60"/>
-    <line x1="0" y1="14" x2="0" y2="106" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
-    <text x="20" y="28" class="project-title">meter reading engine v2</text>
-    <rect x="352" y="14" width="78" height="18" rx="9" fill="#38bdf818" stroke="#38bdf844"/>
-    <text x="391" y="27" text-anchor="middle" font-size="9.5" font-weight="600" fill="#38bdf8">VISION AI</text>
-    <text x="20" y="50" class="meta">Python · ★ 0</text>
-    <text x="20" y="74" class="desc">Production LCD meter OCR pipeline with explicit quality gates…</text>
-    <text x="20" y="98" class="link">github.com/KwanFam26022005/meter-reading-engine-v2</text>
+<g transform="translate(510 170)">
+    <line x1="0" y1="0" x2="414" y2="0" stroke="#14354d"/>
+    <circle cx="8" cy="22" r="3.5" fill="#38bdf8"/>
+    <text x="22" y="20" class="repo">Invoice engine</text>
+    <text x="22" y="39" class="desc">Local-first document intake, validation, persistence and …</text>
+    <text x="330" y="20" class="tag" fill="#38bdf8">VISION</text>
   </g>
-<g transform="translate(490 336)">
-    <rect width="446" height="120" rx="12" class="card" stroke="#153b60"/>
-    <line x1="0" y1="14" x2="0" y2="106" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
-    <text x="20" y="28" class="project-title">meter reading inference service</text>
-    <rect x="352" y="14" width="78" height="18" rx="9" fill="#38bdf818" stroke="#38bdf844"/>
-    <text x="391" y="27" text-anchor="middle" font-size="9.5" font-weight="600" fill="#38bdf8">VISION AI</text>
-    <text x="20" y="50" class="meta">Python · ★ 0</text>
-    <text x="20" y="74" class="desc">FastAPI inference microservice with revision verification and…</text>
-    <text x="20" y="98" class="link">github.com/KwanFam26022005/meter-reading-inference-service</text>
+<g transform="translate(510 232)">
+    <line x1="0" y1="0" x2="414" y2="0" stroke="#14354d"/>
+    <circle cx="8" cy="22" r="3.5" fill="#38bdf8"/>
+    <text x="22" y="20" class="repo">meter reading inference service</text>
+    <text x="22" y="39" class="desc">FastAPI inference and inspection adapter for the frozen m…</text>
+    <text x="330" y="20" class="tag" fill="#38bdf8">VISION</text>
   </g>
 </svg>

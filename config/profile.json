@@ -1,40 +1,38 @@
 {
   "username": "KwanFam26022005",
   "displayName": "Pham Hong Dang Khoa (Khoa Pham)",
-  "tagline": "AI Systems Engineer · Healthcare AI & Clinical Informatics · Computer Vision",
+  "tagline": "AI Systems · Computer Vision · Agentic-RAG · Healthcare AI",
   "featuredRepositories": [
-    "Medical-NLU-Pipeline",
-    "tdtu-student-handbook-chatbot",
-    "Invoice-engine",
     "meter-reading-engine-v2",
+    "Invoice-engine",
     "meter-reading-inference-service",
-    "meter-reading-pipeline-visualizer"
+    "Medical-NLU-Pipeline",
+    "tdtu-student-handbook-chatbot"
   ],
   "tracks": {
-    "healthcare": {
-      "title": "Healthcare AI & Clinical Systems",
-      "accent": "#14b8a6",
+    "agentic": {
+      "title": "Agentic-RAG & Evidence Systems",
+      "accent": "#a78bfa",
       "repositories": [
-        "Medical-NLU-Pipeline",
         "tdtu-student-handbook-chatbot",
-        "Interactive-Web-Dashboard-for-Frequent-Itemset-Mining-and-Apriori-Pruning-Analysis"
+        "Medical-NLU-Pipeline"
       ]
     },
     "vision": {
-      "title": "Computer Vision & Document Intelligence",
+      "title": "Computer Vision & OCR Systems",
       "accent": "#38bdf8",
       "repositories": [
-        "Invoice-engine",
         "meter-reading-engine-v2",
+        "Invoice-engine",
         "meter-reading-inference-service"
       ]
     }
   },
   "domains": [
-    "Healthcare AI & Clinical NLU",
-    "Evidence-Verified RAG",
-    "Document Intelligence & OCR",
+    "Computer Vision & OCR",
+    "Agentic-RAG & Evidence Verification",
+    "Healthcare AI & Clinical Knowledge",
     "Production Inference Systems",
-    "Biomedical Data & Analytics"
+    "Data & Visualization"
   ]
 }

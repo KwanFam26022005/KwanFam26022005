@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="150" viewBox="0 0 960 150" role="img" aria-label="Contribution heatmap awaiting first sync">
+<style>
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+  .prompt{font-size:11px;fill:#78a8c4}
+  .title{font-size:17px;font-weight:700;fill:#f8fafc}
+  .small{font-size:10px;fill:#55788f}
+</style>
+<rect width="960" height="150" rx="18" fill="#06111f"/>
+<rect x="12" y="12" width="936" height="126" rx="14" fill="#081829" stroke="#153a55"/>
+<text x="30" y="38" class="mono prompt">khoa@github:~$ git log --activity</text>
+<text x="30" y="68" class="mono title">Contribution signal</text>
+<text x="30" y="97" class="mono small">first sync pending · GitHub Actions will render the public calendar after merge</text>
+<g transform="translate(690 87)">
+  <rect x="0" y="0" width="10" height="10" rx="2" fill="#0b1726"/>
+  <rect x="16" y="0" width="10" height="10" rx="2" fill="#12395a"/>
+  <rect x="32" y="0" width="10" height="10" rx="2" fill="#167da5"/>
+  <rect x="48" y="0" width="10" height="10" rx="2" fill="#38bdf8"/>
+  <rect x="64" y="0" width="10" height="10" rx="2" fill="#5eead4"/>
+</g>
+</svg>
