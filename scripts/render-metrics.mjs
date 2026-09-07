@@ -2,9 +2,16 @@ import { getProfileData, offlineProfile } from './github-data.mjs';
 import { bar, escapeXml, readConfig, writeGenerated } from './utils.mjs';
 
 const config = await readConfig();
-const data = process.env.PROFILE_OFFLINE === '1'
-  ? offlineProfile(config.username)
-  : await getProfileData(config.username);
+let data;
+if (process.env.PROFILE_OFFLINE === '1') {
+  data = offlineProfile(config.username);
+} else {
+  try {
+    data = await getProfileData(config.username);
+  } catch {
+    data = offlineProfile(config.username);
+  }
+}
 
 const langs = data.languages.slice(0, 5);
 const maxLang = Math.max(...langs.map(([, count]) => count), 1);
@@ -32,36 +39,28 @@ const recentRows = recent.map((repo, i) => {
   <text x="516" y="${y + 17}" class="muted">pushed ${escapeXml(date)}</text>`;
 }).join('\n');
 
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="370" viewBox="0 0 960 370" role="img" aria-label="Oceanic Engineering Telemetry">
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-label="Development Activity Telemetry">
 <style>
   :root { color-scheme: dark; }
-  .bg { fill: #041426; }
-  .panel { fill: #08213a; stroke: #163f66; }
-  .kicker { font: 700 11px ui-monospace,SFMono-Regular,Menlo,monospace; letter-spacing: 2.5px; fill: #14b8a6; }
-  .kicker-vision { font: 700 11px ui-monospace,SFMono-Regular,Menlo,monospace; letter-spacing: 2.5px; fill: #38bdf8; }
-  .title { font: 700 21px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; fill: #f0f9ff; }
-  .metric { font: 700 26px ui-monospace,SFMono-Regular,Menlo,monospace; fill: #f0fdfa; }
-  .label { font: 600 12.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill: #cbd5e1; }
-  .repo { font: 600 12.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill: #f0f9ff; }
-  .muted { font: 500 11px ui-monospace,SFMono-Regular,Menlo,monospace; fill: #7ba1c2; }
-  .track { fill: #0e2d4e; }
-  .trace { stroke: #16436e; stroke-width: 1.5; }
-  .scan { fill: url(#ocean-scan); opacity: .16; animation: scan 7s linear infinite; }
-  @keyframes scan { from { transform: translateY(-70px); } to { transform: translateY(410px); } }
+  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  .bg { fill: #051324; }
+  .panel { fill: #081e35; stroke: #153b60; }
+  .kicker { font: 700 11.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; letter-spacing: 1px; fill: #14b8a6; }
+  .kicker-vision { font: 700 11.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; letter-spacing: 1px; fill: #38bdf8; }
+  .title { font: 700 20px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; fill: #f8fafc; }
+  .metric { font: 700 25px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; fill: #f0fdfa; }
+  .label { font: 500 12.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; fill: #cbd5e1; }
+  .repo { font: 600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; fill: #f8fafc; }
+  .muted { font: 400 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; fill: #7ba1c2; }
+  .track { fill: #0d2847; }
+  .trace { stroke: #153e66; stroke-width: 1.5; }
 </style>
-<defs>
-  <linearGradient id="ocean-scan" x1="0" y1="0" x2="0" y2="1">
-    <stop stop-color="#14b8a6" stop-opacity="0"/>
-    <stop offset=".5" stop-color="#38bdf8" stop-opacity=".35"/>
-    <stop offset="1" stop-color="#14b8a6" stop-opacity="0"/>
-  </linearGradient>
-</defs>
-<rect width="960" height="370" rx="18" class="bg"/>
-<rect x="14" y="14" width="932" height="342" rx="14" class="panel"/>
-<text x="42" y="52" class="kicker">OCEANIC TELEMETRY</text>
-<text x="42" y="78" class="title">Research Activity &amp; Development Pulse</text>
-<text x="755" y="52" class="muted">SNAPSHOT ${updated}</text>
-<g transform="translate(42 100)">
+<rect width="960" height="360" rx="18" class="bg"/>
+<rect x="14" y="14" width="932" height="332" rx="14" class="panel"/>
+<text x="42" y="50" class="kicker">ACTIVITY TELEMETRY</text>
+<text x="42" y="76" class="title">Development &amp; Research Activity</text>
+<text x="760" y="50" class="muted">SNAPSHOT ${updated}</text>
+<g transform="translate(42 98)">
   <text y="22" class="metric">${data.stats.publicRepos}</text>
   <text y="42" class="muted">PUBLIC REPOS</text>
   <g transform="translate(120 0)">
@@ -77,11 +76,10 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="370" vi
     <text y="42" class="muted">FORKS</text>
   </g>
 </g>
-<text x="42" y="166" class="kicker">TECH STACK DIVERSITY</text>
+<text x="42" y="166" class="kicker">PRIMARY TECH STACK</text>
 ${languageRows}
 <text x="496" y="166" class="kicker-vision">RECENT COMMITS</text>
 ${recentRows}
-<rect x="0" y="-70" width="960" height="70" class="scan"/>
 </svg>`;
 
 await writeGenerated('metrics.svg', svg);

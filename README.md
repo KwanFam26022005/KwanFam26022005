@@ -1,36 +1,62 @@
 <div align="center">
-  <img src="./assets/hero.svg" width="100%" alt="Pham Hong Dang Khoa - Healthcare AI & Ocean Systems Lab" />
+  <img src="./assets/hero.svg" width="100%" alt="Pham Hong Dang Khoa - Healthcare AI & Ocean Systems" />
 </div>
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Pham_Hong_Dang_Khoa-0a2540?style=for-the-badge&logo=linkedin&logoColor=14b8a6)](https://www.linkedin.com/in/pham-hong-dang-khoa-40a3a0379)
-[![Email](https://img.shields.io/badge/Email-phdk2602%40gmail.com-0a2540?style=for-the-badge&logo=gmail&logoColor=38bdf8)](mailto:phdk2602@gmail.com)
-[![Location](https://img.shields.io/badge/Location-Ho_Chi_Minh_City-0a2540?style=for-the-badge&logo=google-maps&logoColor=2dd4bf)](https://maps.google.com/?q=Ho+Chi+Minh+City)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Pham_Hong_Dang_Khoa-092540?style=for-the-badge&logo=linkedin&logoColor=14b8a6)](https://www.linkedin.com/in/pham-hong-dang-khoa-40a3a0379)
+[![Email](https://img.shields.io/badge/Email-phdk2602%40gmail.com-092540?style=for-the-badge&logo=gmail&logoColor=38bdf8)](mailto:phdk2602@gmail.com)
+[![Location](https://img.shields.io/badge/Location-Ho_Chi_Minh_City-092540?style=for-the-badge&logo=google-maps&logoColor=2dd4bf)](https://maps.google.com/?q=Ho+Chi+Minh+City)
 
 </div>
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
-## 🌊 RESEARCH IDENTITY & CLINICAL PASSION
+## 🌊 VỀ BẢN THÂN & ĐỊNH HƯỚNG Y TẾ
 
-Xin chào! Tôi là **Phạm Hồng Đăng Khoa (Khoa Pham)**, một kỹ sư phát triển hệ thống AI và sinh viên Khoa học Máy tính. Lấy cảm hứng từ sự bao la, tĩnh lặng của đại dương sâu thẳm (*Deep Navy & Ocean*), tôi hướng trọn đam mê nghiên cứu của mình vào việc xây dựng các hệ thống trí tuệ nhân tạo đáng tin cậy phục vụ **Y tế (Healthcare AI)** và **Thị giác máy tính (Computer Vision)**.
+Xin chào, tôi là **Phạm Hồng Đăng Khoa (Khoa Pham)**. Lấy cảm hứng từ sự bình yên, sâu lắng của biển cả (*Deep Navy & Ocean*), tôi dành nhiều thời gian nghiên cứu và xây dựng các hệ thống trí tuệ nhân tạo hướng tới hai lĩnh vực chính:
 
-Đối với tôi, AI trong y tế không thể là một chiếc "hộp đen" chứa đầy ảo giác. Mọi thông tin, trích xuất thực thể bệnh án hay phản hồi hỗ trợ lâm sàng đều phải được **chứng thực nguồn gốc (Evidence-grounded)**, kiểm định chặt chẽ và tuân thủ các chuẩn mực an toàn khắt khe.
+- **🩺 Y tế & Ngôn ngữ Lâm sàng (Healthcare AI & Clinical NLU)**: Phát triển các mô hình trích xuất thực thể bệnh lý, phân tích hồ sơ y khoa và hệ thống RAG tra cứu hướng dẫn lâm sàng có kiểm chứng dẫn chứng chặt chẽ, nói không với thông tin sai lệch hay ảo giác.
+- **👁️ Thị giác Máy tính & Xử lý Tài liệu (Computer Vision & Document AI)**: Xây dựng các pipeline OCR bóc tách tài liệu, hóa đơn và đồng hồ đo chỉ số với chất lượng cao và khả năng tích hợp thực tế.
 
-<div align="center">
-  <img src="./assets/focus-pillars.svg" width="100%" alt="Core Research Pillars Architecture" />
-</div>
+---
+
+### 🏛️ Trọng tâm Nghiên cứu
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🩺 Healthcare AI & Clinical Informatics
+Hệ thống AI phục vụ chăm sóc sức khỏe với tính minh bạch và độ tin cậy cao:
+- **Clinical Entity Extraction**: Nhận diện triệu chứng, bệnh án, tên thuốc từ văn bản lâm sàng.
+- **Evidence-Grounded RAG**: Tra cứu tài liệu y khoa có đối chiếu nguồn tài liệu gốc.
+- **Anti-Hallucination Barrier**: Rào chắn kiểm định sự thật, loại bỏ thông tin bịa đặt.
+- **Patient Privacy**: Xử lý và làm sạch dữ liệu hồ sơ bệnh án tuân thủ chuẩn riêng tư.
+
+</td>
+<td width="50%" valign="top">
+
+### 👁️ Computer Vision & Document Systems
+Các giải pháp thị giác máy tính thực tế, chạy ổn định và chính xác:
+- **Document Intake & Rectification**: Căn chỉnh góc nghiêng, nâng cao chất lượng ảnh hóa đơn/tài liệu.
+- **Deep Text Localization**: Bóc tách vùng văn bản với mô hình PP-OCRv6.
+- **Deterministic Validation**: Bộ luật kiểm tra ngữ pháp và đối soát số liệu tất định.
+- **FastAPI Microservices**: Đóng gói API suy luận phục vụ ứng dụng thực tế.
+
+</td>
+</tr>
+</table>
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
-## 🔬 FEATURED SYSTEMS & RESEARCH TRACKS
+## 🔬 DỰ ÁN TIÊU BIỂU
 
 <div align="center">
   <img src="./generated/projects.svg" width="100%" alt="Featured Systems Tracks" />
 </div>
 
-### 🩺 Track 01 — Healthcare AI & Clinical Informatics
+### 🩺 Track 01 — Healthcare AI & Clinical Systems
 
 <table>
 <tr>
@@ -55,7 +81,7 @@ Trợ lý tra cứu tri thức dựa trên RAG (Retrieval-Augmented Generation),
 <td width="50%" valign="top">
 
 #### KOA Agentic-RAG *(Clinical Research Prototype)*
-Kiến trúc đa tác tử (Multi-Agent) phục vụ tra cứu hướng dẫn lâm sàng đa bước: tự động phân rã câu hỏi y khoa phức tạp, kiểm tra đối chiếu tài liệu và thiết lập rào chắn chống ảo giác (Anti-Hallucination Barrier).
+Kiến trúc đa tác tử phục vụ tra cứu hướng dẫn lâm sàng đa bước: tự động phân rã câu hỏi y khoa phức tạp, kiểm tra đối chiếu tài liệu và thiết lập rào chắn chống ảo giác y khoa.
 
 `Multi-Agent` · `Evidence Verification` · `Fact Auditing`
 
@@ -63,7 +89,7 @@ Kiến trúc đa tác tử (Multi-Agent) phục vụ tra cứu hướng dẫn l�
 <td width="50%" valign="top">
 
 #### [Interactive-Web-Dashboard-for-Frequent-Itemset-Mining](https://github.com/KwanFam26022005/Interactive-Web-Dashboard-for-Frequent-Itemset-Mining-and-Apriori-Pruning-Analysis)
-Bảng điều khiển tương tác trực quan hóa thuật toán khai phá tập mục phổ biến và luật kết hợp Apriori, hỗ trợ phân tích dữ liệu phân tích và đánh giá hiệu năng.
+Bảng điều khiển tương tác trực quan hóa thuật toán khai phá tập mục phổ biến và luật kết hợp Apriori, hỗ trợ phân tích dữ liệu và đánh giá hiệu năng.
 
 `PHP` · `MySQL` · `JavaScript` · `ECharts` · `Apriori`
 
@@ -114,22 +140,22 @@ Giao diện đo lường và thanh tra trực quan từng giai đoạn xử lý 
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
-## 🛠️ CORE CAPABILITIES & METHODOLOGY
+## 🛠️ NĂNG LỰC KỸ THUẬT
 
-| Miền Nghiên Cứu | Công Nghệ & Phương Pháp Trọng Tâm |
+| Lĩnh Vực | Kỹ Năng & Công Nghệ |
 |---|---|
-| **Healthcare AI & Clinical NLP** | Medical-NLU · Clinical Entity Extraction · De-identification · Evidence-Verified RAG · Citation Auditing |
-| **Computer Vision & OCR** | PP-OCRv6 · OpenCV · PyTorch · Image Quality Gating · Perspective Rectification |
-| **Data & Biomedical Storage** | DuckDB · MySQL · Pandas · Structured Clinical Record Modeling · Transactional Analytics |
-| **Systems & Architecture** | FastAPI Microservices · Docker · GitHub Actions Automation · Fail-Closed Safe Inference |
-| **Web & Instrumentation** | TypeScript · React / Next.js · ECharts · D3.js · Modern Visualization |
+| **Healthcare AI & Clinical NLP** | Medical-NLU · Trích xuất thực thể bệnh án · RAG kiểm chứng dẫn chứng · Khử ảo giác |
+| **Computer Vision & OCR** | PP-OCRv6 · OpenCV · PyTorch · Đánh giá chất lượng ảnh · Căn chỉnh góc nghiêng |
+| **Data & Biomedical Storage** | DuckDB · MySQL · Pandas · Xử lý hồ sơ dữ liệu có cấu trúc |
+| **Systems & Architecture** | FastAPI Microservices · Docker · GitHub Actions CI/CD |
+| **Web & Visualization** | TypeScript · React / Next.js · ECharts · D3.js |
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
-## 📊 OCEANIC TELEMETRY
+## 📊 HOẠT ĐỘNG PHÁT TRIỂN
 
 <div align="center">
-  <img src="./generated/metrics.svg" width="100%" alt="Live Ocean Telemetry" />
+  <img src="./generated/metrics.svg" width="100%" alt="Development Activity Telemetry" />
 </div>
 
 <div align="center">

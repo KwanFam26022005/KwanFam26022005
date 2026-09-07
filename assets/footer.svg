@@ -1,11 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="74" viewBox="0 0 960 74">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="60" viewBox="0 0 960 60">
 <style>
-  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; fill: #6286a8; font-size: 10.5px; letter-spacing: 2px; }
-  .dot-teal { fill: #14b8a6; }
-  .dot-blue { fill: #38bdf8; }
+  .txt { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; fill: #648cae; font-size: 11px; letter-spacing: 1.5px; }
 </style>
-<path d="M120 18H840" stroke="#163f66" stroke-width="1"/>
-<circle cx="474" cy="18" r="3.5" class="dot-teal"/>
-<circle cx="486" cy="18" r="3.5" class="dot-blue"/>
-<text x="480" y="50" text-anchor="middle" class="mono">HEALTHCARE INFORMATICS <tspan fill="#14b8a6">→</tspan> OCEANIC HARMONY <tspan fill="#38bdf8">→</tspan> RELIABLE VISION SYSTEMS</text>
+<path d="M 160 14 Q 480 8, 800 14" stroke="#163e63" stroke-width="1" fill="none"/>
+<circle cx="480" cy="11" r="3" fill="#14b8a6"/>
+<text x="480" y="42" text-anchor="middle" class="txt">HEALTHCARE INFORMATICS · OCEAN TRANQUILITY · RELIABLE AI</text>
 </svg>

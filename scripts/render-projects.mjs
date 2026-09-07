@@ -44,49 +44,49 @@ function renderCard(repoName, x, y, accentColor, tag) {
   const desc = repo.description || DEFAULT_DESCRIPTIONS[repo.name] || 'Systems research repository on GitHub.';
   const lang = repo.language || (repo.name.includes('visualizer') ? 'TypeScript' : (repo.name.includes('Dashboard') ? 'PHP' : 'Python'));
   const displayName = repo.name === 'Interactive-Web-Dashboard-for-Frequent-Itemset-Mining-and-Apriori-Pruning-Analysis'
-    ? 'FIM / APRIORI MINING DASHBOARD'
-    : repo.name.replaceAll('-', ' ').toUpperCase();
+    ? 'FIM / Apriori Mining Dashboard'
+    : repo.name.replaceAll('-', ' ');
 
   return `<g transform="translate(${x} ${y})">
-    <rect width="446" height="122" rx="12" class="card" stroke="#163f66"/>
-    <line x1="0" y1="14" x2="0" y2="108" stroke="${accentColor}" stroke-width="3.5" stroke-linecap="round"/>
-    <text x="20" y="28" class="project-title">${escapeXml(truncate(displayName, 36))}</text>
-    <rect x="356" y="14" width="74" height="18" rx="9" fill="${accentColor}1c" stroke="${accentColor}44"/>
-    <text x="393" y="27" text-anchor="middle" font-size="9" font-weight="700" fill="${accentColor}">${tag}</text>
+    <rect width="446" height="120" rx="12" class="card" stroke="#153b60"/>
+    <line x1="0" y1="14" x2="0" y2="106" stroke="${accentColor}" stroke-width="3" stroke-linecap="round"/>
+    <text x="20" y="28" class="project-title">${escapeXml(truncate(displayName, 38))}</text>
+    <rect x="352" y="14" width="78" height="18" rx="9" fill="${accentColor}18" stroke="${accentColor}44"/>
+    <text x="391" y="27" text-anchor="middle" font-size="9.5" font-weight="600" fill="${accentColor}">${tag}</text>
     <text x="20" y="50" class="meta">${escapeXml(lang)} · ★ ${repo.stargazers_count ?? 0}</text>
-    <text x="20" y="75" class="desc">${escapeXml(truncate(desc, 60))}</text>
-    <text x="20" y="100" class="link">github.com/${config.username}/${escapeXml(repo.name)}</text>
+    <text x="20" y="74" class="desc">${escapeXml(truncate(desc, 62))}</text>
+    <text x="20" y="98" class="link">github.com/${config.username}/${escapeXml(repo.name)}</text>
   </g>`;
 }
 
-const healthCards = healthRepoNames.map((name, i) => renderCard(name, 24, 72 + i * 136, '#14b8a6', 'HEALTH AI')).join('\n');
-const visionCards = visionRepoNames.map((name, i) => renderCard(name, 490, 72 + i * 136, '#38bdf8', 'VISION AI')).join('\n');
+const healthCards = healthRepoNames.map((name, i) => renderCard(name, 24, 68 + i * 134, '#14b8a6', 'HEALTH AI')).join('\n');
+const visionCards = visionRepoNames.map((name, i) => renderCard(name, 490, 68 + i * 134, '#38bdf8', 'VISION AI')).join('\n');
 
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="495" viewBox="0 0 960 495" role="img" aria-label="Featured Systems Tracks">
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="485" viewBox="0 0 960 485" role="img" aria-label="Featured Systems Tracks">
 <style>
   :root { color-scheme: dark; }
-  .bg { fill: #041426; }
-  .panel { fill: #08213a; stroke: #163f66; }
-  .card { fill: #0b2949; }
-  .lane-hdr { font: 700 11px ui-monospace,SFMono-Regular,Menlo,monospace; letter-spacing: 2px; }
+  .bg { fill: #051324; }
+  .panel { fill: #081e35; stroke: #153b60; }
+  .card { fill: #0a2542; }
+  .lane-hdr { font: 700 12px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; letter-spacing: 1px; }
   .lane-health { fill: #14b8a6; }
   .lane-vision { fill: #38bdf8; }
-  .project-title { font: 700 13px ui-monospace,SFMono-Regular,Menlo,monospace; fill: #f0f9ff; letter-spacing: .3px; }
-  .meta { font: 600 11px ui-monospace,SFMono-Regular,Menlo,monospace; fill: #2dd4bf; }
-  .desc { font: 500 11.5px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; fill: #94a3b8; }
+  .project-title { font: 700 13.5px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; fill: #f8fafc; }
+  .meta { font: 500 11px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; fill: #2dd4bf; }
+  .desc { font: 400 11.5px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; fill: #94a3b8; }
   .link { font: 500 10px ui-monospace,SFMono-Regular,Menlo,monospace; fill: #60a5fa; }
 </style>
-<rect width="960" height="495" rx="18" class="bg"/>
-<rect x="14" y="14" width="932" height="467" rx="14" class="panel"/>
+<rect width="960" height="485" rx="18" class="bg"/>
+<rect x="14" y="14" width="932" height="457" rx="14" class="panel"/>
 <!-- Healthcare Lane Header -->
-<g transform="translate(24 44)">
+<g transform="translate(24 42)">
   <circle cx="6" cy="-4" r="4.5" fill="#14b8a6"/>
-  <text x="18" y="0" class="lane-hdr lane-health">TRACK 01 // HEALTHCARE AI &amp; CLINICAL INFORMATICS</text>
+  <text x="18" y="0" class="lane-hdr lane-health">TRACK 01: HEALTHCARE AI &amp; CLINICAL INFORMATICS</text>
 </g>
 <!-- Vision Lane Header -->
-<g transform="translate(490 44)">
+<g transform="translate(490 42)">
   <circle cx="6" cy="-4" r="4.5" fill="#38bdf8"/>
-  <text x="18" y="0" class="lane-hdr lane-vision">TRACK 02 // COMPUTER VISION &amp; DOCUMENT AI</text>
+  <text x="18" y="0" class="lane-hdr lane-vision">TRACK 02: COMPUTER VISION &amp; DOCUMENT AI</text>
 </g>
 ${healthCards}
 ${visionCards}
