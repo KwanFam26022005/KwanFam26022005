@@ -16,38 +16,41 @@
 <text x="30" y="36" class="mono prompt">khoa@github:~$ ./profile --activity</text>
 <rect x="254" y="26" width="6" height="12" rx="1" fill="#0969da"><animate attributeName="opacity" values="1;.12;1" dur="1.15s" repeatCount="indefinite"/></rect>
 <text x="30" y="64" class="sans title">Development signal</text>
-<text x="824" y="36" class="mono muted">2026-10-21</text>
+<text x="824" y="36" class="mono muted">2026-10-22</text>
 
 <g transform="translate(30 84)" class="mono">
-  <text x="0" class="stat">repos 3</text>
-  <text x="86" class="stat">active/30d 1</text>
+  <text x="0" class="stat">repos 4</text>
+  <text x="86" class="stat">active/30d 2</text>
 </g>
 
 <text x="30" y="118" class="mono prompt">&gt; languages --by-repository</text>
 <g class="mono">
-<text x="42" y="142" class="key">JavaScript</text>
-  <text x="154" y="142" class="muted">01 repos</text>
+<text x="42" y="142" class="key">Python</text>
+  <text x="154" y="142" class="muted">02 repos</text>
   <rect x="218" y="134" width="155" height="5" rx="2.5" fill="#e2e8f0"/>
   <rect x="218" y="134" width="155" height="5" rx="2.5" fill="#0969da"/>
-<text x="42" y="167" class="key">Python</text>
+<text x="42" y="167" class="key">JavaScript</text>
   <text x="154" y="167" class="muted">01 repos</text>
   <rect x="218" y="159" width="155" height="5" rx="2.5" fill="#e2e8f0"/>
-  <rect x="218" y="159" width="155" height="5" rx="2.5" fill="#2563eb"/>
+  <rect x="218" y="159" width="78" height="5" rx="2.5" fill="#2563eb"/>
 <text x="42" y="192" class="key">C#</text>
   <text x="154" y="192" class="muted">01 repos</text>
   <rect x="218" y="184" width="155" height="5" rx="2.5" fill="#e2e8f0"/>
-  <rect x="218" y="184" width="155" height="5" rx="2.5" fill="#3b82f6"/>
+  <rect x="218" y="184" width="78" height="5" rx="2.5" fill="#3b82f6"/>
 </g>
 <text x="490" y="118" class="mono prompt">&gt; recent --pushes</text>
 <g class="mono">
-<text x="500" y="142" class="date">10-20</text>
+<text x="500" y="142" class="date">10-21</text>
   <text x="552" y="142" class="repo">KwanFam26022005</text>
   <text x="882" y="142" text-anchor="end" class="muted">push</text>
-<text x="500" y="173" class="date">05-15</text>
-  <text x="552" y="173" class="repo">tdtu-student-handbook-chatbot</text>
+<text x="500" y="173" class="date">10-21</text>
+  <text x="552" y="173" class="repo">KOA-Agentic-RAG-System</text>
   <text x="882" y="173" text-anchor="end" class="muted">push</text>
-<text x="500" y="204" class="date">03-04</text>
-  <text x="552" y="204" class="repo">House-Management-Software-with-AI</text>
+<text x="500" y="204" class="date">05-15</text>
+  <text x="552" y="204" class="repo">tdtu-student-handbook-chatbot</text>
   <text x="882" y="204" text-anchor="end" class="muted">push</text>
+<text x="500" y="235" class="date">03-04</text>
+  <text x="552" y="235" class="repo">House-Management-Software-with-AI</text>
+  <text x="882" y="235" text-anchor="end" class="muted">push</text>
 </g>
 </svg>
